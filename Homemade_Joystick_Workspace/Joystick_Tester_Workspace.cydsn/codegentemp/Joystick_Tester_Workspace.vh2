@@ -2,7 +2,7 @@
 --	Conversion of Joystick_Tester_Workspace.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Sun Dec 24 15:02:56 2017
+--	Sun Dec 24 15:06:17 2017
 --
 
 USE cypress.cypress.all;

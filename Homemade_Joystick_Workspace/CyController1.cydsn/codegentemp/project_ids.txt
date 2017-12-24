@@ -1,7 +1,0 @@
-P:\My_Documents\business\Prometheus_EducationLLC\Tutorials\MCU101_Cypresss\SW_Working_Directory\MCU101_Cypress_PSOC5_Labs\CyController\CyController1.cydsn\CyController1.cyprj|1366bff7-809c-46d2-b251-55f330e19d2d
-C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|f083e79d-865d-4195-b872-686dc7b1b103
-C:\Users\Alex\Documents\PSoC Creator\4.1\Downloads ( 4.1).cylib\Downloads ( 4.1).cyprj|aa2d5b89-0306-455a-9f01-4f6bf9d77cd3
-C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|82dc5b40-7693-4210-b755-03752413a183
-C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|d17f6204-0cd0-4cc5-bb4c-6d289e418b7c
-C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|1517ba13-3c6c-485a-8935-4ba413cf7024
-C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|a42f648b-be1f-4ada-993d-ee11a8134d13
