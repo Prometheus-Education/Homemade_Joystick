@@ -1,0 +1,1248 @@
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.main,"ax",%progbits
+  20              		.align	2
+  21              		.global	main
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	main, %function
+  25              	main:
+  26              	.LFB63:
+  27              		.file 1 "main.c"
+   1:main.c        **** /* ========================================
+   2:main.c        ****  *
+   3:main.c        ****  * Copyright YOUR COMPANY, THE YEAR
+   4:main.c        ****  * All Rights Reserved
+   5:main.c        ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:main.c        ****  *
+   7:main.c        ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:main.c        ****  * WHICH IS THE PROPERTY OF your company.
+   9:main.c        ****  *
+  10:main.c        ****  * ========================================
+  11:main.c        **** */
+  12:main.c        **** #include "project.h"
+  13:main.c        **** 
+  14:main.c        **** int main(void)
+  15:main.c        **** {
+  28              		.loc 1 15 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 2DE9F047 		push	{r4, r5, r6, r7, r8, r9, r10, lr}
+  33              		.cfi_def_cfa_offset 32
+  34              		.cfi_offset 4, -32
+  35              		.cfi_offset 5, -28
+  36              		.cfi_offset 6, -24
+  37              		.cfi_offset 7, -20
+  38              		.cfi_offset 8, -16
+  39              		.cfi_offset 9, -12
+  40              		.cfi_offset 10, -8
+  41              		.cfi_offset 14, -4
+  16:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 2
+
+
+  42              		.loc 1 16 0
+  43              		.syntax unified
+  44              	@ 16 "main.c" 1
+  45 0004 62B6     		CPSIE   i
+  46              	@ 0 "" 2
+  17:main.c        ****     uint8_t A_Button_State;
+  18:main.c        ****     uint8_t B_Button_State;
+  19:main.c        ****     uint8_t X_Button_State;
+  20:main.c        ****     uint8_t Y_Button_State;
+  21:main.c        ****     
+  22:main.c        ****     uint8_t Select_Button_State;
+  23:main.c        ****     uint8_t Start_Button_State;
+  24:main.c        ****     
+  25:main.c        ****     uint8_t Joystick_Button_State;
+  26:main.c        **** 
+  27:main.c        ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  28:main.c        ****     DEBUG_UART_Start();
+  47              		.loc 1 28 0
+  48              		.thumb
+  49              		.syntax unified
+  50 0006 FFF7FEFF 		bl	DEBUG_UART_Start
+  51              	.LVL0:
+  52              	.L16:
+  29:main.c        **** 
+  30:main.c        ****     for(;;)
+  31:main.c        ****     {
+  32:main.c        ****         /* Place your application code here. */
+  33:main.c        ****         
+  34:main.c        ****         //Every 100ms print out the buttons being pressed and the joystick value
+  35:main.c        ****         CyDelay(100);
+  53              		.loc 1 35 0
+  54 000a 6420     		movs	r0, #100
+  55 000c FFF7FEFF 		bl	CyDelay
+  56              	.LVL1:
+  36:main.c        ****         A_Button_State = A_Button_Read();
+  57              		.loc 1 36 0
+  58 0010 FFF7FEFF 		bl	A_Button_Read
+  59              	.LVL2:
+  60 0014 8246     		mov	r10, r0
+  61              	.LVL3:
+  37:main.c        ****         B_Button_State = B_Button_Read();
+  62              		.loc 1 37 0
+  63 0016 FFF7FEFF 		bl	B_Button_Read
+  64              	.LVL4:
+  65 001a 8146     		mov	r9, r0
+  66              	.LVL5:
+  38:main.c        ****         X_Button_State = X_Button_Read();
+  67              		.loc 1 38 0
+  68 001c FFF7FEFF 		bl	X_Button_Read
+  69              	.LVL6:
+  70 0020 8046     		mov	r8, r0
+  71              	.LVL7:
+  39:main.c        ****         Y_Button_State = Y_Button_Read();
+  72              		.loc 1 39 0
+  73 0022 FFF7FEFF 		bl	Y_Button_Read
+  74              	.LVL8:
+  75 0026 0746     		mov	r7, r0
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 3
+
+
+  76              	.LVL9:
+  40:main.c        ****         
+  41:main.c        ****         Select_Button_State = Select_Button_Read();
+  77              		.loc 1 41 0
+  78 0028 FFF7FEFF 		bl	Select_Button_Read
+  79              	.LVL10:
+  80 002c 0646     		mov	r6, r0
+  81              	.LVL11:
+  42:main.c        ****         Start_Button_State = Start_Button_Read();
+  82              		.loc 1 42 0
+  83 002e FFF7FEFF 		bl	Start_Button_Read
+  84              	.LVL12:
+  85 0032 0546     		mov	r5, r0
+  86              	.LVL13:
+  43:main.c        ****         
+  44:main.c        ****         Joystick_Button_State = Joystick_Button_Read();
+  87              		.loc 1 44 0
+  88 0034 FFF7FEFF 		bl	Joystick_Button_Read
+  89              	.LVL14:
+  90 0038 0446     		mov	r4, r0
+  91              	.LVL15:
+  45:main.c        ****         
+  46:main.c        ****         //Print out via Debug the states of each button
+  47:main.c        ****         if( A_Button_State )
+  92              		.loc 1 47 0
+  93 003a BAF1000F 		cmp	r10, #0
+  94 003e 03D0     		beq	.L2
+  48:main.c        ****         {
+  49:main.c        ****             DEBUG_UART_PutString("A\t");
+  95              		.loc 1 49 0
+  96 0040 1F48     		ldr	r0, .L18
+  97 0042 FFF7FEFF 		bl	DEBUG_UART_PutString
+  98              	.LVL16:
+  99 0046 02E0     		b	.L3
+ 100              	.L2:
+  50:main.c        ****         }
+  51:main.c        ****         else
+  52:main.c        ****         {
+  53:main.c        ****             DEBUG_UART_PutString("\t");
+ 101              		.loc 1 53 0
+ 102 0048 1E48     		ldr	r0, .L18+4
+ 103 004a FFF7FEFF 		bl	DEBUG_UART_PutString
+ 104              	.LVL17:
+ 105              	.L3:
+  54:main.c        ****         }
+  55:main.c        ****         
+  56:main.c        ****         if( B_Button_State )
+ 106              		.loc 1 56 0
+ 107 004e B9F1000F 		cmp	r9, #0
+ 108 0052 03D0     		beq	.L4
+  57:main.c        ****         {
+  58:main.c        ****             DEBUG_UART_PutString("B\t");
+ 109              		.loc 1 58 0
+ 110 0054 1C48     		ldr	r0, .L18+8
+ 111 0056 FFF7FEFF 		bl	DEBUG_UART_PutString
+ 112              	.LVL18:
+ 113 005a 02E0     		b	.L5
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 4
+
+
+ 114              	.L4:
+  59:main.c        ****         }
+  60:main.c        ****         else
+  61:main.c        ****         {
+  62:main.c        ****             DEBUG_UART_PutString("\t");
+ 115              		.loc 1 62 0
+ 116 005c 1948     		ldr	r0, .L18+4
+ 117 005e FFF7FEFF 		bl	DEBUG_UART_PutString
+ 118              	.LVL19:
+ 119              	.L5:
+  63:main.c        ****         }
+  64:main.c        ****         
+  65:main.c        ****         if( X_Button_State )
+ 120              		.loc 1 65 0
+ 121 0062 B8F1000F 		cmp	r8, #0
+ 122 0066 03D0     		beq	.L6
+  66:main.c        ****         {
+  67:main.c        ****             DEBUG_UART_PutString("X\t");
+ 123              		.loc 1 67 0
+ 124 0068 1848     		ldr	r0, .L18+12
+ 125 006a FFF7FEFF 		bl	DEBUG_UART_PutString
+ 126              	.LVL20:
+ 127 006e 02E0     		b	.L7
+ 128              	.L6:
+  68:main.c        ****         }
+  69:main.c        ****         else
+  70:main.c        ****         {
+  71:main.c        ****             DEBUG_UART_PutString("\t");
+ 129              		.loc 1 71 0
+ 130 0070 1448     		ldr	r0, .L18+4
+ 131 0072 FFF7FEFF 		bl	DEBUG_UART_PutString
+ 132              	.LVL21:
+ 133              	.L7:
+  72:main.c        ****         }
+  73:main.c        ****         
+  74:main.c        ****         if( Y_Button_State )
+ 134              		.loc 1 74 0
+ 135 0076 1FB1     		cbz	r7, .L8
+  75:main.c        ****         {
+  76:main.c        ****             DEBUG_UART_PutString("Y\t");
+ 136              		.loc 1 76 0
+ 137 0078 1548     		ldr	r0, .L18+16
+ 138 007a FFF7FEFF 		bl	DEBUG_UART_PutString
+ 139              	.LVL22:
+ 140 007e 02E0     		b	.L9
+ 141              	.L8:
+  77:main.c        ****         }
+  78:main.c        ****         else
+  79:main.c        ****         {
+  80:main.c        ****             DEBUG_UART_PutString("\t");
+ 142              		.loc 1 80 0
+ 143 0080 1048     		ldr	r0, .L18+4
+ 144 0082 FFF7FEFF 		bl	DEBUG_UART_PutString
+ 145              	.LVL23:
+ 146              	.L9:
+  81:main.c        ****         }
+  82:main.c        ****         
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 5
+
+
+  83:main.c        ****         if( Select_Button_State )
+ 147              		.loc 1 83 0
+ 148 0086 1EB1     		cbz	r6, .L10
+  84:main.c        ****         {
+  85:main.c        ****             DEBUG_UART_PutString("Select\t");
+ 149              		.loc 1 85 0
+ 150 0088 1248     		ldr	r0, .L18+20
+ 151 008a FFF7FEFF 		bl	DEBUG_UART_PutString
+ 152              	.LVL24:
+ 153 008e 02E0     		b	.L11
+ 154              	.L10:
+  86:main.c        ****         }
+  87:main.c        ****         else
+  88:main.c        ****         {
+  89:main.c        ****             DEBUG_UART_PutString("\t");
+ 155              		.loc 1 89 0
+ 156 0090 0C48     		ldr	r0, .L18+4
+ 157 0092 FFF7FEFF 		bl	DEBUG_UART_PutString
+ 158              	.LVL25:
+ 159              	.L11:
+  90:main.c        ****         }
+  91:main.c        ****         
+  92:main.c        ****         if( Start_Button_State )
+ 160              		.loc 1 92 0
+ 161 0096 1DB1     		cbz	r5, .L12
+  93:main.c        ****         {
+  94:main.c        ****             DEBUG_UART_PutString("Start\t");
+ 162              		.loc 1 94 0
+ 163 0098 0F48     		ldr	r0, .L18+24
+ 164 009a FFF7FEFF 		bl	DEBUG_UART_PutString
+ 165              	.LVL26:
+ 166 009e 02E0     		b	.L13
+ 167              	.L12:
+  95:main.c        ****         }
+  96:main.c        ****         else
+  97:main.c        ****         {
+  98:main.c        ****             DEBUG_UART_PutString("\t");
+ 168              		.loc 1 98 0
+ 169 00a0 0848     		ldr	r0, .L18+4
+ 170 00a2 FFF7FEFF 		bl	DEBUG_UART_PutString
+ 171              	.LVL27:
+ 172              	.L13:
+  99:main.c        ****         }
+ 100:main.c        ****         
+ 101:main.c        ****         if( !Joystick_Button_State )
+ 173              		.loc 1 101 0
+ 174 00a6 1CB9     		cbnz	r4, .L14
+ 102:main.c        ****         {
+ 103:main.c        ****             DEBUG_UART_PutString("Joy\t");
+ 175              		.loc 1 103 0
+ 176 00a8 0C48     		ldr	r0, .L18+28
+ 177 00aa FFF7FEFF 		bl	DEBUG_UART_PutString
+ 178              	.LVL28:
+ 179 00ae 02E0     		b	.L15
+ 180              	.L14:
+ 104:main.c        ****         }
+ 105:main.c        ****         else
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 6
+
+
+ 106:main.c        ****         {
+ 107:main.c        ****             DEBUG_UART_PutString("\t");
+ 181              		.loc 1 107 0
+ 182 00b0 0448     		ldr	r0, .L18+4
+ 183 00b2 FFF7FEFF 		bl	DEBUG_UART_PutString
+ 184              	.LVL29:
+ 185              	.L15:
+ 108:main.c        ****         }
+ 109:main.c        ****         
+ 110:main.c        ****         
+ 111:main.c        ****         DEBUG_UART_PutString("\r\n");
+ 186              		.loc 1 111 0
+ 187 00b6 0A48     		ldr	r0, .L18+32
+ 188 00b8 FFF7FEFF 		bl	DEBUG_UART_PutString
+ 189              	.LVL30:
+ 112:main.c        ****         
+ 113:main.c        ****     }
+ 190              		.loc 1 113 0
+ 191 00bc A5E7     		b	.L16
+ 192              	.L19:
+ 193 00be 00BF     		.align	2
+ 194              	.L18:
+ 195 00c0 00000000 		.word	.LC0
+ 196 00c4 04000000 		.word	.LC1
+ 197 00c8 08000000 		.word	.LC2
+ 198 00cc 0C000000 		.word	.LC3
+ 199 00d0 10000000 		.word	.LC4
+ 200 00d4 14000000 		.word	.LC5
+ 201 00d8 1C000000 		.word	.LC6
+ 202 00dc 24000000 		.word	.LC7
+ 203 00e0 2C000000 		.word	.LC8
+ 204              		.cfi_endproc
+ 205              	.LFE63:
+ 206              		.size	main, .-main
+ 207              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 208              		.align	2
+ 209              	.LC0:
+ 210 0000 410900   		.ascii	"A\011\000"
+ 211 0003 00       		.space	1
+ 212              	.LC1:
+ 213 0004 0900     		.ascii	"\011\000"
+ 214 0006 0000     		.space	2
+ 215              	.LC2:
+ 216 0008 420900   		.ascii	"B\011\000"
+ 217 000b 00       		.space	1
+ 218              	.LC3:
+ 219 000c 580900   		.ascii	"X\011\000"
+ 220 000f 00       		.space	1
+ 221              	.LC4:
+ 222 0010 590900   		.ascii	"Y\011\000"
+ 223 0013 00       		.space	1
+ 224              	.LC5:
+ 225 0014 53656C65 		.ascii	"Select\011\000"
+ 225      63740900 
+ 226              	.LC6:
+ 227 001c 53746172 		.ascii	"Start\011\000"
+ 227      740900
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 7
+
+
+ 228 0023 00       		.space	1
+ 229              	.LC7:
+ 230 0024 4A6F7909 		.ascii	"Joy\011\000"
+ 230      00
+ 231 0029 000000   		.space	3
+ 232              	.LC8:
+ 233 002c 0D0A00   		.ascii	"\015\012\000"
+ 234              		.text
+ 235              	.Letext0:
+ 236              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
+ 237              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
+ 238              		.file 4 "Generated_Source\\PSoC5/DEBUG_UART.h"
+ 239              		.file 5 "Generated_Source\\PSoC5/CyLib.h"
+ 240              		.file 6 "Generated_Source\\PSoC5/A_Button.h"
+ 241              		.file 7 "Generated_Source\\PSoC5/B_Button.h"
+ 242              		.file 8 "Generated_Source\\PSoC5/X_Button.h"
+ 243              		.file 9 "Generated_Source\\PSoC5/Y_Button.h"
+ 244              		.file 10 "Generated_Source\\PSoC5/Select_Button.h"
+ 245              		.file 11 "Generated_Source\\PSoC5/Start_Button.h"
+ 246              		.file 12 "Generated_Source\\PSoC5/Joystick_Button.h"
+ 247              		.file 13 "Generated_Source\\PSoC5/core_cm3.h"
+ 248              		.section	.debug_info,"",%progbits
+ 249              	.Ldebug_info0:
+ 250 0000 5C030000 		.4byte	0x35c
+ 251 0004 0400     		.2byte	0x4
+ 252 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 253 000a 04       		.byte	0x4
+ 254 000b 01       		.uleb128 0x1
+ 255 000c 5D000000 		.4byte	.LASF35
+ 256 0010 0C       		.byte	0xc
+ 257 0011 46020000 		.4byte	.LASF36
+ 258 0015 34010000 		.4byte	.LASF37
+ 259 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 260 001d 00000000 		.4byte	0
+ 261 0021 00000000 		.4byte	.Ldebug_line0
+ 262 0025 02       		.uleb128 0x2
+ 263 0026 01       		.byte	0x1
+ 264 0027 06       		.byte	0x6
+ 265 0028 AD020000 		.4byte	.LASF0
+ 266 002c 03       		.uleb128 0x3
+ 267 002d 00000000 		.4byte	.LASF4
+ 268 0031 02       		.byte	0x2
+ 269 0032 1D       		.byte	0x1d
+ 270 0033 37000000 		.4byte	0x37
+ 271 0037 02       		.uleb128 0x2
+ 272 0038 01       		.byte	0x1
+ 273 0039 08       		.byte	0x8
+ 274 003a 4F000000 		.4byte	.LASF1
+ 275 003e 02       		.uleb128 0x2
+ 276 003f 02       		.byte	0x2
+ 277 0040 05       		.byte	0x5
+ 278 0041 C8010000 		.4byte	.LASF2
+ 279 0045 02       		.uleb128 0x2
+ 280 0046 02       		.byte	0x2
+ 281 0047 07       		.byte	0x7
+ 282 0048 75010000 		.4byte	.LASF3
+ 283 004c 03       		.uleb128 0x3
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 8
+
+
+ 284 004d 1C000000 		.4byte	.LASF5
+ 285 0051 02       		.byte	0x2
+ 286 0052 3F       		.byte	0x3f
+ 287 0053 57000000 		.4byte	0x57
+ 288 0057 02       		.uleb128 0x2
+ 289 0058 04       		.byte	0x4
+ 290 0059 05       		.byte	0x5
+ 291 005a 98020000 		.4byte	.LASF6
+ 292 005e 02       		.uleb128 0x2
+ 293 005f 04       		.byte	0x4
+ 294 0060 07       		.byte	0x7
+ 295 0061 22010000 		.4byte	.LASF7
+ 296 0065 02       		.uleb128 0x2
+ 297 0066 08       		.byte	0x8
+ 298 0067 05       		.byte	0x5
+ 299 0068 38020000 		.4byte	.LASF8
+ 300 006c 02       		.uleb128 0x2
+ 301 006d 08       		.byte	0x8
+ 302 006e 07       		.byte	0x7
+ 303 006f E4010000 		.4byte	.LASF9
+ 304 0073 04       		.uleb128 0x4
+ 305 0074 04       		.byte	0x4
+ 306 0075 05       		.byte	0x5
+ 307 0076 696E7400 		.ascii	"int\000"
+ 308 007a 02       		.uleb128 0x2
+ 309 007b 04       		.byte	0x4
+ 310 007c 07       		.byte	0x7
+ 311 007d D7010000 		.4byte	.LASF10
+ 312 0081 03       		.uleb128 0x3
+ 313 0082 FB010000 		.4byte	.LASF11
+ 314 0086 03       		.byte	0x3
+ 315 0087 18       		.byte	0x18
+ 316 0088 2C000000 		.4byte	0x2c
+ 317 008c 03       		.uleb128 0x3
+ 318 008d 19020000 		.4byte	.LASF12
+ 319 0091 03       		.byte	0x3
+ 320 0092 2C       		.byte	0x2c
+ 321 0093 4C000000 		.4byte	0x4c
+ 322 0097 02       		.uleb128 0x2
+ 323 0098 04       		.byte	0x4
+ 324 0099 04       		.byte	0x4
+ 325 009a 49000000 		.4byte	.LASF13
+ 326 009e 02       		.uleb128 0x2
+ 327 009f 08       		.byte	0x8
+ 328 00a0 04       		.byte	0x4
+ 329 00a1 B2010000 		.4byte	.LASF14
+ 330 00a5 02       		.uleb128 0x2
+ 331 00a6 01       		.byte	0x1
+ 332 00a7 08       		.byte	0x8
+ 333 00a8 4D020000 		.4byte	.LASF15
+ 334 00ac 02       		.uleb128 0x2
+ 335 00ad 08       		.byte	0x8
+ 336 00ae 04       		.byte	0x4
+ 337 00af A1020000 		.4byte	.LASF16
+ 338 00b3 02       		.uleb128 0x2
+ 339 00b4 04       		.byte	0x4
+ 340 00b5 07       		.byte	0x7
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 9
+
+
+ 341 00b6 21020000 		.4byte	.LASF17
+ 342 00ba 05       		.uleb128 0x5
+ 343 00bb D2010000 		.4byte	.LASF38
+ 344 00bf 01       		.byte	0x1
+ 345 00c0 0E       		.byte	0xe
+ 346 00c1 73000000 		.4byte	0x73
+ 347 00c5 00000000 		.4byte	.LFB63
+ 348 00c9 E4000000 		.4byte	.LFE63-.LFB63
+ 349 00cd 01       		.uleb128 0x1
+ 350 00ce 9C       		.byte	0x9c
+ 351 00cf E0020000 		.4byte	0x2e0
+ 352 00d3 06       		.uleb128 0x6
+ 353 00d4 B9010000 		.4byte	.LASF18
+ 354 00d8 01       		.byte	0x1
+ 355 00d9 11       		.byte	0x11
+ 356 00da 81000000 		.4byte	0x81
+ 357 00de 01       		.uleb128 0x1
+ 358 00df 5A       		.byte	0x5a
+ 359 00e0 06       		.uleb128 0x6
+ 360 00e1 C1020000 		.4byte	.LASF19
+ 361 00e5 01       		.byte	0x1
+ 362 00e6 12       		.byte	0x12
+ 363 00e7 81000000 		.4byte	0x81
+ 364 00eb 01       		.uleb128 0x1
+ 365 00ec 59       		.byte	0x59
+ 366 00ed 06       		.uleb128 0x6
+ 367 00ee 52020000 		.4byte	.LASF20
+ 368 00f2 01       		.byte	0x1
+ 369 00f3 13       		.byte	0x13
+ 370 00f4 81000000 		.4byte	0x81
+ 371 00f8 01       		.uleb128 0x1
+ 372 00f9 58       		.byte	0x58
+ 373 00fa 06       		.uleb128 0x6
+ 374 00fb 88010000 		.4byte	.LASF21
+ 375 00ff 01       		.byte	0x1
+ 376 0100 14       		.byte	0x14
+ 377 0101 81000000 		.4byte	0x81
+ 378 0105 01       		.uleb128 0x1
+ 379 0106 57       		.byte	0x57
+ 380 0107 06       		.uleb128 0x6
+ 381 0108 84020000 		.4byte	.LASF22
+ 382 010c 01       		.byte	0x1
+ 383 010d 16       		.byte	0x16
+ 384 010e 81000000 		.4byte	0x81
+ 385 0112 01       		.uleb128 0x1
+ 386 0113 56       		.byte	0x56
+ 387 0114 06       		.uleb128 0x6
+ 388 0115 0F010000 		.4byte	.LASF23
+ 389 0119 01       		.byte	0x1
+ 390 011a 17       		.byte	0x17
+ 391 011b 81000000 		.4byte	0x81
+ 392 011f 01       		.uleb128 0x1
+ 393 0120 55       		.byte	0x55
+ 394 0121 06       		.uleb128 0x6
+ 395 0122 03020000 		.4byte	.LASF24
+ 396 0126 01       		.byte	0x1
+ 397 0127 19       		.byte	0x19
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 10
+
+
+ 398 0128 81000000 		.4byte	0x81
+ 399 012c 01       		.uleb128 0x1
+ 400 012d 54       		.byte	0x54
+ 401 012e 07       		.uleb128 0x7
+ 402 012f 0A000000 		.4byte	.LVL0
+ 403 0133 F1020000 		.4byte	0x2f1
+ 404 0137 08       		.uleb128 0x8
+ 405 0138 10000000 		.4byte	.LVL1
+ 406 013c FC020000 		.4byte	0x2fc
+ 407 0140 4B010000 		.4byte	0x14b
+ 408 0144 09       		.uleb128 0x9
+ 409 0145 01       		.uleb128 0x1
+ 410 0146 50       		.byte	0x50
+ 411 0147 02       		.uleb128 0x2
+ 412 0148 08       		.byte	0x8
+ 413 0149 64       		.byte	0x64
+ 414 014a 00       		.byte	0
+ 415 014b 07       		.uleb128 0x7
+ 416 014c 14000000 		.4byte	.LVL2
+ 417 0150 07030000 		.4byte	0x307
+ 418 0154 07       		.uleb128 0x7
+ 419 0155 1A000000 		.4byte	.LVL4
+ 420 0159 12030000 		.4byte	0x312
+ 421 015d 07       		.uleb128 0x7
+ 422 015e 20000000 		.4byte	.LVL6
+ 423 0162 1D030000 		.4byte	0x31d
+ 424 0166 07       		.uleb128 0x7
+ 425 0167 26000000 		.4byte	.LVL8
+ 426 016b 28030000 		.4byte	0x328
+ 427 016f 07       		.uleb128 0x7
+ 428 0170 2C000000 		.4byte	.LVL10
+ 429 0174 33030000 		.4byte	0x333
+ 430 0178 07       		.uleb128 0x7
+ 431 0179 32000000 		.4byte	.LVL12
+ 432 017d 3E030000 		.4byte	0x33e
+ 433 0181 07       		.uleb128 0x7
+ 434 0182 38000000 		.4byte	.LVL14
+ 435 0186 49030000 		.4byte	0x349
+ 436 018a 08       		.uleb128 0x8
+ 437 018b 46000000 		.4byte	.LVL16
+ 438 018f 54030000 		.4byte	0x354
+ 439 0193 A1010000 		.4byte	0x1a1
+ 440 0197 09       		.uleb128 0x9
+ 441 0198 01       		.uleb128 0x1
+ 442 0199 50       		.byte	0x50
+ 443 019a 05       		.uleb128 0x5
+ 444 019b 03       		.byte	0x3
+ 445 019c 00000000 		.4byte	.LC0
+ 446 01a0 00       		.byte	0
+ 447 01a1 08       		.uleb128 0x8
+ 448 01a2 4E000000 		.4byte	.LVL17
+ 449 01a6 54030000 		.4byte	0x354
+ 450 01aa B8010000 		.4byte	0x1b8
+ 451 01ae 09       		.uleb128 0x9
+ 452 01af 01       		.uleb128 0x1
+ 453 01b0 50       		.byte	0x50
+ 454 01b1 05       		.uleb128 0x5
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 11
+
+
+ 455 01b2 03       		.byte	0x3
+ 456 01b3 04000000 		.4byte	.LC1
+ 457 01b7 00       		.byte	0
+ 458 01b8 08       		.uleb128 0x8
+ 459 01b9 5A000000 		.4byte	.LVL18
+ 460 01bd 54030000 		.4byte	0x354
+ 461 01c1 CF010000 		.4byte	0x1cf
+ 462 01c5 09       		.uleb128 0x9
+ 463 01c6 01       		.uleb128 0x1
+ 464 01c7 50       		.byte	0x50
+ 465 01c8 05       		.uleb128 0x5
+ 466 01c9 03       		.byte	0x3
+ 467 01ca 08000000 		.4byte	.LC2
+ 468 01ce 00       		.byte	0
+ 469 01cf 08       		.uleb128 0x8
+ 470 01d0 62000000 		.4byte	.LVL19
+ 471 01d4 54030000 		.4byte	0x354
+ 472 01d8 E6010000 		.4byte	0x1e6
+ 473 01dc 09       		.uleb128 0x9
+ 474 01dd 01       		.uleb128 0x1
+ 475 01de 50       		.byte	0x50
+ 476 01df 05       		.uleb128 0x5
+ 477 01e0 03       		.byte	0x3
+ 478 01e1 04000000 		.4byte	.LC1
+ 479 01e5 00       		.byte	0
+ 480 01e6 08       		.uleb128 0x8
+ 481 01e7 6E000000 		.4byte	.LVL20
+ 482 01eb 54030000 		.4byte	0x354
+ 483 01ef FD010000 		.4byte	0x1fd
+ 484 01f3 09       		.uleb128 0x9
+ 485 01f4 01       		.uleb128 0x1
+ 486 01f5 50       		.byte	0x50
+ 487 01f6 05       		.uleb128 0x5
+ 488 01f7 03       		.byte	0x3
+ 489 01f8 0C000000 		.4byte	.LC3
+ 490 01fc 00       		.byte	0
+ 491 01fd 08       		.uleb128 0x8
+ 492 01fe 76000000 		.4byte	.LVL21
+ 493 0202 54030000 		.4byte	0x354
+ 494 0206 14020000 		.4byte	0x214
+ 495 020a 09       		.uleb128 0x9
+ 496 020b 01       		.uleb128 0x1
+ 497 020c 50       		.byte	0x50
+ 498 020d 05       		.uleb128 0x5
+ 499 020e 03       		.byte	0x3
+ 500 020f 04000000 		.4byte	.LC1
+ 501 0213 00       		.byte	0
+ 502 0214 08       		.uleb128 0x8
+ 503 0215 7E000000 		.4byte	.LVL22
+ 504 0219 54030000 		.4byte	0x354
+ 505 021d 2B020000 		.4byte	0x22b
+ 506 0221 09       		.uleb128 0x9
+ 507 0222 01       		.uleb128 0x1
+ 508 0223 50       		.byte	0x50
+ 509 0224 05       		.uleb128 0x5
+ 510 0225 03       		.byte	0x3
+ 511 0226 10000000 		.4byte	.LC4
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 12
+
+
+ 512 022a 00       		.byte	0
+ 513 022b 08       		.uleb128 0x8
+ 514 022c 86000000 		.4byte	.LVL23
+ 515 0230 54030000 		.4byte	0x354
+ 516 0234 42020000 		.4byte	0x242
+ 517 0238 09       		.uleb128 0x9
+ 518 0239 01       		.uleb128 0x1
+ 519 023a 50       		.byte	0x50
+ 520 023b 05       		.uleb128 0x5
+ 521 023c 03       		.byte	0x3
+ 522 023d 04000000 		.4byte	.LC1
+ 523 0241 00       		.byte	0
+ 524 0242 08       		.uleb128 0x8
+ 525 0243 8E000000 		.4byte	.LVL24
+ 526 0247 54030000 		.4byte	0x354
+ 527 024b 59020000 		.4byte	0x259
+ 528 024f 09       		.uleb128 0x9
+ 529 0250 01       		.uleb128 0x1
+ 530 0251 50       		.byte	0x50
+ 531 0252 05       		.uleb128 0x5
+ 532 0253 03       		.byte	0x3
+ 533 0254 14000000 		.4byte	.LC5
+ 534 0258 00       		.byte	0
+ 535 0259 08       		.uleb128 0x8
+ 536 025a 96000000 		.4byte	.LVL25
+ 537 025e 54030000 		.4byte	0x354
+ 538 0262 70020000 		.4byte	0x270
+ 539 0266 09       		.uleb128 0x9
+ 540 0267 01       		.uleb128 0x1
+ 541 0268 50       		.byte	0x50
+ 542 0269 05       		.uleb128 0x5
+ 543 026a 03       		.byte	0x3
+ 544 026b 04000000 		.4byte	.LC1
+ 545 026f 00       		.byte	0
+ 546 0270 08       		.uleb128 0x8
+ 547 0271 9E000000 		.4byte	.LVL26
+ 548 0275 54030000 		.4byte	0x354
+ 549 0279 87020000 		.4byte	0x287
+ 550 027d 09       		.uleb128 0x9
+ 551 027e 01       		.uleb128 0x1
+ 552 027f 50       		.byte	0x50
+ 553 0280 05       		.uleb128 0x5
+ 554 0281 03       		.byte	0x3
+ 555 0282 1C000000 		.4byte	.LC6
+ 556 0286 00       		.byte	0
+ 557 0287 08       		.uleb128 0x8
+ 558 0288 A6000000 		.4byte	.LVL27
+ 559 028c 54030000 		.4byte	0x354
+ 560 0290 9E020000 		.4byte	0x29e
+ 561 0294 09       		.uleb128 0x9
+ 562 0295 01       		.uleb128 0x1
+ 563 0296 50       		.byte	0x50
+ 564 0297 05       		.uleb128 0x5
+ 565 0298 03       		.byte	0x3
+ 566 0299 04000000 		.4byte	.LC1
+ 567 029d 00       		.byte	0
+ 568 029e 08       		.uleb128 0x8
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 13
+
+
+ 569 029f AE000000 		.4byte	.LVL28
+ 570 02a3 54030000 		.4byte	0x354
+ 571 02a7 B5020000 		.4byte	0x2b5
+ 572 02ab 09       		.uleb128 0x9
+ 573 02ac 01       		.uleb128 0x1
+ 574 02ad 50       		.byte	0x50
+ 575 02ae 05       		.uleb128 0x5
+ 576 02af 03       		.byte	0x3
+ 577 02b0 24000000 		.4byte	.LC7
+ 578 02b4 00       		.byte	0
+ 579 02b5 08       		.uleb128 0x8
+ 580 02b6 B6000000 		.4byte	.LVL29
+ 581 02ba 54030000 		.4byte	0x354
+ 582 02be CC020000 		.4byte	0x2cc
+ 583 02c2 09       		.uleb128 0x9
+ 584 02c3 01       		.uleb128 0x1
+ 585 02c4 50       		.byte	0x50
+ 586 02c5 05       		.uleb128 0x5
+ 587 02c6 03       		.byte	0x3
+ 588 02c7 04000000 		.4byte	.LC1
+ 589 02cb 00       		.byte	0
+ 590 02cc 0A       		.uleb128 0xa
+ 591 02cd BC000000 		.4byte	.LVL30
+ 592 02d1 54030000 		.4byte	0x354
+ 593 02d5 09       		.uleb128 0x9
+ 594 02d6 01       		.uleb128 0x1
+ 595 02d7 50       		.byte	0x50
+ 596 02d8 05       		.uleb128 0x5
+ 597 02d9 03       		.byte	0x3
+ 598 02da 2C000000 		.4byte	.LC8
+ 599 02de 00       		.byte	0
+ 600 02df 00       		.byte	0
+ 601 02e0 0B       		.uleb128 0xb
+ 602 02e1 97010000 		.4byte	.LASF39
+ 603 02e5 0D       		.byte	0xd
+ 604 02e6 1207     		.2byte	0x712
+ 605 02e8 EC020000 		.4byte	0x2ec
+ 606 02ec 0C       		.uleb128 0xc
+ 607 02ed 8C000000 		.4byte	0x8c
+ 608 02f1 0D       		.uleb128 0xd
+ 609 02f2 EB000000 		.4byte	.LASF25
+ 610 02f6 EB000000 		.4byte	.LASF25
+ 611 02fa 04       		.byte	0x4
+ 612 02fb 54       		.byte	0x54
+ 613 02fc 0D       		.uleb128 0xd
+ 614 02fd B9020000 		.4byte	.LASF26
+ 615 0301 B9020000 		.4byte	.LASF26
+ 616 0305 05       		.byte	0x5
+ 617 0306 76       		.byte	0x76
+ 618 0307 0D       		.uleb128 0xd
+ 619 0308 26000000 		.4byte	.LASF27
+ 620 030c 26000000 		.4byte	.LASF27
+ 621 0310 06       		.byte	0x6
+ 622 0311 29       		.byte	0x29
+ 623 0312 0D       		.uleb128 0xd
+ 624 0313 76020000 		.4byte	.LASF28
+ 625 0317 76020000 		.4byte	.LASF28
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 14
+
+
+ 626 031b 07       		.byte	0x7
+ 627 031c 29       		.byte	0x29
+ 628 031d 0D       		.uleb128 0xd
+ 629 031e 2A020000 		.4byte	.LASF29
+ 630 0322 2A020000 		.4byte	.LASF29
+ 631 0326 08       		.byte	0x8
+ 632 0327 29       		.byte	0x29
+ 633 0328 0D       		.uleb128 0xd
+ 634 0329 A4010000 		.4byte	.LASF30
+ 635 032d A4010000 		.4byte	.LASF30
+ 636 0331 09       		.byte	0x9
+ 637 0332 29       		.byte	0x29
+ 638 0333 0D       		.uleb128 0xd
+ 639 0334 FC000000 		.4byte	.LASF31
+ 640 0338 FC000000 		.4byte	.LASF31
+ 641 033c 0A       		.byte	0xa
+ 642 033d 29       		.byte	0x29
+ 643 033e 0D       		.uleb128 0xd
+ 644 033f 0A000000 		.4byte	.LASF32
+ 645 0343 0A000000 		.4byte	.LASF32
+ 646 0347 0B       		.byte	0xb
+ 647 0348 29       		.byte	0x29
+ 648 0349 0D       		.uleb128 0xd
+ 649 034a 61020000 		.4byte	.LASF33
+ 650 034e 61020000 		.4byte	.LASF33
+ 651 0352 0C       		.byte	0xc
+ 652 0353 29       		.byte	0x29
+ 653 0354 0D       		.uleb128 0xd
+ 654 0355 34000000 		.4byte	.LASF34
+ 655 0359 34000000 		.4byte	.LASF34
+ 656 035d 04       		.byte	0x4
+ 657 035e 8B       		.byte	0x8b
+ 658 035f 00       		.byte	0
+ 659              		.section	.debug_abbrev,"",%progbits
+ 660              	.Ldebug_abbrev0:
+ 661 0000 01       		.uleb128 0x1
+ 662 0001 11       		.uleb128 0x11
+ 663 0002 01       		.byte	0x1
+ 664 0003 25       		.uleb128 0x25
+ 665 0004 0E       		.uleb128 0xe
+ 666 0005 13       		.uleb128 0x13
+ 667 0006 0B       		.uleb128 0xb
+ 668 0007 03       		.uleb128 0x3
+ 669 0008 0E       		.uleb128 0xe
+ 670 0009 1B       		.uleb128 0x1b
+ 671 000a 0E       		.uleb128 0xe
+ 672 000b 55       		.uleb128 0x55
+ 673 000c 17       		.uleb128 0x17
+ 674 000d 11       		.uleb128 0x11
+ 675 000e 01       		.uleb128 0x1
+ 676 000f 10       		.uleb128 0x10
+ 677 0010 17       		.uleb128 0x17
+ 678 0011 00       		.byte	0
+ 679 0012 00       		.byte	0
+ 680 0013 02       		.uleb128 0x2
+ 681 0014 24       		.uleb128 0x24
+ 682 0015 00       		.byte	0
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 15
+
+
+ 683 0016 0B       		.uleb128 0xb
+ 684 0017 0B       		.uleb128 0xb
+ 685 0018 3E       		.uleb128 0x3e
+ 686 0019 0B       		.uleb128 0xb
+ 687 001a 03       		.uleb128 0x3
+ 688 001b 0E       		.uleb128 0xe
+ 689 001c 00       		.byte	0
+ 690 001d 00       		.byte	0
+ 691 001e 03       		.uleb128 0x3
+ 692 001f 16       		.uleb128 0x16
+ 693 0020 00       		.byte	0
+ 694 0021 03       		.uleb128 0x3
+ 695 0022 0E       		.uleb128 0xe
+ 696 0023 3A       		.uleb128 0x3a
+ 697 0024 0B       		.uleb128 0xb
+ 698 0025 3B       		.uleb128 0x3b
+ 699 0026 0B       		.uleb128 0xb
+ 700 0027 49       		.uleb128 0x49
+ 701 0028 13       		.uleb128 0x13
+ 702 0029 00       		.byte	0
+ 703 002a 00       		.byte	0
+ 704 002b 04       		.uleb128 0x4
+ 705 002c 24       		.uleb128 0x24
+ 706 002d 00       		.byte	0
+ 707 002e 0B       		.uleb128 0xb
+ 708 002f 0B       		.uleb128 0xb
+ 709 0030 3E       		.uleb128 0x3e
+ 710 0031 0B       		.uleb128 0xb
+ 711 0032 03       		.uleb128 0x3
+ 712 0033 08       		.uleb128 0x8
+ 713 0034 00       		.byte	0
+ 714 0035 00       		.byte	0
+ 715 0036 05       		.uleb128 0x5
+ 716 0037 2E       		.uleb128 0x2e
+ 717 0038 01       		.byte	0x1
+ 718 0039 3F       		.uleb128 0x3f
+ 719 003a 19       		.uleb128 0x19
+ 720 003b 03       		.uleb128 0x3
+ 721 003c 0E       		.uleb128 0xe
+ 722 003d 3A       		.uleb128 0x3a
+ 723 003e 0B       		.uleb128 0xb
+ 724 003f 3B       		.uleb128 0x3b
+ 725 0040 0B       		.uleb128 0xb
+ 726 0041 27       		.uleb128 0x27
+ 727 0042 19       		.uleb128 0x19
+ 728 0043 49       		.uleb128 0x49
+ 729 0044 13       		.uleb128 0x13
+ 730 0045 8701     		.uleb128 0x87
+ 731 0047 19       		.uleb128 0x19
+ 732 0048 11       		.uleb128 0x11
+ 733 0049 01       		.uleb128 0x1
+ 734 004a 12       		.uleb128 0x12
+ 735 004b 06       		.uleb128 0x6
+ 736 004c 40       		.uleb128 0x40
+ 737 004d 18       		.uleb128 0x18
+ 738 004e 9742     		.uleb128 0x2117
+ 739 0050 19       		.uleb128 0x19
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 16
+
+
+ 740 0051 01       		.uleb128 0x1
+ 741 0052 13       		.uleb128 0x13
+ 742 0053 00       		.byte	0
+ 743 0054 00       		.byte	0
+ 744 0055 06       		.uleb128 0x6
+ 745 0056 34       		.uleb128 0x34
+ 746 0057 00       		.byte	0
+ 747 0058 03       		.uleb128 0x3
+ 748 0059 0E       		.uleb128 0xe
+ 749 005a 3A       		.uleb128 0x3a
+ 750 005b 0B       		.uleb128 0xb
+ 751 005c 3B       		.uleb128 0x3b
+ 752 005d 0B       		.uleb128 0xb
+ 753 005e 49       		.uleb128 0x49
+ 754 005f 13       		.uleb128 0x13
+ 755 0060 02       		.uleb128 0x2
+ 756 0061 18       		.uleb128 0x18
+ 757 0062 00       		.byte	0
+ 758 0063 00       		.byte	0
+ 759 0064 07       		.uleb128 0x7
+ 760 0065 898201   		.uleb128 0x4109
+ 761 0068 00       		.byte	0
+ 762 0069 11       		.uleb128 0x11
+ 763 006a 01       		.uleb128 0x1
+ 764 006b 31       		.uleb128 0x31
+ 765 006c 13       		.uleb128 0x13
+ 766 006d 00       		.byte	0
+ 767 006e 00       		.byte	0
+ 768 006f 08       		.uleb128 0x8
+ 769 0070 898201   		.uleb128 0x4109
+ 770 0073 01       		.byte	0x1
+ 771 0074 11       		.uleb128 0x11
+ 772 0075 01       		.uleb128 0x1
+ 773 0076 31       		.uleb128 0x31
+ 774 0077 13       		.uleb128 0x13
+ 775 0078 01       		.uleb128 0x1
+ 776 0079 13       		.uleb128 0x13
+ 777 007a 00       		.byte	0
+ 778 007b 00       		.byte	0
+ 779 007c 09       		.uleb128 0x9
+ 780 007d 8A8201   		.uleb128 0x410a
+ 781 0080 00       		.byte	0
+ 782 0081 02       		.uleb128 0x2
+ 783 0082 18       		.uleb128 0x18
+ 784 0083 9142     		.uleb128 0x2111
+ 785 0085 18       		.uleb128 0x18
+ 786 0086 00       		.byte	0
+ 787 0087 00       		.byte	0
+ 788 0088 0A       		.uleb128 0xa
+ 789 0089 898201   		.uleb128 0x4109
+ 790 008c 01       		.byte	0x1
+ 791 008d 11       		.uleb128 0x11
+ 792 008e 01       		.uleb128 0x1
+ 793 008f 31       		.uleb128 0x31
+ 794 0090 13       		.uleb128 0x13
+ 795 0091 00       		.byte	0
+ 796 0092 00       		.byte	0
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 17
+
+
+ 797 0093 0B       		.uleb128 0xb
+ 798 0094 34       		.uleb128 0x34
+ 799 0095 00       		.byte	0
+ 800 0096 03       		.uleb128 0x3
+ 801 0097 0E       		.uleb128 0xe
+ 802 0098 3A       		.uleb128 0x3a
+ 803 0099 0B       		.uleb128 0xb
+ 804 009a 3B       		.uleb128 0x3b
+ 805 009b 05       		.uleb128 0x5
+ 806 009c 49       		.uleb128 0x49
+ 807 009d 13       		.uleb128 0x13
+ 808 009e 3F       		.uleb128 0x3f
+ 809 009f 19       		.uleb128 0x19
+ 810 00a0 3C       		.uleb128 0x3c
+ 811 00a1 19       		.uleb128 0x19
+ 812 00a2 00       		.byte	0
+ 813 00a3 00       		.byte	0
+ 814 00a4 0C       		.uleb128 0xc
+ 815 00a5 35       		.uleb128 0x35
+ 816 00a6 00       		.byte	0
+ 817 00a7 49       		.uleb128 0x49
+ 818 00a8 13       		.uleb128 0x13
+ 819 00a9 00       		.byte	0
+ 820 00aa 00       		.byte	0
+ 821 00ab 0D       		.uleb128 0xd
+ 822 00ac 2E       		.uleb128 0x2e
+ 823 00ad 00       		.byte	0
+ 824 00ae 3F       		.uleb128 0x3f
+ 825 00af 19       		.uleb128 0x19
+ 826 00b0 3C       		.uleb128 0x3c
+ 827 00b1 19       		.uleb128 0x19
+ 828 00b2 6E       		.uleb128 0x6e
+ 829 00b3 0E       		.uleb128 0xe
+ 830 00b4 03       		.uleb128 0x3
+ 831 00b5 0E       		.uleb128 0xe
+ 832 00b6 3A       		.uleb128 0x3a
+ 833 00b7 0B       		.uleb128 0xb
+ 834 00b8 3B       		.uleb128 0x3b
+ 835 00b9 0B       		.uleb128 0xb
+ 836 00ba 00       		.byte	0
+ 837 00bb 00       		.byte	0
+ 838 00bc 00       		.byte	0
+ 839              		.section	.debug_aranges,"",%progbits
+ 840 0000 1C000000 		.4byte	0x1c
+ 841 0004 0200     		.2byte	0x2
+ 842 0006 00000000 		.4byte	.Ldebug_info0
+ 843 000a 04       		.byte	0x4
+ 844 000b 00       		.byte	0
+ 845 000c 0000     		.2byte	0
+ 846 000e 0000     		.2byte	0
+ 847 0010 00000000 		.4byte	.LFB63
+ 848 0014 E4000000 		.4byte	.LFE63-.LFB63
+ 849 0018 00000000 		.4byte	0
+ 850 001c 00000000 		.4byte	0
+ 851              		.section	.debug_ranges,"",%progbits
+ 852              	.Ldebug_ranges0:
+ 853 0000 00000000 		.4byte	.LFB63
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 18
+
+
+ 854 0004 E4000000 		.4byte	.LFE63
+ 855 0008 00000000 		.4byte	0
+ 856 000c 00000000 		.4byte	0
+ 857              		.section	.debug_line,"",%progbits
+ 858              	.Ldebug_line0:
+ 859 0000 04020000 		.section	.debug_str,"MS",%progbits,1
+ 859      0200CC01 
+ 859      00000201 
+ 859      FB0E0D00 
+ 859      01010101 
+ 860              	.LASF4:
+ 861 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 861      6E74385F 
+ 861      7400
+ 862              	.LASF32:
+ 863 000a 53746172 		.ascii	"Start_Button_Read\000"
+ 863      745F4275 
+ 863      74746F6E 
+ 863      5F526561 
+ 863      6400
+ 864              	.LASF5:
+ 865 001c 5F5F696E 		.ascii	"__int32_t\000"
+ 865      7433325F 
+ 865      7400
+ 866              	.LASF27:
+ 867 0026 415F4275 		.ascii	"A_Button_Read\000"
+ 867      74746F6E 
+ 867      5F526561 
+ 867      6400
+ 868              	.LASF34:
+ 869 0034 44454255 		.ascii	"DEBUG_UART_PutString\000"
+ 869      475F5541 
+ 869      52545F50 
+ 869      75745374 
+ 869      72696E67 
+ 870              	.LASF13:
+ 871 0049 666C6F61 		.ascii	"float\000"
+ 871      7400
+ 872              	.LASF1:
+ 873 004f 756E7369 		.ascii	"unsigned char\000"
+ 873      676E6564 
+ 873      20636861 
+ 873      7200
+ 874              	.LASF35:
+ 875 005d 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 875      43313120 
+ 875      352E342E 
+ 875      31203230 
+ 875      31363036 
+ 876 0090 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 876      20726576 
+ 876      6973696F 
+ 876      6E203233 
+ 876      37373135 
+ 877 00c3 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 877      66756E63 
+ 877      74696F6E 
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 19
+
+
+ 877      2D736563 
+ 877      74696F6E 
+ 878              	.LASF25:
+ 879 00eb 44454255 		.ascii	"DEBUG_UART_Start\000"
+ 879      475F5541 
+ 879      52545F53 
+ 879      74617274 
+ 879      00
+ 880              	.LASF31:
+ 881 00fc 53656C65 		.ascii	"Select_Button_Read\000"
+ 881      63745F42 
+ 881      7574746F 
+ 881      6E5F5265 
+ 881      616400
+ 882              	.LASF23:
+ 883 010f 53746172 		.ascii	"Start_Button_State\000"
+ 883      745F4275 
+ 883      74746F6E 
+ 883      5F537461 
+ 883      746500
+ 884              	.LASF7:
+ 885 0122 6C6F6E67 		.ascii	"long unsigned int\000"
+ 885      20756E73 
+ 885      69676E65 
+ 885      6420696E 
+ 885      7400
+ 886              	.LASF37:
+ 887 0134 453A5C41 		.ascii	"E:\\Ali_Workspace\\Joystick_Tester\\Joystick_Tester"
+ 887      6C695F57 
+ 887      6F726B73 
+ 887      70616365 
+ 887      5C4A6F79 
+ 888 0164 5F576F72 		.ascii	"_Workspace.cydsn\000"
+ 888      6B737061 
+ 888      63652E63 
+ 888      7964736E 
+ 888      00
+ 889              	.LASF3:
+ 890 0175 73686F72 		.ascii	"short unsigned int\000"
+ 890      7420756E 
+ 890      7369676E 
+ 890      65642069 
+ 890      6E7400
+ 891              	.LASF21:
+ 892 0188 595F4275 		.ascii	"Y_Button_State\000"
+ 892      74746F6E 
+ 892      5F537461 
+ 892      746500
+ 893              	.LASF39:
+ 894 0197 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 894      52784275 
+ 894      66666572 
+ 894      00
+ 895              	.LASF30:
+ 896 01a4 595F4275 		.ascii	"Y_Button_Read\000"
+ 896      74746F6E 
+ 896      5F526561 
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 20
+
+
+ 896      6400
+ 897              	.LASF14:
+ 898 01b2 646F7562 		.ascii	"double\000"
+ 898      6C6500
+ 899              	.LASF18:
+ 900 01b9 415F4275 		.ascii	"A_Button_State\000"
+ 900      74746F6E 
+ 900      5F537461 
+ 900      746500
+ 901              	.LASF2:
+ 902 01c8 73686F72 		.ascii	"short int\000"
+ 902      7420696E 
+ 902      7400
+ 903              	.LASF38:
+ 904 01d2 6D61696E 		.ascii	"main\000"
+ 904      00
+ 905              	.LASF10:
+ 906 01d7 756E7369 		.ascii	"unsigned int\000"
+ 906      676E6564 
+ 906      20696E74 
+ 906      00
+ 907              	.LASF9:
+ 908 01e4 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 908      206C6F6E 
+ 908      6720756E 
+ 908      7369676E 
+ 908      65642069 
+ 909              	.LASF11:
+ 910 01fb 75696E74 		.ascii	"uint8_t\000"
+ 910      385F7400 
+ 911              	.LASF24:
+ 912 0203 4A6F7973 		.ascii	"Joystick_Button_State\000"
+ 912      7469636B 
+ 912      5F427574 
+ 912      746F6E5F 
+ 912      53746174 
+ 913              	.LASF12:
+ 914 0219 696E7433 		.ascii	"int32_t\000"
+ 914      325F7400 
+ 915              	.LASF17:
+ 916 0221 73697A65 		.ascii	"sizetype\000"
+ 916      74797065 
+ 916      00
+ 917              	.LASF29:
+ 918 022a 585F4275 		.ascii	"X_Button_Read\000"
+ 918      74746F6E 
+ 918      5F526561 
+ 918      6400
+ 919              	.LASF8:
+ 920 0238 6C6F6E67 		.ascii	"long long int\000"
+ 920      206C6F6E 
+ 920      6720696E 
+ 920      7400
+ 921              	.LASF36:
+ 922 0246 6D61696E 		.ascii	"main.c\000"
+ 922      2E6300
+ 923              	.LASF15:
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccp5e1tM.s 			page 21
+
+
+ 924 024d 63686172 		.ascii	"char\000"
+ 924      00
+ 925              	.LASF20:
+ 926 0252 585F4275 		.ascii	"X_Button_State\000"
+ 926      74746F6E 
+ 926      5F537461 
+ 926      746500
+ 927              	.LASF33:
+ 928 0261 4A6F7973 		.ascii	"Joystick_Button_Read\000"
+ 928      7469636B 
+ 928      5F427574 
+ 928      746F6E5F 
+ 928      52656164 
+ 929              	.LASF28:
+ 930 0276 425F4275 		.ascii	"B_Button_Read\000"
+ 930      74746F6E 
+ 930      5F526561 
+ 930      6400
+ 931              	.LASF22:
+ 932 0284 53656C65 		.ascii	"Select_Button_State\000"
+ 932      63745F42 
+ 932      7574746F 
+ 932      6E5F5374 
+ 932      61746500 
+ 933              	.LASF6:
+ 934 0298 6C6F6E67 		.ascii	"long int\000"
+ 934      20696E74 
+ 934      00
+ 935              	.LASF16:
+ 936 02a1 6C6F6E67 		.ascii	"long double\000"
+ 936      20646F75 
+ 936      626C6500 
+ 937              	.LASF0:
+ 938 02ad 7369676E 		.ascii	"signed char\000"
+ 938      65642063 
+ 938      68617200 
+ 939              	.LASF26:
+ 940 02b9 43794465 		.ascii	"CyDelay\000"
+ 940      6C617900 
+ 941              	.LASF19:
+ 942 02c1 425F4275 		.ascii	"B_Button_State\000"
+ 942      74746F6E 
+ 942      5F537461 
+ 942      746500
+ 943              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

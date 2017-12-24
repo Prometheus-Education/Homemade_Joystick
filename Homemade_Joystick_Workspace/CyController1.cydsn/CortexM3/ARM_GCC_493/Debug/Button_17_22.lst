@@ -1,0 +1,824 @@
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccSZq4Cn.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"Button_17_22.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.Button_17_22_Write,"ax",%progbits
+  19              		.align	2
+  20              		.global	Button_17_22_Write
+  21              		.thumb
+  22              		.thumb_func
+  23              		.type	Button_17_22_Write, %function
+  24              	Button_17_22_Write:
+  25              	.LFB0:
+  26              		.file 1 ".\\Generated_Source\\PSoC5\\Button_17_22.c"
+   1:.\Generated_Source\PSoC5/Button_17_22.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC5/Button_17_22.c **** * File Name: Button_17_22.c  
+   3:.\Generated_Source\PSoC5/Button_17_22.c **** * Version 2.10
+   4:.\Generated_Source\PSoC5/Button_17_22.c **** *
+   5:.\Generated_Source\PSoC5/Button_17_22.c **** * Description:
+   6:.\Generated_Source\PSoC5/Button_17_22.c **** *  This file contains API to enable firmware control of a Pins component.
+   7:.\Generated_Source\PSoC5/Button_17_22.c **** *
+   8:.\Generated_Source\PSoC5/Button_17_22.c **** * Note:
+   9:.\Generated_Source\PSoC5/Button_17_22.c **** *
+  10:.\Generated_Source\PSoC5/Button_17_22.c **** ********************************************************************************
+  11:.\Generated_Source\PSoC5/Button_17_22.c **** * Copyright 2008-2014, Cypress Semiconductor Corporation.  All rights reserved.
+  12:.\Generated_Source\PSoC5/Button_17_22.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  13:.\Generated_Source\PSoC5/Button_17_22.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  14:.\Generated_Source\PSoC5/Button_17_22.c **** * the software package with which this file was provided.
+  15:.\Generated_Source\PSoC5/Button_17_22.c **** *******************************************************************************/
+  16:.\Generated_Source\PSoC5/Button_17_22.c **** 
+  17:.\Generated_Source\PSoC5/Button_17_22.c **** #include "cytypes.h"
+  18:.\Generated_Source\PSoC5/Button_17_22.c **** #include "Button_17_22.h"
+  19:.\Generated_Source\PSoC5/Button_17_22.c **** 
+  20:.\Generated_Source\PSoC5/Button_17_22.c **** /* APIs are not generated for P15[7:6] on PSoC 5 */
+  21:.\Generated_Source\PSoC5/Button_17_22.c **** #if !(CY_PSOC5A &&\
+  22:.\Generated_Source\PSoC5/Button_17_22.c **** 	 Button_17_22__PORT == 15 && ((Button_17_22__MASK & 0xC0) != 0))
+  23:.\Generated_Source\PSoC5/Button_17_22.c **** 
+  24:.\Generated_Source\PSoC5/Button_17_22.c **** 
+  25:.\Generated_Source\PSoC5/Button_17_22.c **** /*******************************************************************************
+  26:.\Generated_Source\PSoC5/Button_17_22.c **** * Function Name: Button_17_22_Write
+  27:.\Generated_Source\PSoC5/Button_17_22.c **** ********************************************************************************
+  28:.\Generated_Source\PSoC5/Button_17_22.c **** *
+  29:.\Generated_Source\PSoC5/Button_17_22.c **** * Summary:
+  30:.\Generated_Source\PSoC5/Button_17_22.c **** *  Assign a new value to the digital port's data output register.  
+  31:.\Generated_Source\PSoC5/Button_17_22.c **** *
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccSZq4Cn.s 			page 2
+
+
+  32:.\Generated_Source\PSoC5/Button_17_22.c **** * Parameters:  
+  33:.\Generated_Source\PSoC5/Button_17_22.c **** *  prtValue:  The value to be assigned to the Digital Port. 
+  34:.\Generated_Source\PSoC5/Button_17_22.c **** *
+  35:.\Generated_Source\PSoC5/Button_17_22.c **** * Return: 
+  36:.\Generated_Source\PSoC5/Button_17_22.c **** *  None
+  37:.\Generated_Source\PSoC5/Button_17_22.c **** *  
+  38:.\Generated_Source\PSoC5/Button_17_22.c **** *******************************************************************************/
+  39:.\Generated_Source\PSoC5/Button_17_22.c **** void Button_17_22_Write(uint8 value) 
+  40:.\Generated_Source\PSoC5/Button_17_22.c **** {
+  27              		.loc 1 40 0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31              		@ link register save eliminated.
+  32              	.LVL0:
+  41:.\Generated_Source\PSoC5/Button_17_22.c ****     uint8 staticBits = (Button_17_22_DR & (uint8)(~Button_17_22_MASK));
+  33              		.loc 1 41 0
+  34 0000 044A     		ldr	r2, .L2
+  35 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  36 0004 03F00303 		and	r3, r3, #3
+  37              	.LVL1:
+  42:.\Generated_Source\PSoC5/Button_17_22.c ****     Button_17_22_DR = staticBits | ((uint8)(value << Button_17_22_SHIFT) & Button_17_22_MASK);
+  38              		.loc 1 42 0
+  39 0008 8000     		lsls	r0, r0, #2
+  40              	.LVL2:
+  41 000a C0B2     		uxtb	r0, r0
+  42 000c 0343     		orrs	r3, r3, r0
+  43              	.LVL3:
+  44 000e 1370     		strb	r3, [r2]
+  45 0010 7047     		bx	lr
+  46              	.L3:
+  47 0012 00BF     		.align	2
+  48              	.L2:
+  49 0014 10510040 		.word	1073762576
+  50              		.cfi_endproc
+  51              	.LFE0:
+  52              		.size	Button_17_22_Write, .-Button_17_22_Write
+  53              		.section	.text.Button_17_22_SetDriveMode,"ax",%progbits
+  54              		.align	2
+  55              		.global	Button_17_22_SetDriveMode
+  56              		.thumb
+  57              		.thumb_func
+  58              		.type	Button_17_22_SetDriveMode, %function
+  59              	Button_17_22_SetDriveMode:
+  60              	.LFB1:
+  43:.\Generated_Source\PSoC5/Button_17_22.c **** }
+  44:.\Generated_Source\PSoC5/Button_17_22.c **** 
+  45:.\Generated_Source\PSoC5/Button_17_22.c **** 
+  46:.\Generated_Source\PSoC5/Button_17_22.c **** /*******************************************************************************
+  47:.\Generated_Source\PSoC5/Button_17_22.c **** * Function Name: Button_17_22_SetDriveMode
+  48:.\Generated_Source\PSoC5/Button_17_22.c **** ********************************************************************************
+  49:.\Generated_Source\PSoC5/Button_17_22.c **** *
+  50:.\Generated_Source\PSoC5/Button_17_22.c **** * Summary:
+  51:.\Generated_Source\PSoC5/Button_17_22.c **** *  Change the drive mode on the pins of the port.
+  52:.\Generated_Source\PSoC5/Button_17_22.c **** * 
+  53:.\Generated_Source\PSoC5/Button_17_22.c **** * Parameters:  
+  54:.\Generated_Source\PSoC5/Button_17_22.c **** *  mode:  Change the pins to one of the following drive modes.
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccSZq4Cn.s 			page 3
+
+
+  55:.\Generated_Source\PSoC5/Button_17_22.c **** *
+  56:.\Generated_Source\PSoC5/Button_17_22.c **** *  Button_17_22_DM_STRONG     Strong Drive 
+  57:.\Generated_Source\PSoC5/Button_17_22.c **** *  Button_17_22_DM_OD_HI      Open Drain, Drives High 
+  58:.\Generated_Source\PSoC5/Button_17_22.c **** *  Button_17_22_DM_OD_LO      Open Drain, Drives Low 
+  59:.\Generated_Source\PSoC5/Button_17_22.c **** *  Button_17_22_DM_RES_UP     Resistive Pull Up 
+  60:.\Generated_Source\PSoC5/Button_17_22.c **** *  Button_17_22_DM_RES_DWN    Resistive Pull Down 
+  61:.\Generated_Source\PSoC5/Button_17_22.c **** *  Button_17_22_DM_RES_UPDWN  Resistive Pull Up/Down 
+  62:.\Generated_Source\PSoC5/Button_17_22.c **** *  Button_17_22_DM_DIG_HIZ    High Impedance Digital 
+  63:.\Generated_Source\PSoC5/Button_17_22.c **** *  Button_17_22_DM_ALG_HIZ    High Impedance Analog 
+  64:.\Generated_Source\PSoC5/Button_17_22.c **** *
+  65:.\Generated_Source\PSoC5/Button_17_22.c **** * Return: 
+  66:.\Generated_Source\PSoC5/Button_17_22.c **** *  None
+  67:.\Generated_Source\PSoC5/Button_17_22.c **** *
+  68:.\Generated_Source\PSoC5/Button_17_22.c **** *******************************************************************************/
+  69:.\Generated_Source\PSoC5/Button_17_22.c **** void Button_17_22_SetDriveMode(uint8 mode) 
+  70:.\Generated_Source\PSoC5/Button_17_22.c **** {
+  61              		.loc 1 70 0
+  62              		.cfi_startproc
+  63              		@ args = 0, pretend = 0, frame = 0
+  64              		@ frame_needed = 0, uses_anonymous_args = 0
+  65              		@ link register save eliminated.
+  66              	.LVL4:
+  71:.\Generated_Source\PSoC5/Button_17_22.c **** 	CyPins_SetPinDriveMode(Button_17_22_0, mode);
+  67              		.loc 1 71 0
+  68 0000 134A     		ldr	r2, .L5
+  69 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  70 0004 00F00E00 		and	r0, r0, #14
+  71              	.LVL5:
+  72 0008 03F0F103 		and	r3, r3, #241
+  73 000c 0343     		orrs	r3, r3, r0
+  74 000e 1370     		strb	r3, [r2]
+  72:.\Generated_Source\PSoC5/Button_17_22.c **** 	CyPins_SetPinDriveMode(Button_17_22_1, mode);
+  75              		.loc 1 72 0
+  76 0010 0132     		adds	r2, r2, #1
+  77 0012 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  78 0014 03F0F103 		and	r3, r3, #241
+  79 0018 0343     		orrs	r3, r3, r0
+  80 001a 1370     		strb	r3, [r2]
+  73:.\Generated_Source\PSoC5/Button_17_22.c **** 	CyPins_SetPinDriveMode(Button_17_22_2, mode);
+  81              		.loc 1 73 0
+  82 001c 0132     		adds	r2, r2, #1
+  83 001e 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  84 0020 03F0F103 		and	r3, r3, #241
+  85 0024 0343     		orrs	r3, r3, r0
+  86 0026 1370     		strb	r3, [r2]
+  74:.\Generated_Source\PSoC5/Button_17_22.c **** 	CyPins_SetPinDriveMode(Button_17_22_3, mode);
+  87              		.loc 1 74 0
+  88 0028 0132     		adds	r2, r2, #1
+  89 002a 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  90 002c 03F0F103 		and	r3, r3, #241
+  91 0030 0343     		orrs	r3, r3, r0
+  92 0032 1370     		strb	r3, [r2]
+  75:.\Generated_Source\PSoC5/Button_17_22.c **** 	CyPins_SetPinDriveMode(Button_17_22_4, mode);
+  93              		.loc 1 75 0
+  94 0034 0132     		adds	r2, r2, #1
+  95 0036 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  96 0038 03F0F103 		and	r3, r3, #241
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccSZq4Cn.s 			page 4
+
+
+  97 003c 0343     		orrs	r3, r3, r0
+  98 003e 1370     		strb	r3, [r2]
+  76:.\Generated_Source\PSoC5/Button_17_22.c **** 	CyPins_SetPinDriveMode(Button_17_22_5, mode);
+  99              		.loc 1 76 0
+ 100 0040 0132     		adds	r2, r2, #1
+ 101 0042 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 102 0044 03F0F103 		and	r3, r3, #241
+ 103 0048 1843     		orrs	r0, r0, r3
+ 104 004a 1070     		strb	r0, [r2]
+ 105 004c 7047     		bx	lr
+ 106              	.L6:
+ 107 004e 00BF     		.align	2
+ 108              	.L5:
+ 109 0050 0A500040 		.word	1073762314
+ 110              		.cfi_endproc
+ 111              	.LFE1:
+ 112              		.size	Button_17_22_SetDriveMode, .-Button_17_22_SetDriveMode
+ 113              		.section	.text.Button_17_22_Read,"ax",%progbits
+ 114              		.align	2
+ 115              		.global	Button_17_22_Read
+ 116              		.thumb
+ 117              		.thumb_func
+ 118              		.type	Button_17_22_Read, %function
+ 119              	Button_17_22_Read:
+ 120              	.LFB2:
+  77:.\Generated_Source\PSoC5/Button_17_22.c **** }
+  78:.\Generated_Source\PSoC5/Button_17_22.c **** 
+  79:.\Generated_Source\PSoC5/Button_17_22.c **** 
+  80:.\Generated_Source\PSoC5/Button_17_22.c **** /*******************************************************************************
+  81:.\Generated_Source\PSoC5/Button_17_22.c **** * Function Name: Button_17_22_Read
+  82:.\Generated_Source\PSoC5/Button_17_22.c **** ********************************************************************************
+  83:.\Generated_Source\PSoC5/Button_17_22.c **** *
+  84:.\Generated_Source\PSoC5/Button_17_22.c **** * Summary:
+  85:.\Generated_Source\PSoC5/Button_17_22.c **** *  Read the current value on the pins of the Digital Port in right justified 
+  86:.\Generated_Source\PSoC5/Button_17_22.c **** *  form.
+  87:.\Generated_Source\PSoC5/Button_17_22.c **** *
+  88:.\Generated_Source\PSoC5/Button_17_22.c **** * Parameters:  
+  89:.\Generated_Source\PSoC5/Button_17_22.c **** *  None
+  90:.\Generated_Source\PSoC5/Button_17_22.c **** *
+  91:.\Generated_Source\PSoC5/Button_17_22.c **** * Return: 
+  92:.\Generated_Source\PSoC5/Button_17_22.c **** *  Returns the current value of the Digital Port as a right justified number
+  93:.\Generated_Source\PSoC5/Button_17_22.c **** *  
+  94:.\Generated_Source\PSoC5/Button_17_22.c **** * Note:
+  95:.\Generated_Source\PSoC5/Button_17_22.c **** *  Macro Button_17_22_ReadPS calls this function. 
+  96:.\Generated_Source\PSoC5/Button_17_22.c **** *  
+  97:.\Generated_Source\PSoC5/Button_17_22.c **** *******************************************************************************/
+  98:.\Generated_Source\PSoC5/Button_17_22.c **** uint8 Button_17_22_Read(void) 
+  99:.\Generated_Source\PSoC5/Button_17_22.c **** {
+ 121              		.loc 1 99 0
+ 122              		.cfi_startproc
+ 123              		@ args = 0, pretend = 0, frame = 0
+ 124              		@ frame_needed = 0, uses_anonymous_args = 0
+ 125              		@ link register save eliminated.
+ 100:.\Generated_Source\PSoC5/Button_17_22.c ****     return (Button_17_22_PS & Button_17_22_MASK) >> Button_17_22_SHIFT;
+ 126              		.loc 1 100 0
+ 127 0000 014B     		ldr	r3, .L8
+ 128 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccSZq4Cn.s 			page 5
+
+
+ 101:.\Generated_Source\PSoC5/Button_17_22.c **** }
+ 129              		.loc 1 101 0
+ 130 0004 8008     		lsrs	r0, r0, #2
+ 131 0006 7047     		bx	lr
+ 132              	.L9:
+ 133              		.align	2
+ 134              	.L8:
+ 135 0008 11510040 		.word	1073762577
+ 136              		.cfi_endproc
+ 137              	.LFE2:
+ 138              		.size	Button_17_22_Read, .-Button_17_22_Read
+ 139              		.section	.text.Button_17_22_ReadDataReg,"ax",%progbits
+ 140              		.align	2
+ 141              		.global	Button_17_22_ReadDataReg
+ 142              		.thumb
+ 143              		.thumb_func
+ 144              		.type	Button_17_22_ReadDataReg, %function
+ 145              	Button_17_22_ReadDataReg:
+ 146              	.LFB3:
+ 102:.\Generated_Source\PSoC5/Button_17_22.c **** 
+ 103:.\Generated_Source\PSoC5/Button_17_22.c **** 
+ 104:.\Generated_Source\PSoC5/Button_17_22.c **** /*******************************************************************************
+ 105:.\Generated_Source\PSoC5/Button_17_22.c **** * Function Name: Button_17_22_ReadDataReg
+ 106:.\Generated_Source\PSoC5/Button_17_22.c **** ********************************************************************************
+ 107:.\Generated_Source\PSoC5/Button_17_22.c **** *
+ 108:.\Generated_Source\PSoC5/Button_17_22.c **** * Summary:
+ 109:.\Generated_Source\PSoC5/Button_17_22.c **** *  Read the current value assigned to a Digital Port's data output register
+ 110:.\Generated_Source\PSoC5/Button_17_22.c **** *
+ 111:.\Generated_Source\PSoC5/Button_17_22.c **** * Parameters:  
+ 112:.\Generated_Source\PSoC5/Button_17_22.c **** *  None 
+ 113:.\Generated_Source\PSoC5/Button_17_22.c **** *
+ 114:.\Generated_Source\PSoC5/Button_17_22.c **** * Return: 
+ 115:.\Generated_Source\PSoC5/Button_17_22.c **** *  Returns the current value assigned to the Digital Port's data output register
+ 116:.\Generated_Source\PSoC5/Button_17_22.c **** *  
+ 117:.\Generated_Source\PSoC5/Button_17_22.c **** *******************************************************************************/
+ 118:.\Generated_Source\PSoC5/Button_17_22.c **** uint8 Button_17_22_ReadDataReg(void) 
+ 119:.\Generated_Source\PSoC5/Button_17_22.c **** {
+ 147              		.loc 1 119 0
+ 148              		.cfi_startproc
+ 149              		@ args = 0, pretend = 0, frame = 0
+ 150              		@ frame_needed = 0, uses_anonymous_args = 0
+ 151              		@ link register save eliminated.
+ 120:.\Generated_Source\PSoC5/Button_17_22.c ****     return (Button_17_22_DR & Button_17_22_MASK) >> Button_17_22_SHIFT;
+ 152              		.loc 1 120 0
+ 153 0000 014B     		ldr	r3, .L11
+ 154 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 121:.\Generated_Source\PSoC5/Button_17_22.c **** }
+ 155              		.loc 1 121 0
+ 156 0004 8008     		lsrs	r0, r0, #2
+ 157 0006 7047     		bx	lr
+ 158              	.L12:
+ 159              		.align	2
+ 160              	.L11:
+ 161 0008 10510040 		.word	1073762576
+ 162              		.cfi_endproc
+ 163              	.LFE3:
+ 164              		.size	Button_17_22_ReadDataReg, .-Button_17_22_ReadDataReg
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccSZq4Cn.s 			page 6
+
+
+ 165              		.text
+ 166              	.Letext0:
+ 167              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 168              		.section	.debug_info,"",%progbits
+ 169              	.Ldebug_info0:
+ 170 0000 1C010000 		.4byte	0x11c
+ 171 0004 0400     		.2byte	0x4
+ 172 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 173 000a 04       		.byte	0x4
+ 174 000b 01       		.uleb128 0x1
+ 175 000c 0A010000 		.4byte	.LASF20
+ 176 0010 01       		.byte	0x1
+ 177 0011 06000000 		.4byte	.LASF21
+ 178 0015 4B000000 		.4byte	.LASF22
+ 179 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 180 001d 00000000 		.4byte	0
+ 181 0021 00000000 		.4byte	.Ldebug_line0
+ 182 0025 02       		.uleb128 0x2
+ 183 0026 01       		.byte	0x1
+ 184 0027 06       		.byte	0x6
+ 185 0028 ED010000 		.4byte	.LASF0
+ 186 002c 02       		.uleb128 0x2
+ 187 002d 01       		.byte	0x1
+ 188 002e 08       		.byte	0x8
+ 189 002f B8000000 		.4byte	.LASF1
+ 190 0033 02       		.uleb128 0x2
+ 191 0034 02       		.byte	0x2
+ 192 0035 05       		.byte	0x5
+ 193 0036 D4010000 		.4byte	.LASF2
+ 194 003a 02       		.uleb128 0x2
+ 195 003b 02       		.byte	0x2
+ 196 003c 07       		.byte	0x7
+ 197 003d DD000000 		.4byte	.LASF3
+ 198 0041 02       		.uleb128 0x2
+ 199 0042 04       		.byte	0x4
+ 200 0043 05       		.byte	0x5
+ 201 0044 E4010000 		.4byte	.LASF4
+ 202 0048 02       		.uleb128 0x2
+ 203 0049 04       		.byte	0x4
+ 204 004a 07       		.byte	0x7
+ 205 004b CB000000 		.4byte	.LASF5
+ 206 004f 02       		.uleb128 0x2
+ 207 0050 08       		.byte	0x8
+ 208 0051 05       		.byte	0x5
+ 209 0052 C1010000 		.4byte	.LASF6
+ 210 0056 02       		.uleb128 0x2
+ 211 0057 08       		.byte	0x8
+ 212 0058 07       		.byte	0x7
+ 213 0059 A5010000 		.4byte	.LASF7
+ 214 005d 03       		.uleb128 0x3
+ 215 005e 04       		.byte	0x4
+ 216 005f 05       		.byte	0x5
+ 217 0060 696E7400 		.ascii	"int\000"
+ 218 0064 02       		.uleb128 0x2
+ 219 0065 04       		.byte	0x4
+ 220 0066 07       		.byte	0x7
+ 221 0067 98010000 		.4byte	.LASF8
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccSZq4Cn.s 			page 7
+
+
+ 222 006b 04       		.uleb128 0x4
+ 223 006c DE010000 		.4byte	.LASF12
+ 224 0070 02       		.byte	0x2
+ 225 0071 C2       		.byte	0xc2
+ 226 0072 2C000000 		.4byte	0x2c
+ 227 0076 02       		.uleb128 0x2
+ 228 0077 04       		.byte	0x4
+ 229 0078 04       		.byte	0x4
+ 230 0079 98000000 		.4byte	.LASF9
+ 231 007d 02       		.uleb128 0x2
+ 232 007e 08       		.byte	0x8
+ 233 007f 04       		.byte	0x4
+ 234 0080 F0000000 		.4byte	.LASF10
+ 235 0084 02       		.uleb128 0x2
+ 236 0085 01       		.byte	0x1
+ 237 0086 08       		.byte	0x8
+ 238 0087 CF010000 		.4byte	.LASF11
+ 239 008b 05       		.uleb128 0x5
+ 240 008c C6000000 		.4byte	.LASF13
+ 241 0090 02       		.byte	0x2
+ 242 0091 6C01     		.2byte	0x16c
+ 243 0093 97000000 		.4byte	0x97
+ 244 0097 06       		.uleb128 0x6
+ 245 0098 6B000000 		.4byte	0x6b
+ 246 009c 07       		.uleb128 0x7
+ 247 009d F7000000 		.4byte	.LASF14
+ 248 00a1 01       		.byte	0x1
+ 249 00a2 27       		.byte	0x27
+ 250 00a3 00000000 		.4byte	.LFB0
+ 251 00a7 18000000 		.4byte	.LFE0-.LFB0
+ 252 00ab 01       		.uleb128 0x1
+ 253 00ac 9C       		.byte	0x9c
+ 254 00ad D0000000 		.4byte	0xd0
+ 255 00b1 08       		.uleb128 0x8
+ 256 00b2 00000000 		.4byte	.LASF16
+ 257 00b6 01       		.byte	0x1
+ 258 00b7 27       		.byte	0x27
+ 259 00b8 6B000000 		.4byte	0x6b
+ 260 00bc 00000000 		.4byte	.LLST0
+ 261 00c0 09       		.uleb128 0x9
+ 262 00c1 2E000000 		.4byte	.LASF23
+ 263 00c5 01       		.byte	0x1
+ 264 00c6 29       		.byte	0x29
+ 265 00c7 6B000000 		.4byte	0x6b
+ 266 00cb 21000000 		.4byte	.LLST1
+ 267 00cf 00       		.byte	0
+ 268 00d0 07       		.uleb128 0x7
+ 269 00d1 9E000000 		.4byte	.LASF15
+ 270 00d5 01       		.byte	0x1
+ 271 00d6 45       		.byte	0x45
+ 272 00d7 00000000 		.4byte	.LFB1
+ 273 00db 54000000 		.4byte	.LFE1-.LFB1
+ 274 00df 01       		.uleb128 0x1
+ 275 00e0 9C       		.byte	0x9c
+ 276 00e1 F5000000 		.4byte	0xf5
+ 277 00e5 08       		.uleb128 0x8
+ 278 00e6 BC010000 		.4byte	.LASF17
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccSZq4Cn.s 			page 8
+
+
+ 279 00ea 01       		.byte	0x1
+ 280 00eb 45       		.byte	0x45
+ 281 00ec 6B000000 		.4byte	0x6b
+ 282 00f0 34000000 		.4byte	.LLST2
+ 283 00f4 00       		.byte	0
+ 284 00f5 0A       		.uleb128 0xa
+ 285 00f6 39000000 		.4byte	.LASF18
+ 286 00fa 01       		.byte	0x1
+ 287 00fb 62       		.byte	0x62
+ 288 00fc 6B000000 		.4byte	0x6b
+ 289 0100 00000000 		.4byte	.LFB2
+ 290 0104 0C000000 		.4byte	.LFE2-.LFB2
+ 291 0108 01       		.uleb128 0x1
+ 292 0109 9C       		.byte	0x9c
+ 293 010a 0A       		.uleb128 0xa
+ 294 010b F9010000 		.4byte	.LASF19
+ 295 010f 01       		.byte	0x1
+ 296 0110 76       		.byte	0x76
+ 297 0111 6B000000 		.4byte	0x6b
+ 298 0115 00000000 		.4byte	.LFB3
+ 299 0119 0C000000 		.4byte	.LFE3-.LFB3
+ 300 011d 01       		.uleb128 0x1
+ 301 011e 9C       		.byte	0x9c
+ 302 011f 00       		.byte	0
+ 303              		.section	.debug_abbrev,"",%progbits
+ 304              	.Ldebug_abbrev0:
+ 305 0000 01       		.uleb128 0x1
+ 306 0001 11       		.uleb128 0x11
+ 307 0002 01       		.byte	0x1
+ 308 0003 25       		.uleb128 0x25
+ 309 0004 0E       		.uleb128 0xe
+ 310 0005 13       		.uleb128 0x13
+ 311 0006 0B       		.uleb128 0xb
+ 312 0007 03       		.uleb128 0x3
+ 313 0008 0E       		.uleb128 0xe
+ 314 0009 1B       		.uleb128 0x1b
+ 315 000a 0E       		.uleb128 0xe
+ 316 000b 55       		.uleb128 0x55
+ 317 000c 17       		.uleb128 0x17
+ 318 000d 11       		.uleb128 0x11
+ 319 000e 01       		.uleb128 0x1
+ 320 000f 10       		.uleb128 0x10
+ 321 0010 17       		.uleb128 0x17
+ 322 0011 00       		.byte	0
+ 323 0012 00       		.byte	0
+ 324 0013 02       		.uleb128 0x2
+ 325 0014 24       		.uleb128 0x24
+ 326 0015 00       		.byte	0
+ 327 0016 0B       		.uleb128 0xb
+ 328 0017 0B       		.uleb128 0xb
+ 329 0018 3E       		.uleb128 0x3e
+ 330 0019 0B       		.uleb128 0xb
+ 331 001a 03       		.uleb128 0x3
+ 332 001b 0E       		.uleb128 0xe
+ 333 001c 00       		.byte	0
+ 334 001d 00       		.byte	0
+ 335 001e 03       		.uleb128 0x3
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccSZq4Cn.s 			page 9
+
+
+ 336 001f 24       		.uleb128 0x24
+ 337 0020 00       		.byte	0
+ 338 0021 0B       		.uleb128 0xb
+ 339 0022 0B       		.uleb128 0xb
+ 340 0023 3E       		.uleb128 0x3e
+ 341 0024 0B       		.uleb128 0xb
+ 342 0025 03       		.uleb128 0x3
+ 343 0026 08       		.uleb128 0x8
+ 344 0027 00       		.byte	0
+ 345 0028 00       		.byte	0
+ 346 0029 04       		.uleb128 0x4
+ 347 002a 16       		.uleb128 0x16
+ 348 002b 00       		.byte	0
+ 349 002c 03       		.uleb128 0x3
+ 350 002d 0E       		.uleb128 0xe
+ 351 002e 3A       		.uleb128 0x3a
+ 352 002f 0B       		.uleb128 0xb
+ 353 0030 3B       		.uleb128 0x3b
+ 354 0031 0B       		.uleb128 0xb
+ 355 0032 49       		.uleb128 0x49
+ 356 0033 13       		.uleb128 0x13
+ 357 0034 00       		.byte	0
+ 358 0035 00       		.byte	0
+ 359 0036 05       		.uleb128 0x5
+ 360 0037 16       		.uleb128 0x16
+ 361 0038 00       		.byte	0
+ 362 0039 03       		.uleb128 0x3
+ 363 003a 0E       		.uleb128 0xe
+ 364 003b 3A       		.uleb128 0x3a
+ 365 003c 0B       		.uleb128 0xb
+ 366 003d 3B       		.uleb128 0x3b
+ 367 003e 05       		.uleb128 0x5
+ 368 003f 49       		.uleb128 0x49
+ 369 0040 13       		.uleb128 0x13
+ 370 0041 00       		.byte	0
+ 371 0042 00       		.byte	0
+ 372 0043 06       		.uleb128 0x6
+ 373 0044 35       		.uleb128 0x35
+ 374 0045 00       		.byte	0
+ 375 0046 49       		.uleb128 0x49
+ 376 0047 13       		.uleb128 0x13
+ 377 0048 00       		.byte	0
+ 378 0049 00       		.byte	0
+ 379 004a 07       		.uleb128 0x7
+ 380 004b 2E       		.uleb128 0x2e
+ 381 004c 01       		.byte	0x1
+ 382 004d 3F       		.uleb128 0x3f
+ 383 004e 19       		.uleb128 0x19
+ 384 004f 03       		.uleb128 0x3
+ 385 0050 0E       		.uleb128 0xe
+ 386 0051 3A       		.uleb128 0x3a
+ 387 0052 0B       		.uleb128 0xb
+ 388 0053 3B       		.uleb128 0x3b
+ 389 0054 0B       		.uleb128 0xb
+ 390 0055 27       		.uleb128 0x27
+ 391 0056 19       		.uleb128 0x19
+ 392 0057 11       		.uleb128 0x11
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccSZq4Cn.s 			page 10
+
+
+ 393 0058 01       		.uleb128 0x1
+ 394 0059 12       		.uleb128 0x12
+ 395 005a 06       		.uleb128 0x6
+ 396 005b 40       		.uleb128 0x40
+ 397 005c 18       		.uleb128 0x18
+ 398 005d 9742     		.uleb128 0x2117
+ 399 005f 19       		.uleb128 0x19
+ 400 0060 01       		.uleb128 0x1
+ 401 0061 13       		.uleb128 0x13
+ 402 0062 00       		.byte	0
+ 403 0063 00       		.byte	0
+ 404 0064 08       		.uleb128 0x8
+ 405 0065 05       		.uleb128 0x5
+ 406 0066 00       		.byte	0
+ 407 0067 03       		.uleb128 0x3
+ 408 0068 0E       		.uleb128 0xe
+ 409 0069 3A       		.uleb128 0x3a
+ 410 006a 0B       		.uleb128 0xb
+ 411 006b 3B       		.uleb128 0x3b
+ 412 006c 0B       		.uleb128 0xb
+ 413 006d 49       		.uleb128 0x49
+ 414 006e 13       		.uleb128 0x13
+ 415 006f 02       		.uleb128 0x2
+ 416 0070 17       		.uleb128 0x17
+ 417 0071 00       		.byte	0
+ 418 0072 00       		.byte	0
+ 419 0073 09       		.uleb128 0x9
+ 420 0074 34       		.uleb128 0x34
+ 421 0075 00       		.byte	0
+ 422 0076 03       		.uleb128 0x3
+ 423 0077 0E       		.uleb128 0xe
+ 424 0078 3A       		.uleb128 0x3a
+ 425 0079 0B       		.uleb128 0xb
+ 426 007a 3B       		.uleb128 0x3b
+ 427 007b 0B       		.uleb128 0xb
+ 428 007c 49       		.uleb128 0x49
+ 429 007d 13       		.uleb128 0x13
+ 430 007e 02       		.uleb128 0x2
+ 431 007f 17       		.uleb128 0x17
+ 432 0080 00       		.byte	0
+ 433 0081 00       		.byte	0
+ 434 0082 0A       		.uleb128 0xa
+ 435 0083 2E       		.uleb128 0x2e
+ 436 0084 00       		.byte	0
+ 437 0085 3F       		.uleb128 0x3f
+ 438 0086 19       		.uleb128 0x19
+ 439 0087 03       		.uleb128 0x3
+ 440 0088 0E       		.uleb128 0xe
+ 441 0089 3A       		.uleb128 0x3a
+ 442 008a 0B       		.uleb128 0xb
+ 443 008b 3B       		.uleb128 0x3b
+ 444 008c 0B       		.uleb128 0xb
+ 445 008d 27       		.uleb128 0x27
+ 446 008e 19       		.uleb128 0x19
+ 447 008f 49       		.uleb128 0x49
+ 448 0090 13       		.uleb128 0x13
+ 449 0091 11       		.uleb128 0x11
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccSZq4Cn.s 			page 11
+
+
+ 450 0092 01       		.uleb128 0x1
+ 451 0093 12       		.uleb128 0x12
+ 452 0094 06       		.uleb128 0x6
+ 453 0095 40       		.uleb128 0x40
+ 454 0096 18       		.uleb128 0x18
+ 455 0097 9742     		.uleb128 0x2117
+ 456 0099 19       		.uleb128 0x19
+ 457 009a 00       		.byte	0
+ 458 009b 00       		.byte	0
+ 459 009c 00       		.byte	0
+ 460              		.section	.debug_loc,"",%progbits
+ 461              	.Ldebug_loc0:
+ 462              	.LLST0:
+ 463 0000 00000000 		.4byte	.LVL0
+ 464 0004 0A000000 		.4byte	.LVL2
+ 465 0008 0100     		.2byte	0x1
+ 466 000a 50       		.byte	0x50
+ 467 000b 0A000000 		.4byte	.LVL2
+ 468 000f 18000000 		.4byte	.LFE0
+ 469 0013 0400     		.2byte	0x4
+ 470 0015 F3       		.byte	0xf3
+ 471 0016 01       		.uleb128 0x1
+ 472 0017 50       		.byte	0x50
+ 473 0018 9F       		.byte	0x9f
+ 474 0019 00000000 		.4byte	0
+ 475 001d 00000000 		.4byte	0
+ 476              	.LLST1:
+ 477 0021 08000000 		.4byte	.LVL1
+ 478 0025 0E000000 		.4byte	.LVL3
+ 479 0029 0100     		.2byte	0x1
+ 480 002b 53       		.byte	0x53
+ 481 002c 00000000 		.4byte	0
+ 482 0030 00000000 		.4byte	0
+ 483              	.LLST2:
+ 484 0034 00000000 		.4byte	.LVL4
+ 485 0038 08000000 		.4byte	.LVL5
+ 486 003c 0100     		.2byte	0x1
+ 487 003e 50       		.byte	0x50
+ 488 003f 08000000 		.4byte	.LVL5
+ 489 0043 54000000 		.4byte	.LFE1
+ 490 0047 0400     		.2byte	0x4
+ 491 0049 F3       		.byte	0xf3
+ 492 004a 01       		.uleb128 0x1
+ 493 004b 50       		.byte	0x50
+ 494 004c 9F       		.byte	0x9f
+ 495 004d 00000000 		.4byte	0
+ 496 0051 00000000 		.4byte	0
+ 497              		.section	.debug_aranges,"",%progbits
+ 498 0000 34000000 		.4byte	0x34
+ 499 0004 0200     		.2byte	0x2
+ 500 0006 00000000 		.4byte	.Ldebug_info0
+ 501 000a 04       		.byte	0x4
+ 502 000b 00       		.byte	0
+ 503 000c 0000     		.2byte	0
+ 504 000e 0000     		.2byte	0
+ 505 0010 00000000 		.4byte	.LFB0
+ 506 0014 18000000 		.4byte	.LFE0-.LFB0
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccSZq4Cn.s 			page 12
+
+
+ 507 0018 00000000 		.4byte	.LFB1
+ 508 001c 54000000 		.4byte	.LFE1-.LFB1
+ 509 0020 00000000 		.4byte	.LFB2
+ 510 0024 0C000000 		.4byte	.LFE2-.LFB2
+ 511 0028 00000000 		.4byte	.LFB3
+ 512 002c 0C000000 		.4byte	.LFE3-.LFB3
+ 513 0030 00000000 		.4byte	0
+ 514 0034 00000000 		.4byte	0
+ 515              		.section	.debug_ranges,"",%progbits
+ 516              	.Ldebug_ranges0:
+ 517 0000 00000000 		.4byte	.LFB0
+ 518 0004 18000000 		.4byte	.LFE0
+ 519 0008 00000000 		.4byte	.LFB1
+ 520 000c 54000000 		.4byte	.LFE1
+ 521 0010 00000000 		.4byte	.LFB2
+ 522 0014 0C000000 		.4byte	.LFE2
+ 523 0018 00000000 		.4byte	.LFB3
+ 524 001c 0C000000 		.4byte	.LFE3
+ 525 0020 00000000 		.4byte	0
+ 526 0024 00000000 		.4byte	0
+ 527              		.section	.debug_line,"",%progbits
+ 528              	.Ldebug_line0:
+ 529 0000 9C000000 		.section	.debug_str,"MS",%progbits,1
+ 529      02004B00 
+ 529      00000201 
+ 529      FB0E0D00 
+ 529      01010101 
+ 530              	.LASF16:
+ 531 0000 76616C75 		.ascii	"value\000"
+ 531      6500
+ 532              	.LASF21:
+ 533 0006 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Button_17_22.c\000"
+ 533      6E657261 
+ 533      7465645F 
+ 533      536F7572 
+ 533      63655C50 
+ 534              	.LASF23:
+ 535 002e 73746174 		.ascii	"staticBits\000"
+ 535      69634269 
+ 535      747300
+ 536              	.LASF18:
+ 537 0039 42757474 		.ascii	"Button_17_22_Read\000"
+ 537      6F6E5F31 
+ 537      375F3232 
+ 537      5F526561 
+ 537      6400
+ 538              	.LASF22:
+ 539 004b 433A5C55 		.ascii	"C:\\Users\\Greg\\Documents\\Cypress_Local\\FIRST\\C"
+ 539      73657273 
+ 539      5C477265 
+ 539      675C446F 
+ 539      63756D65 
+ 540 0078 79436F6E 		.ascii	"yController\\CyController1.cydsn\000"
+ 540      74726F6C 
+ 540      6C65725C 
+ 540      4379436F 
+ 540      6E74726F 
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccSZq4Cn.s 			page 13
+
+
+ 541              	.LASF9:
+ 542 0098 666C6F61 		.ascii	"float\000"
+ 542      7400
+ 543              	.LASF15:
+ 544 009e 42757474 		.ascii	"Button_17_22_SetDriveMode\000"
+ 544      6F6E5F31 
+ 544      375F3232 
+ 544      5F536574 
+ 544      44726976 
+ 545              	.LASF1:
+ 546 00b8 756E7369 		.ascii	"unsigned char\000"
+ 546      676E6564 
+ 546      20636861 
+ 546      7200
+ 547              	.LASF13:
+ 548 00c6 72656738 		.ascii	"reg8\000"
+ 548      00
+ 549              	.LASF5:
+ 550 00cb 6C6F6E67 		.ascii	"long unsigned int\000"
+ 550      20756E73 
+ 550      69676E65 
+ 550      6420696E 
+ 550      7400
+ 551              	.LASF3:
+ 552 00dd 73686F72 		.ascii	"short unsigned int\000"
+ 552      7420756E 
+ 552      7369676E 
+ 552      65642069 
+ 552      6E7400
+ 553              	.LASF10:
+ 554 00f0 646F7562 		.ascii	"double\000"
+ 554      6C6500
+ 555              	.LASF14:
+ 556 00f7 42757474 		.ascii	"Button_17_22_Write\000"
+ 556      6F6E5F31 
+ 556      375F3232 
+ 556      5F577269 
+ 556      746500
+ 557              	.LASF20:
+ 558 010a 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 558      4320342E 
+ 558      392E3320 
+ 558      32303135 
+ 558      30333033 
+ 559 013d 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 559      20726576 
+ 559      6973696F 
+ 559      6E203232 
+ 559      31323230 
+ 560 0170 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 560      66756E63 
+ 560      74696F6E 
+ 560      2D736563 
+ 560      74696F6E 
+ 561              	.LASF8:
+ 562 0198 756E7369 		.ascii	"unsigned int\000"
+ 562      676E6564 
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccSZq4Cn.s 			page 14
+
+
+ 562      20696E74 
+ 562      00
+ 563              	.LASF7:
+ 564 01a5 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 564      206C6F6E 
+ 564      6720756E 
+ 564      7369676E 
+ 564      65642069 
+ 565              	.LASF17:
+ 566 01bc 6D6F6465 		.ascii	"mode\000"
+ 566      00
+ 567              	.LASF6:
+ 568 01c1 6C6F6E67 		.ascii	"long long int\000"
+ 568      206C6F6E 
+ 568      6720696E 
+ 568      7400
+ 569              	.LASF11:
+ 570 01cf 63686172 		.ascii	"char\000"
+ 570      00
+ 571              	.LASF2:
+ 572 01d4 73686F72 		.ascii	"short int\000"
+ 572      7420696E 
+ 572      7400
+ 573              	.LASF12:
+ 574 01de 75696E74 		.ascii	"uint8\000"
+ 574      3800
+ 575              	.LASF4:
+ 576 01e4 6C6F6E67 		.ascii	"long int\000"
+ 576      20696E74 
+ 576      00
+ 577              	.LASF0:
+ 578 01ed 7369676E 		.ascii	"signed char\000"
+ 578      65642063 
+ 578      68617200 
+ 579              	.LASF19:
+ 580 01f9 42757474 		.ascii	"Button_17_22_ReadDataReg\000"
+ 580      6F6E5F31 
+ 580      375F3232 
+ 580      5F526561 
+ 580      64446174 
+ 581              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

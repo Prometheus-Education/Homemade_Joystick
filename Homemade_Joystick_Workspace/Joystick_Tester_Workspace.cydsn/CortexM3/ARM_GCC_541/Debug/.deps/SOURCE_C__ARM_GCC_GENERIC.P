@@ -1,0 +1,28 @@
+E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/CortexM3/ARM_GCC_541/Debug/cyfitter_cfg.o : E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/CyFlash.h E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/CyLib.h E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/CySpc.h E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/cyPm.h E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/cydevice.h E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/cydevice_trm.h E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/cyfitter.h E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/cyfitter_cfg.c E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/cytypes.h E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/cyapicallbacks.h 
+
+E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/CyFlash.h : 
+
+E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/CyLib.h : 
+
+E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/CySpc.h : 
+
+E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/cyPm.h : 
+
+E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/cydevice.h : 
+
+E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/cydevice_trm.h : 
+
+E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/cyfitter.h : 
+
+E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/cyfitter_cfg.c : 
+
+E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h : 
+
+E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/cytypes.h : 
+
+E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/cyapicallbacks.h : 
+
+E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/CortexM3/ARM_GCC_541/Debug/cymetadata.o : E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/cymetadata.c 
+
+E:/Ali_Workspace/Joystick_Tester/Joystick_Tester_Workspace.cydsn/Generated_Source/PSoC5/cymetadata.c : 
+

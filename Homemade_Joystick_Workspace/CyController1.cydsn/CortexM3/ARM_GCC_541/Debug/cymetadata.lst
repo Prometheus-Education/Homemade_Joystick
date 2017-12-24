@@ -1,0 +1,3516 @@
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"cymetadata.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	cy_metadata
+  20              		.global	cy_meta_flashprotect
+  21              		.global	cy_meta_wonvl
+  22              		.global	cy_meta_custnvl
+  23              		.global	cy_meta_configecc
+  24              		.section	.cyconfigecc,"a",%progbits
+  25              		.align	2
+  26              		.type	cy_meta_configecc, %object
+  27              		.size	cy_meta_configecc, 2852
+  28              	cy_meta_configecc:
+  29 0000 01       		.byte	1
+  30 0001 45       		.byte	69
+  31 0002 00       		.byte	0
+  32 0003 40       		.byte	64
+  33 0004 08       		.byte	8
+  34 0005 52       		.byte	82
+  35 0006 00       		.byte	0
+  36 0007 40       		.byte	64
+  37 0008 01       		.byte	1
+  38 0009 5B       		.byte	91
+  39 000a 00       		.byte	0
+  40 000b 40       		.byte	64
+  41 000c 02       		.byte	2
+  42 000d 64       		.byte	100
+  43 000e 00       		.byte	0
+  44 000f 40       		.byte	64
+  45 0010 02       		.byte	2
+  46 0011 65       		.byte	101
+  47 0012 00       		.byte	0
+  48 0013 40       		.byte	64
+  49 0014 2B       		.byte	43
+  50 0015 00       		.byte	0
+  51 0016 01       		.byte	1
+  52 0017 40       		.byte	64
+  53 0018 2B       		.byte	43
+  54 0019 01       		.byte	1
+  55 001a 01       		.byte	1
+  56 001b 40       		.byte	64
+  57 001c 4B       		.byte	75
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 2
+
+
+  58 001d 02       		.byte	2
+  59 001e 01       		.byte	1
+  60 001f 40       		.byte	64
+  61 0020 45       		.byte	69
+  62 0021 03       		.byte	3
+  63 0022 01       		.byte	1
+  64 0023 40       		.byte	64
+  65 0024 2B       		.byte	43
+  66 0025 04       		.byte	4
+  67 0026 01       		.byte	1
+  68 0027 40       		.byte	64
+  69 0028 40       		.byte	64
+  70 0029 05       		.byte	5
+  71 002a 01       		.byte	1
+  72 002b 40       		.byte	64
+  73 002c 15       		.byte	21
+  74 002d 06       		.byte	6
+  75 002e 01       		.byte	1
+  76 002f 40       		.byte	64
+  77 0030 43       		.byte	67
+  78 0031 07       		.byte	7
+  79 0032 01       		.byte	1
+  80 0033 40       		.byte	64
+  81 0034 46       		.byte	70
+  82 0035 08       		.byte	8
+  83 0036 01       		.byte	1
+  84 0037 40       		.byte	64
+  85 0038 4D       		.byte	77
+  86 0039 09       		.byte	9
+  87 003a 01       		.byte	1
+  88 003b 40       		.byte	64
+  89 003c 20       		.byte	32
+  90 003d 0A       		.byte	10
+  91 003e 01       		.byte	1
+  92 003f 40       		.byte	64
+  93 0040 36       		.byte	54
+  94 0041 0B       		.byte	11
+  95 0042 01       		.byte	1
+  96 0043 40       		.byte	64
+  97 0044 02       		.byte	2
+  98 0045 0D       		.byte	13
+  99 0046 01       		.byte	1
+ 100 0047 40       		.byte	64
+ 101 0048 22       		.byte	34
+ 102 0049 14       		.byte	20
+ 103 004a 01       		.byte	1
+ 104 004b 40       		.byte	64
+ 105 004c 48       		.byte	72
+ 106 004d 15       		.byte	21
+ 107 004e 01       		.byte	1
+ 108 004f 40       		.byte	64
+ 109 0050 22       		.byte	34
+ 110 0051 16       		.byte	22
+ 111 0052 01       		.byte	1
+ 112 0053 40       		.byte	64
+ 113 0054 43       		.byte	67
+ 114 0055 17       		.byte	23
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 3
+
+
+ 115 0056 01       		.byte	1
+ 116 0057 40       		.byte	64
+ 117 0058 29       		.byte	41
+ 118 0059 18       		.byte	24
+ 119 005a 01       		.byte	1
+ 120 005b 40       		.byte	64
+ 121 005c 4A       		.byte	74
+ 122 005d 19       		.byte	25
+ 123 005e 01       		.byte	1
+ 124 005f 40       		.byte	64
+ 125 0060 38       		.byte	56
+ 126 0061 1A       		.byte	26
+ 127 0062 01       		.byte	1
+ 128 0063 40       		.byte	64
+ 129 0064 4C       		.byte	76
+ 130 0065 1B       		.byte	27
+ 131 0066 01       		.byte	1
+ 132 0067 40       		.byte	64
+ 133 0068 0A       		.byte	10
+ 134 0069 40       		.byte	64
+ 135 006a 01       		.byte	1
+ 136 006b 40       		.byte	64
+ 137 006c 13       		.byte	19
+ 138 006d 41       		.byte	65
+ 139 006e 01       		.byte	1
+ 140 006f 40       		.byte	64
+ 141 0070 16       		.byte	22
+ 142 0071 42       		.byte	66
+ 143 0072 01       		.byte	1
+ 144 0073 40       		.byte	64
+ 145 0074 08       		.byte	8
+ 146 0075 43       		.byte	67
+ 147 0076 01       		.byte	1
+ 148 0077 40       		.byte	64
+ 149 0078 04       		.byte	4
+ 150 0079 44       		.byte	68
+ 151 007a 01       		.byte	1
+ 152 007b 40       		.byte	64
+ 153 007c 0F       		.byte	15
+ 154 007d 45       		.byte	69
+ 155 007e 01       		.byte	1
+ 156 007f 40       		.byte	64
+ 157 0080 17       		.byte	23
+ 158 0081 46       		.byte	70
+ 159 0082 01       		.byte	1
+ 160 0083 40       		.byte	64
+ 161 0084 08       		.byte	8
+ 162 0085 47       		.byte	71
+ 163 0086 01       		.byte	1
+ 164 0087 40       		.byte	64
+ 165 0088 10       		.byte	16
+ 166 0089 48       		.byte	72
+ 167 008a 01       		.byte	1
+ 168 008b 40       		.byte	64
+ 169 008c 12       		.byte	18
+ 170 008d 49       		.byte	73
+ 171 008e 01       		.byte	1
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 4
+
+
+ 172 008f 40       		.byte	64
+ 173 0090 11       		.byte	17
+ 174 0091 4C       		.byte	76
+ 175 0092 01       		.byte	1
+ 176 0093 40       		.byte	64
+ 177 0094 0C       		.byte	12
+ 178 0095 4D       		.byte	77
+ 179 0096 01       		.byte	1
+ 180 0097 40       		.byte	64
+ 181 0098 0A       		.byte	10
+ 182 0099 50       		.byte	80
+ 183 009a 01       		.byte	1
+ 184 009b 40       		.byte	64
+ 185 009c 02       		.byte	2
+ 186 009d 51       		.byte	81
+ 187 009e 01       		.byte	1
+ 188 009f 40       		.byte	64
+ 189 00a0 7E       		.byte	126
+ 190 00a1 02       		.byte	2
+ 191 00a2 00       		.byte	0
+ 192 00a3 3C       		.byte	60
+ 193 00a4 01       		.byte	1
+ 194 00a5 55       		.byte	85
+ 195 00a6 0C       		.byte	12
+ 196 00a7 FC       		.byte	-4
+ 197 00a8 14       		.byte	20
+ 198 00a9 FF       		.byte	-1
+ 199 00aa 1C       		.byte	28
+ 200 00ab FF       		.byte	-1
+ 201 00ac 78       		.byte	120
+ 202 00ad 23       		.byte	35
+ 203 00ae 79       		.byte	121
+ 204 00af 09       		.byte	9
+ 205 00b0 7C       		.byte	124
+ 206 00b1 40       		.byte	64
+ 207 00b2 27       		.byte	39
+ 208 00b3 84       		.byte	-124
+ 209 00b4 83       		.byte	-125
+ 210 00b5 0F       		.byte	15
+ 211 00b6 87       		.byte	-121
+ 212 00b7 38       		.byte	56
+ 213 00b8 88       		.byte	-120
+ 214 00b9 07       		.byte	7
+ 215 00ba 8A       		.byte	-118
+ 216 00bb 72       		.byte	114
+ 217 00bc 01       		.byte	1
+ 218 00bd 03       		.byte	3
+ 219 00be 03       		.byte	3
+ 220 00bf 34       		.byte	52
+ 221 00c0 05       		.byte	5
+ 222 00c1 03       		.byte	3
+ 223 00c2 06       		.byte	6
+ 224 00c3 01       		.byte	1
+ 225 00c4 07       		.byte	7
+ 226 00c5 04       		.byte	4
+ 227 00c6 09       		.byte	9
+ 228 00c7 03       		.byte	3
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 5
+
+
+ 229 00c8 0B       		.byte	11
+ 230 00c9 1C       		.byte	28
+ 231 00ca 11       		.byte	17
+ 232 00cb 2A       		.byte	42
+ 233 00cc 12       		.byte	18
+ 234 00cd 01       		.byte	1
+ 235 00ce 13       		.byte	19
+ 236 00cf 14       		.byte	20
+ 237 00d0 1A       		.byte	26
+ 238 00d1 01       		.byte	1
+ 239 00d2 1B       		.byte	27
+ 240 00d3 28       		.byte	40
+ 241 00d4 1F       		.byte	31
+ 242 00d5 20       		.byte	32
+ 243 00d6 27       		.byte	39
+ 244 00d7 15       		.byte	21
+ 245 00d8 28       		.byte	40
+ 246 00d9 01       		.byte	1
+ 247 00da 2C       		.byte	44
+ 248 00db 01       		.byte	1
+ 249 00dc 31       		.byte	49
+ 250 00dd 38       		.byte	56
+ 251 00de 33       		.byte	51
+ 252 00df 0F       		.byte	15
+ 253 00e0 36       		.byte	54
+ 254 00e1 01       		.byte	1
+ 255 00e2 3B       		.byte	59
+ 256 00e3 0A       		.byte	10
+ 257 00e4 3E       		.byte	62
+ 258 00e5 40       		.byte	64
+ 259 00e6 58       		.byte	88
+ 260 00e7 04       		.byte	4
+ 261 00e8 59       		.byte	89
+ 262 00e9 04       		.byte	4
+ 263 00ea 5C       		.byte	92
+ 264 00eb 10       		.byte	16
+ 265 00ec 5F       		.byte	95
+ 266 00ed 01       		.byte	1
+ 267 00ee 81       		.byte	-127
+ 268 00ef 01       		.byte	1
+ 269 00f0 86       		.byte	-122
+ 270 00f1 01       		.byte	1
+ 271 00f2 87       		.byte	-121
+ 272 00f3 01       		.byte	1
+ 273 00f4 89       		.byte	-119
+ 274 00f5 01       		.byte	1
+ 275 00f6 93       		.byte	-109
+ 276 00f7 01       		.byte	1
+ 277 00f8 98       		.byte	-104
+ 278 00f9 02       		.byte	2
+ 279 00fa 9F       		.byte	-97
+ 280 00fb 01       		.byte	1
+ 281 00fc A4       		.byte	-92
+ 282 00fd 03       		.byte	3
+ 283 00fe A9       		.byte	-87
+ 284 00ff 01       		.byte	1
+ 285 0100 AC       		.byte	-84
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 6
+
+
+ 286 0101 03       		.byte	3
+ 287 0102 AD       		.byte	-83
+ 288 0103 01       		.byte	1
+ 289 0104 B0       		.byte	-80
+ 290 0105 03       		.byte	3
+ 291 0106 B1       		.byte	-79
+ 292 0107 01       		.byte	1
+ 293 0108 B8       		.byte	-72
+ 294 0109 02       		.byte	2
+ 295 010a BE       		.byte	-66
+ 296 010b 01       		.byte	1
+ 297 010c D8       		.byte	-40
+ 298 010d 04       		.byte	4
+ 299 010e D9       		.byte	-39
+ 300 010f 04       		.byte	4
+ 301 0110 DF       		.byte	-33
+ 302 0111 01       		.byte	1
+ 303 0112 01       		.byte	1
+ 304 0113 08       		.byte	8
+ 305 0114 02       		.byte	2
+ 306 0115 45       		.byte	69
+ 307 0116 04       		.byte	4
+ 308 0117 90       		.byte	-112
+ 309 0118 05       		.byte	5
+ 310 0119 08       		.byte	8
+ 311 011a 06       		.byte	6
+ 312 011b C1       		.byte	-63
+ 313 011c 07       		.byte	7
+ 314 011d 0A       		.byte	10
+ 315 011e 09       		.byte	9
+ 316 011f 02       		.byte	2
+ 317 0120 0A       		.byte	10
+ 318 0121 10       		.byte	16
+ 319 0122 0B       		.byte	11
+ 320 0123 09       		.byte	9
+ 321 0124 0E       		.byte	14
+ 322 0125 14       		.byte	20
+ 323 0126 0F       		.byte	15
+ 324 0127 01       		.byte	1
+ 325 0128 10       		.byte	16
+ 326 0129 40       		.byte	64
+ 327 012a 13       		.byte	19
+ 328 012b 98       		.byte	-104
+ 329 012c 14       		.byte	20
+ 330 012d 42       		.byte	66
+ 331 012e 15       		.byte	21
+ 332 012f 08       		.byte	8
+ 333 0130 16       		.byte	22
+ 334 0131 0C       		.byte	12
+ 335 0132 17       		.byte	23
+ 336 0133 80       		.byte	-128
+ 337 0134 19       		.byte	25
+ 338 0135 80       		.byte	-128
+ 339 0136 1C       		.byte	28
+ 340 0137 40       		.byte	64
+ 341 0138 21       		.byte	33
+ 342 0139 05       		.byte	5
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 7
+
+
+ 343 013a 23       		.byte	35
+ 344 013b 90       		.byte	-112
+ 345 013c 25       		.byte	37
+ 346 013d 01       		.byte	1
+ 347 013e 29       		.byte	41
+ 348 013f 08       		.byte	8
+ 349 0140 2E       		.byte	46
+ 350 0141 B0       		.byte	-80
+ 351 0142 30       		.byte	48
+ 352 0143 80       		.byte	-128
+ 353 0144 31       		.byte	49
+ 354 0145 02       		.byte	2
+ 355 0146 32       		.byte	50
+ 356 0147 10       		.byte	16
+ 357 0148 33       		.byte	51
+ 358 0149 02       		.byte	2
+ 359 014a 34       		.byte	52
+ 360 014b 40       		.byte	64
+ 361 014c 37       		.byte	55
+ 362 014d 02       		.byte	2
+ 363 014e 39       		.byte	57
+ 364 014f 02       		.byte	2
+ 365 0150 3B       		.byte	59
+ 366 0151 18       		.byte	24
+ 367 0152 3C       		.byte	60
+ 368 0153 10       		.byte	16
+ 369 0154 3E       		.byte	62
+ 370 0155 08       		.byte	8
+ 371 0156 3F       		.byte	63
+ 372 0157 01       		.byte	1
+ 373 0158 89       		.byte	-119
+ 374 0159 02       		.byte	2
+ 375 015a 8A       		.byte	-118
+ 376 015b 04       		.byte	4
+ 377 015c C0       		.byte	-64
+ 378 015d FF       		.byte	-1
+ 379 015e C2       		.byte	-62
+ 380 015f EF       		.byte	-17
+ 381 0160 C4       		.byte	-60
+ 382 0161 FF       		.byte	-1
+ 383 0162 CA       		.byte	-54
+ 384 0163 32       		.byte	50
+ 385 0164 CC       		.byte	-52
+ 386 0165 9D       		.byte	-99
+ 387 0166 CE       		.byte	-50
+ 388 0167 E7       		.byte	-25
+ 389 0168 00       		.byte	0
+ 390 0169 03       		.byte	3
+ 391 016a 01       		.byte	1
+ 392 016b 01       		.byte	1
+ 393 016c 04       		.byte	4
+ 394 016d 02       		.byte	2
+ 395 016e 05       		.byte	5
+ 396 016f 01       		.byte	1
+ 397 0170 06       		.byte	6
+ 398 0171 01       		.byte	1
+ 399 0172 08       		.byte	8
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 8
+
+
+ 400 0173 03       		.byte	3
+ 401 0174 09       		.byte	9
+ 402 0175 01       		.byte	1
+ 403 0176 0E       		.byte	14
+ 404 0177 03       		.byte	3
+ 405 0178 13       		.byte	19
+ 406 0179 01       		.byte	1
+ 407 017a 1C       		.byte	28
+ 408 017b 03       		.byte	3
+ 409 017c 1D       		.byte	29
+ 410 017d 01       		.byte	1
+ 411 017e 20       		.byte	32
+ 412 017f 01       		.byte	1
+ 413 0180 22       		.byte	34
+ 414 0181 02       		.byte	2
+ 415 0182 28       		.byte	40
+ 416 0183 02       		.byte	2
+ 417 0184 2A       		.byte	42
+ 418 0185 01       		.byte	1
+ 419 0186 2B       		.byte	43
+ 420 0187 01       		.byte	1
+ 421 0188 2D       		.byte	45
+ 422 0189 01       		.byte	1
+ 423 018a 32       		.byte	50
+ 424 018b 02       		.byte	2
+ 425 018c 33       		.byte	51
+ 426 018d 01       		.byte	1
+ 427 018e 34       		.byte	52
+ 428 018f 01       		.byte	1
+ 429 0190 58       		.byte	88
+ 430 0191 04       		.byte	4
+ 431 0192 59       		.byte	89
+ 432 0193 04       		.byte	4
+ 433 0194 5F       		.byte	95
+ 434 0195 01       		.byte	1
+ 435 0196 85       		.byte	-123
+ 436 0197 09       		.byte	9
+ 437 0198 86       		.byte	-122
+ 438 0199 03       		.byte	3
+ 439 019a 87       		.byte	-121
+ 440 019b 10       		.byte	16
+ 441 019c 89       		.byte	-119
+ 442 019d 30       		.byte	48
+ 443 019e 8B       		.byte	-117
+ 444 019f 0C       		.byte	12
+ 445 01a0 8C       		.byte	-116
+ 446 01a1 0C       		.byte	12
+ 447 01a2 8D       		.byte	-115
+ 448 01a3 2C       		.byte	44
+ 449 01a4 8E       		.byte	-114
+ 450 01a5 03       		.byte	3
+ 451 01a6 8F       		.byte	-113
+ 452 01a7 11       		.byte	17
+ 453 01a8 93       		.byte	-109
+ 454 01a9 03       		.byte	3
+ 455 01aa 96       		.byte	-106
+ 456 01ab 0C       		.byte	12
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 9
+
+
+ 457 01ac 99       		.byte	-103
+ 458 01ad 14       		.byte	20
+ 459 01ae 9D       		.byte	-99
+ 460 01af 10       		.byte	16
+ 461 01b0 A2       		.byte	-94
+ 462 01b1 08       		.byte	8
+ 463 01b2 A5       		.byte	-91
+ 464 01b3 40       		.byte	64
+ 465 01b4 A8       		.byte	-88
+ 466 01b5 01       		.byte	1
+ 467 01b6 A9       		.byte	-87
+ 468 01b7 80       		.byte	-128
+ 469 01b8 AA       		.byte	-86
+ 470 01b9 06       		.byte	6
+ 471 01ba AC       		.byte	-84
+ 472 01bb 01       		.byte	1
+ 473 01bc AD       		.byte	-83
+ 474 01bd 1C       		.byte	28
+ 475 01be AE       		.byte	-82
+ 476 01bf 0E       		.byte	14
+ 477 01c0 AF       		.byte	-81
+ 478 01c1 22       		.byte	34
+ 479 01c2 B1       		.byte	-79
+ 480 01c3 1F       		.byte	31
+ 481 01c4 B3       		.byte	-77
+ 482 01c5 80       		.byte	-128
+ 483 01c6 B4       		.byte	-76
+ 484 01c7 0F       		.byte	15
+ 485 01c8 B5       		.byte	-75
+ 486 01c9 60       		.byte	96
+ 487 01ca B9       		.byte	-71
+ 488 01cb 20       		.byte	32
+ 489 01cc BA       		.byte	-70
+ 490 01cd 20       		.byte	32
+ 491 01ce BF       		.byte	-65
+ 492 01cf 04       		.byte	4
+ 493 01d0 C0       		.byte	-64
+ 494 01d1 63       		.byte	99
+ 495 01d2 C1       		.byte	-63
+ 496 01d3 01       		.byte	1
+ 497 01d4 C5       		.byte	-59
+ 498 01d5 0B       		.byte	11
+ 499 01d6 C6       		.byte	-58
+ 500 01d7 E0       		.byte	-32
+ 501 01d8 C7       		.byte	-57
+ 502 01d9 0C       		.byte	12
+ 503 01da C8       		.byte	-56
+ 504 01db 19       		.byte	25
+ 505 01dc C9       		.byte	-55
+ 506 01dd FF       		.byte	-1
+ 507 01de CA       		.byte	-54
+ 508 01df FF       		.byte	-1
+ 509 01e0 CB       		.byte	-53
+ 510 01e1 FF       		.byte	-1
+ 511 01e2 CE       		.byte	-50
+ 512 01e3 F0       		.byte	-16
+ 513 01e4 CF       		.byte	-49
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 10
+
+
+ 514 01e5 44       		.byte	68
+ 515 01e6 D0       		.byte	-48
+ 516 01e7 0C       		.byte	12
+ 517 01e8 D4       		.byte	-44
+ 518 01e9 01       		.byte	1
+ 519 01ea D8       		.byte	-40
+ 520 01eb 04       		.byte	4
+ 521 01ec D9       		.byte	-39
+ 522 01ed 04       		.byte	4
+ 523 01ee DA       		.byte	-38
+ 524 01ef 04       		.byte	4
+ 525 01f0 DB       		.byte	-37
+ 526 01f1 04       		.byte	4
+ 527 01f2 DC       		.byte	-36
+ 528 01f3 11       		.byte	17
+ 529 01f4 DD       		.byte	-35
+ 530 01f5 11       		.byte	17
+ 531 01f6 DF       		.byte	-33
+ 532 01f7 01       		.byte	1
+ 533 01f8 E6       		.byte	-26
+ 534 01f9 C0       		.byte	-64
+ 535 01fa EA       		.byte	-22
+ 536 01fb 40       		.byte	64
+ 537 01fc EB       		.byte	-21
+ 538 01fd 02       		.byte	2
+ 539 01fe 01       		.byte	1
+ 540 01ff 08       		.byte	8
+ 541 0200 03       		.byte	3
+ 542 0201 02       		.byte	2
+ 543 0202 04       		.byte	4
+ 544 0203 90       		.byte	-112
+ 545 0204 06       		.byte	6
+ 546 0205 E0       		.byte	-32
+ 547 0206 07       		.byte	7
+ 548 0207 02       		.byte	2
+ 549 0208 0A       		.byte	10
+ 550 0209 20       		.byte	32
+ 551 020a 0F       		.byte	15
+ 552 020b 01       		.byte	1
+ 553 020c 10       		.byte	16
+ 554 020d 80       		.byte	-128
+ 555 020e 13       		.byte	19
+ 556 020f 90       		.byte	-112
+ 557 0210 14       		.byte	20
+ 558 0211 40       		.byte	64
+ 559 0212 16       		.byte	22
+ 560 0213 04       		.byte	4
+ 561 0214 1A       		.byte	26
+ 562 0215 04       		.byte	4
+ 563 0216 1F       		.byte	31
+ 564 0217 28       		.byte	40
+ 565 0218 20       		.byte	32
+ 566 0219 04       		.byte	4
+ 567 021a 22       		.byte	34
+ 568 021b 15       		.byte	21
+ 569 021c 27       		.byte	39
+ 570 021d 20       		.byte	32
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 11
+
+
+ 571 021e 28       		.byte	40
+ 572 021f 20       		.byte	32
+ 573 0220 29       		.byte	41
+ 574 0221 08       		.byte	8
+ 575 0222 2A       		.byte	42
+ 576 0223 10       		.byte	16
+ 577 0224 2B       		.byte	43
+ 578 0225 02       		.byte	2
+ 579 0226 2E       		.byte	46
+ 580 0227 A0       		.byte	-96
+ 581 0228 30       		.byte	48
+ 582 0229 A0       		.byte	-96
+ 583 022a 32       		.byte	50
+ 584 022b 01       		.byte	1
+ 585 022c 34       		.byte	52
+ 586 022d 40       		.byte	64
+ 587 022e 37       		.byte	55
+ 588 022f 02       		.byte	2
+ 589 0230 38       		.byte	56
+ 590 0231 04       		.byte	4
+ 591 0232 39       		.byte	57
+ 592 0233 80       		.byte	-128
+ 593 0234 3B       		.byte	59
+ 594 0235 10       		.byte	16
+ 595 0236 3C       		.byte	60
+ 596 0237 10       		.byte	16
+ 597 0238 3E       		.byte	62
+ 598 0239 08       		.byte	8
+ 599 023a 3F       		.byte	63
+ 600 023b 01       		.byte	1
+ 601 023c 40       		.byte	64
+ 602 023d 22       		.byte	34
+ 603 023e 41       		.byte	65
+ 604 023f 40       		.byte	64
+ 605 0240 48       		.byte	72
+ 606 0241 20       		.byte	32
+ 607 0242 4B       		.byte	75
+ 608 0243 10       		.byte	16
+ 609 0244 52       		.byte	82
+ 610 0245 10       		.byte	16
+ 611 0246 53       		.byte	83
+ 612 0247 04       		.byte	4
+ 613 0248 58       		.byte	88
+ 614 0249 01       		.byte	1
+ 615 024a 59       		.byte	89
+ 616 024b A0       		.byte	-96
+ 617 024c 5A       		.byte	90
+ 618 024d 08       		.byte	8
+ 619 024e 65       		.byte	101
+ 620 024f 20       		.byte	32
+ 621 0250 67       		.byte	103
+ 622 0251 08       		.byte	8
+ 623 0252 83       		.byte	-125
+ 624 0253 20       		.byte	32
+ 625 0254 8B       		.byte	-117
+ 626 0255 20       		.byte	32
+ 627 0256 90       		.byte	-112
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 12
+
+
+ 628 0257 40       		.byte	64
+ 629 0258 93       		.byte	-109
+ 630 0259 10       		.byte	16
+ 631 025a 94       		.byte	-108
+ 632 025b 90       		.byte	-112
+ 633 025c 96       		.byte	-106
+ 634 025d 24       		.byte	36
+ 635 025e 97       		.byte	-105
+ 636 025f 09       		.byte	9
+ 637 0260 98       		.byte	-104
+ 638 0261 02       		.byte	2
+ 639 0262 99       		.byte	-103
+ 640 0263 80       		.byte	-128
+ 641 0264 9A       		.byte	-102
+ 642 0265 08       		.byte	8
+ 643 0266 9B       		.byte	-101
+ 644 0267 80       		.byte	-128
+ 645 0268 9C       		.byte	-100
+ 646 0269 40       		.byte	64
+ 647 026a 9D       		.byte	-99
+ 648 026b 08       		.byte	8
+ 649 026c 9E       		.byte	-98
+ 650 026d 64       		.byte	100
+ 651 026e A1       		.byte	-95
+ 652 026f 01       		.byte	1
+ 653 0270 A3       		.byte	-93
+ 654 0271 02       		.byte	2
+ 655 0272 A4       		.byte	-92
+ 656 0273 80       		.byte	-128
+ 657 0274 C0       		.byte	-64
+ 658 0275 F5       		.byte	-11
+ 659 0276 C2       		.byte	-62
+ 660 0277 84       		.byte	-124
+ 661 0278 C4       		.byte	-60
+ 662 0279 5B       		.byte	91
+ 663 027a CA       		.byte	-54
+ 664 027b 3E       		.byte	62
+ 665 027c CC       		.byte	-52
+ 666 027d 9D       		.byte	-99
+ 667 027e CE       		.byte	-50
+ 668 027f EE       		.byte	-18
+ 669 0280 D0       		.byte	-48
+ 670 0281 0A       		.byte	10
+ 671 0282 D2       		.byte	-46
+ 672 0283 04       		.byte	4
+ 673 0284 D6       		.byte	-42
+ 674 0285 0F       		.byte	15
+ 675 0286 E2       		.byte	-30
+ 676 0287 80       		.byte	-128
+ 677 0288 40       		.byte	64
+ 678 0289 04       		.byte	4
+ 679 028a 46       		.byte	70
+ 680 028b 04       		.byte	4
+ 681 028c 49       		.byte	73
+ 682 028d FF       		.byte	-1
+ 683 028e 4A       		.byte	74
+ 684 028f 07       		.byte	7
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 13
+
+
+ 685 0290 4B       		.byte	75
+ 686 0291 FF       		.byte	-1
+ 687 0292 4C       		.byte	76
+ 688 0293 40       		.byte	64
+ 689 0294 4D       		.byte	77
+ 690 0295 20       		.byte	32
+ 691 0296 4E       		.byte	78
+ 692 0297 F0       		.byte	-16
+ 693 0298 4F       		.byte	79
+ 694 0299 05       		.byte	5
+ 695 029a 50       		.byte	80
+ 696 029b 08       		.byte	8
+ 697 029c 58       		.byte	88
+ 698 029d 04       		.byte	4
+ 699 029e 59       		.byte	89
+ 700 029f 04       		.byte	4
+ 701 02a0 5A       		.byte	90
+ 702 02a1 04       		.byte	4
+ 703 02a2 5D       		.byte	93
+ 704 02a3 01       		.byte	1
+ 705 02a4 5F       		.byte	95
+ 706 02a5 01       		.byte	1
+ 707 02a6 60       		.byte	96
+ 708 02a7 40       		.byte	64
+ 709 02a8 61       		.byte	97
+ 710 02a9 A8       		.byte	-88
+ 711 02aa 62       		.byte	98
+ 712 02ab 40       		.byte	64
+ 713 02ac 63       		.byte	99
+ 714 02ad 20       		.byte	32
+ 715 02ae 81       		.byte	-127
+ 716 02af 03       		.byte	3
+ 717 02b0 88       		.byte	-120
+ 718 02b1 03       		.byte	3
+ 719 02b2 89       		.byte	-119
+ 720 02b3 03       		.byte	3
+ 721 02b4 8D       		.byte	-115
+ 722 02b5 03       		.byte	3
+ 723 02b6 90       		.byte	-112
+ 724 02b7 03       		.byte	3
+ 725 02b8 93       		.byte	-109
+ 726 02b9 03       		.byte	3
+ 727 02ba 96       		.byte	-106
+ 728 02bb 03       		.byte	3
+ 729 02bc 9D       		.byte	-99
+ 730 02bd 03       		.byte	3
+ 731 02be 9E       		.byte	-98
+ 732 02bf 03       		.byte	3
+ 733 02c0 A0       		.byte	-96
+ 734 02c1 03       		.byte	3
+ 735 02c2 A8       		.byte	-88
+ 736 02c3 02       		.byte	2
+ 737 02c4 A9       		.byte	-87
+ 738 02c5 03       		.byte	3
+ 739 02c6 AA       		.byte	-86
+ 740 02c7 01       		.byte	1
+ 741 02c8 AD       		.byte	-83
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 14
+
+
+ 742 02c9 02       		.byte	2
+ 743 02ca AE       		.byte	-82
+ 744 02cb 03       		.byte	3
+ 745 02cc AF       		.byte	-81
+ 746 02cd 01       		.byte	1
+ 747 02ce B2       		.byte	-78
+ 748 02cf 01       		.byte	1
+ 749 02d0 B4       		.byte	-76
+ 750 02d1 02       		.byte	2
+ 751 02d2 B5       		.byte	-75
+ 752 02d3 01       		.byte	1
+ 753 02d4 B7       		.byte	-73
+ 754 02d5 02       		.byte	2
+ 755 02d6 D8       		.byte	-40
+ 756 02d7 04       		.byte	4
+ 757 02d8 D9       		.byte	-39
+ 758 02d9 04       		.byte	4
+ 759 02da DB       		.byte	-37
+ 760 02db 04       		.byte	4
+ 761 02dc DF       		.byte	-33
+ 762 02dd 01       		.byte	1
+ 763 02de 00       		.byte	0
+ 764 02df 10       		.byte	16
+ 765 02e0 04       		.byte	4
+ 766 02e1 10       		.byte	16
+ 767 02e2 08       		.byte	8
+ 768 02e3 40       		.byte	64
+ 769 02e4 09       		.byte	9
+ 770 02e5 08       		.byte	8
+ 771 02e6 0B       		.byte	11
+ 772 02e7 40       		.byte	64
+ 773 02e8 0C       		.byte	12
+ 774 02e9 40       		.byte	64
+ 775 02ea 0D       		.byte	13
+ 776 02eb 09       		.byte	9
+ 777 02ec 10       		.byte	16
+ 778 02ed 01       		.byte	1
+ 779 02ee 12       		.byte	18
+ 780 02ef 04       		.byte	4
+ 781 02f0 13       		.byte	19
+ 782 02f1 01       		.byte	1
+ 783 02f2 14       		.byte	20
+ 784 02f3 01       		.byte	1
+ 785 02f4 16       		.byte	22
+ 786 02f5 44       		.byte	68
+ 787 02f6 1D       		.byte	29
+ 788 02f7 20       		.byte	32
+ 789 02f8 1F       		.byte	31
+ 790 02f9 04       		.byte	4
+ 791 02fa 24       		.byte	36
+ 792 02fb 08       		.byte	8
+ 793 02fc 27       		.byte	39
+ 794 02fd 02       		.byte	2
+ 795 02fe 28       		.byte	40
+ 796 02ff 41       		.byte	65
+ 797 0300 2A       		.byte	42
+ 798 0301 04       		.byte	4
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 15
+
+
+ 799 0302 2E       		.byte	46
+ 800 0303 A0       		.byte	-96
+ 801 0304 31       		.byte	49
+ 802 0305 08       		.byte	8
+ 803 0306 34       		.byte	52
+ 804 0307 41       		.byte	65
+ 805 0308 38       		.byte	56
+ 806 0309 10       		.byte	16
+ 807 030a 39       		.byte	57
+ 808 030b 02       		.byte	2
+ 809 030c 3A       		.byte	58
+ 810 030d 40       		.byte	64
+ 811 030e 3B       		.byte	59
+ 812 030f 41       		.byte	65
+ 813 0310 3C       		.byte	60
+ 814 0311 10       		.byte	16
+ 815 0312 3F       		.byte	63
+ 816 0313 41       		.byte	65
+ 817 0314 40       		.byte	64
+ 818 0315 40       		.byte	64
+ 819 0316 49       		.byte	73
+ 820 0317 08       		.byte	8
+ 821 0318 50       		.byte	80
+ 822 0319 80       		.byte	-128
+ 823 031a 6C       		.byte	108
+ 824 031b 10       		.byte	16
+ 825 031c 6D       		.byte	109
+ 826 031d 01       		.byte	1
+ 827 031e 6F       		.byte	111
+ 828 031f 0A       		.byte	10
+ 829 0320 74       		.byte	116
+ 830 0321 10       		.byte	16
+ 831 0322 75       		.byte	117
+ 832 0323 04       		.byte	4
+ 833 0324 76       		.byte	118
+ 834 0325 02       		.byte	2
+ 835 0326 77       		.byte	119
+ 836 0327 80       		.byte	-128
+ 837 0328 81       		.byte	-127
+ 838 0329 20       		.byte	32
+ 839 032a 87       		.byte	-121
+ 840 032b 82       		.byte	-126
+ 841 032c 8B       		.byte	-117
+ 842 032d 04       		.byte	4
+ 843 032e 8C       		.byte	-116
+ 844 032f 14       		.byte	20
+ 845 0330 8E       		.byte	-114
+ 846 0331 02       		.byte	2
+ 847 0332 90       		.byte	-112
+ 848 0333 40       		.byte	64
+ 849 0334 92       		.byte	-110
+ 850 0335 02       		.byte	2
+ 851 0336 94       		.byte	-108
+ 852 0337 90       		.byte	-112
+ 853 0338 97       		.byte	-105
+ 854 0339 01       		.byte	1
+ 855 033a 9C       		.byte	-100
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 16
+
+
+ 856 033b 40       		.byte	64
+ 857 033c 9D       		.byte	-99
+ 858 033d 08       		.byte	8
+ 859 033e 9E       		.byte	-98
+ 860 033f 64       		.byte	100
+ 861 0340 A4       		.byte	-92
+ 862 0341 80       		.byte	-128
+ 863 0342 AB       		.byte	-85
+ 864 0343 08       		.byte	8
+ 865 0344 AC       		.byte	-84
+ 866 0345 01       		.byte	1
+ 867 0346 AE       		.byte	-82
+ 868 0347 10       		.byte	16
+ 869 0348 B5       		.byte	-75
+ 870 0349 01       		.byte	1
+ 871 034a C0       		.byte	-64
+ 872 034b 42       		.byte	66
+ 873 034c C2       		.byte	-62
+ 874 034d BD       		.byte	-67
+ 875 034e C4       		.byte	-60
+ 876 034f DB       		.byte	-37
+ 877 0350 CA       		.byte	-54
+ 878 0351 3B       		.byte	59
+ 879 0352 CC       		.byte	-52
+ 880 0353 92       		.byte	-110
+ 881 0354 CE       		.byte	-50
+ 882 0355 BD       		.byte	-67
+ 883 0356 D0       		.byte	-48
+ 884 0357 01       		.byte	1
+ 885 0358 E2       		.byte	-30
+ 886 0359 90       		.byte	-112
+ 887 035a E6       		.byte	-26
+ 888 035b 42       		.byte	66
+ 889 035c EA       		.byte	-22
+ 890 035d 10       		.byte	16
+ 891 035e 58       		.byte	88
+ 892 035f 04       		.byte	4
+ 893 0360 59       		.byte	89
+ 894 0361 04       		.byte	4
+ 895 0362 5F       		.byte	95
+ 896 0363 01       		.byte	1
+ 897 0364 83       		.byte	-125
+ 898 0365 02       		.byte	2
+ 899 0366 8E       		.byte	-114
+ 900 0367 01       		.byte	1
+ 901 0368 91       		.byte	-111
+ 902 0369 04       		.byte	4
+ 903 036a 92       		.byte	-110
+ 904 036b 01       		.byte	1
+ 905 036c 9B       		.byte	-101
+ 906 036d 02       		.byte	2
+ 907 036e 9F       		.byte	-97
+ 908 036f 01       		.byte	1
+ 909 0370 B0       		.byte	-80
+ 910 0371 01       		.byte	1
+ 911 0372 B1       		.byte	-79
+ 912 0373 04       		.byte	4
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 17
+
+
+ 913 0374 B3       		.byte	-77
+ 914 0375 01       		.byte	1
+ 915 0376 B5       		.byte	-75
+ 916 0377 02       		.byte	2
+ 917 0378 BE       		.byte	-66
+ 918 0379 01       		.byte	1
+ 919 037a BF       		.byte	-65
+ 920 037b 11       		.byte	17
+ 921 037c D4       		.byte	-44
+ 922 037d 18       		.byte	24
+ 923 037e D8       		.byte	-40
+ 924 037f 04       		.byte	4
+ 925 0380 D9       		.byte	-39
+ 926 0381 04       		.byte	4
+ 927 0382 DB       		.byte	-37
+ 928 0383 04       		.byte	4
+ 929 0384 DD       		.byte	-35
+ 930 0385 10       		.byte	16
+ 931 0386 DF       		.byte	-33
+ 932 0387 01       		.byte	1
+ 933 0388 00       		.byte	0
+ 934 0389 10       		.byte	16
+ 935 038a 01       		.byte	1
+ 936 038b 40       		.byte	64
+ 937 038c 03       		.byte	3
+ 938 038d 20       		.byte	32
+ 939 038e 04       		.byte	4
+ 940 038f 90       		.byte	-112
+ 941 0390 05       		.byte	5
+ 942 0391 C0       		.byte	-64
+ 943 0392 06       		.byte	6
+ 944 0393 40       		.byte	64
+ 945 0394 08       		.byte	8
+ 946 0395 44       		.byte	68
+ 947 0396 09       		.byte	9
+ 948 0397 01       		.byte	1
+ 949 0398 0F       		.byte	15
+ 950 0399 11       		.byte	17
+ 951 039a 10       		.byte	16
+ 952 039b 01       		.byte	1
+ 953 039c 12       		.byte	18
+ 954 039d 40       		.byte	64
+ 955 039e 13       		.byte	19
+ 956 039f 10       		.byte	16
+ 957 03a0 14       		.byte	20
+ 958 03a1 40       		.byte	64
+ 959 03a2 16       		.byte	22
+ 960 03a3 04       		.byte	4
+ 961 03a4 1B       		.byte	27
+ 962 03a5 01       		.byte	1
+ 963 03a6 21       		.byte	33
+ 964 03a7 09       		.byte	9
+ 965 03a8 23       		.byte	35
+ 966 03a9 14       		.byte	20
+ 967 03aa 28       		.byte	40
+ 968 03ab 41       		.byte	65
+ 969 03ac 29       		.byte	41
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 18
+
+
+ 970 03ad 40       		.byte	64
+ 971 03ae 2B       		.byte	43
+ 972 03af 20       		.byte	32
+ 973 03b0 2D       		.byte	45
+ 974 03b1 80       		.byte	-128
+ 975 03b2 30       		.byte	48
+ 976 03b3 20       		.byte	32
+ 977 03b4 31       		.byte	49
+ 978 03b5 08       		.byte	8
+ 979 03b6 32       		.byte	50
+ 980 03b7 01       		.byte	1
+ 981 03b8 33       		.byte	51
+ 982 03b9 40       		.byte	64
+ 983 03ba 34       		.byte	52
+ 984 03bb 44       		.byte	68
+ 985 03bc 36       		.byte	54
+ 986 03bd 09       		.byte	9
+ 987 03be 38       		.byte	56
+ 988 03bf 10       		.byte	16
+ 989 03c0 3A       		.byte	58
+ 990 03c1 45       		.byte	69
+ 991 03c2 3B       		.byte	59
+ 992 03c3 40       		.byte	64
+ 993 03c4 3E       		.byte	62
+ 994 03c5 20       		.byte	32
+ 995 03c6 3F       		.byte	63
+ 996 03c7 41       		.byte	65
+ 997 03c8 45       		.byte	69
+ 998 03c9 08       		.byte	8
+ 999 03ca 46       		.byte	70
+ 1000 03cb 20       		.byte	32
+ 1001 03cc 5B       		.byte	91
+ 1002 03cd 01       		.byte	1
+ 1003 03ce 63       		.byte	99
+ 1004 03cf 06       		.byte	6
+ 1005 03d0 81       		.byte	-127
+ 1006 03d1 01       		.byte	1
+ 1007 03d2 82       		.byte	-126
+ 1008 03d3 01       		.byte	1
+ 1009 03d4 89       		.byte	-119
+ 1010 03d5 08       		.byte	8
+ 1011 03d6 8C       		.byte	-116
+ 1012 03d7 10       		.byte	16
+ 1013 03d8 8E       		.byte	-114
+ 1014 03d9 01       		.byte	1
+ 1015 03da 91       		.byte	-111
+ 1016 03db 01       		.byte	1
+ 1017 03dc 92       		.byte	-110
+ 1018 03dd 02       		.byte	2
+ 1019 03de 94       		.byte	-108
+ 1020 03df 90       		.byte	-112
+ 1021 03e0 97       		.byte	-105
+ 1022 03e1 01       		.byte	1
+ 1023 03e2 9C       		.byte	-100
+ 1024 03e3 41       		.byte	65
+ 1025 03e4 9E       		.byte	-98
+ 1026 03e5 64       		.byte	100
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 19
+
+
+ 1027 03e6 A3       		.byte	-93
+ 1028 03e7 08       		.byte	8
+ 1029 03e8 A5       		.byte	-91
+ 1030 03e9 08       		.byte	8
+ 1031 03ea AA       		.byte	-86
+ 1032 03eb 84       		.byte	-124
+ 1033 03ec AB       		.byte	-85
+ 1034 03ed 02       		.byte	2
+ 1035 03ee AC       		.byte	-84
+ 1036 03ef 10       		.byte	16
+ 1037 03f0 B0       		.byte	-80
+ 1038 03f1 41       		.byte	65
+ 1039 03f2 B5       		.byte	-75
+ 1040 03f3 04       		.byte	4
+ 1041 03f4 C0       		.byte	-64
+ 1042 03f5 D7       		.byte	-41
+ 1043 03f6 C2       		.byte	-62
+ 1044 03f7 AD       		.byte	-83
+ 1045 03f8 C4       		.byte	-60
+ 1046 03f9 5B       		.byte	91
+ 1047 03fa CA       		.byte	-54
+ 1048 03fb 1B       		.byte	27
+ 1049 03fc CC       		.byte	-52
+ 1050 03fd DF       		.byte	-33
+ 1051 03fe CE       		.byte	-50
+ 1052 03ff BF       		.byte	-65
+ 1053 0400 D6       		.byte	-42
+ 1054 0401 01       		.byte	1
+ 1055 0402 D8       		.byte	-40
+ 1056 0403 0C       		.byte	12
+ 1057 0404 E2       		.byte	-30
+ 1058 0405 04       		.byte	4
+ 1059 0406 E6       		.byte	-26
+ 1060 0407 01       		.byte	1
+ 1061 0408 E8       		.byte	-24
+ 1062 0409 29       		.byte	41
+ 1063 040a EA       		.byte	-22
+ 1064 040b 10       		.byte	16
+ 1065 040c EE       		.byte	-18
+ 1066 040d 04       		.byte	4
+ 1067 040e 06       		.byte	6
+ 1068 040f 02       		.byte	2
+ 1069 0410 09       		.byte	9
+ 1070 0411 06       		.byte	6
+ 1071 0412 0D       		.byte	13
+ 1072 0413 06       		.byte	6
+ 1073 0414 0F       		.byte	15
+ 1074 0415 09       		.byte	9
+ 1075 0416 12       		.byte	18
+ 1076 0417 01       		.byte	1
+ 1077 0418 13       		.byte	19
+ 1078 0419 01       		.byte	1
+ 1079 041a 15       		.byte	21
+ 1080 041b 09       		.byte	9
+ 1081 041c 17       		.byte	23
+ 1082 041d 06       		.byte	6
+ 1083 041e 19       		.byte	25
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 20
+
+
+ 1084 041f 07       		.byte	7
+ 1085 0420 1A       		.byte	26
+ 1086 0421 02       		.byte	2
+ 1087 0422 1B       		.byte	27
+ 1088 0423 08       		.byte	8
+ 1089 0424 21       		.byte	33
+ 1090 0425 04       		.byte	4
+ 1091 0426 25       		.byte	37
+ 1092 0427 02       		.byte	2
+ 1093 0428 29       		.byte	41
+ 1094 0429 0F       		.byte	15
+ 1095 042a 33       		.byte	51
+ 1096 042b 07       		.byte	7
+ 1097 042c 35       		.byte	53
+ 1098 042d 08       		.byte	8
+ 1099 042e 36       		.byte	54
+ 1100 042f 03       		.byte	3
+ 1101 0430 39       		.byte	57
+ 1102 0431 20       		.byte	32
+ 1103 0432 3E       		.byte	62
+ 1104 0433 40       		.byte	64
+ 1105 0434 40       		.byte	64
+ 1106 0435 35       		.byte	53
+ 1107 0436 41       		.byte	65
+ 1108 0437 06       		.byte	6
+ 1109 0438 42       		.byte	66
+ 1110 0439 02       		.byte	2
+ 1111 043a 44       		.byte	68
+ 1112 043b 01       		.byte	1
+ 1113 043c 45       		.byte	69
+ 1114 043d E0       		.byte	-32
+ 1115 043e 47       		.byte	71
+ 1116 043f 0C       		.byte	12
+ 1117 0440 48       		.byte	72
+ 1118 0441 12       		.byte	18
+ 1119 0442 49       		.byte	73
+ 1120 0443 FF       		.byte	-1
+ 1121 0444 4A       		.byte	74
+ 1122 0445 FF       		.byte	-1
+ 1123 0446 4B       		.byte	75
+ 1124 0447 FF       		.byte	-1
+ 1125 0448 4C       		.byte	76
+ 1126 0449 62       		.byte	98
+ 1127 044a 4D       		.byte	77
+ 1128 044b A0       		.byte	-96
+ 1129 044c 4E       		.byte	78
+ 1130 044d F0       		.byte	-16
+ 1131 044e 4F       		.byte	79
+ 1132 044f 41       		.byte	65
+ 1133 0450 50       		.byte	80
+ 1134 0451 0C       		.byte	12
+ 1135 0452 56       		.byte	86
+ 1136 0453 08       		.byte	8
+ 1137 0454 58       		.byte	88
+ 1138 0455 04       		.byte	4
+ 1139 0456 59       		.byte	89
+ 1140 0457 04       		.byte	4
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 21
+
+
+ 1141 0458 5A       		.byte	90
+ 1142 0459 04       		.byte	4
+ 1143 045a 5B       		.byte	91
+ 1144 045b 04       		.byte	4
+ 1145 045c 5C       		.byte	92
+ 1146 045d 10       		.byte	16
+ 1147 045e 5D       		.byte	93
+ 1148 045f 91       		.byte	-111
+ 1149 0460 5F       		.byte	95
+ 1150 0461 01       		.byte	1
+ 1151 0462 66       		.byte	102
+ 1152 0463 40       		.byte	64
+ 1153 0464 67       		.byte	103
+ 1154 0465 02       		.byte	2
+ 1155 0466 69       		.byte	105
+ 1156 0467 10       		.byte	16
+ 1157 0468 6A       		.byte	106
+ 1158 0469 30       		.byte	48
+ 1159 046a 6B       		.byte	107
+ 1160 046b 10       		.byte	16
+ 1161 046c 6D       		.byte	109
+ 1162 046d 10       		.byte	16
+ 1163 046e 6E       		.byte	110
+ 1164 046f 10       		.byte	16
+ 1165 0470 6F       		.byte	111
+ 1166 0471 12       		.byte	18
+ 1167 0472 83       		.byte	-125
+ 1168 0473 03       		.byte	3
+ 1169 0474 84       		.byte	-124
+ 1170 0475 04       		.byte	4
+ 1171 0476 8C       		.byte	-116
+ 1172 0477 04       		.byte	4
+ 1173 0478 91       		.byte	-111
+ 1174 0479 01       		.byte	1
+ 1175 047a 92       		.byte	-110
+ 1176 047b 02       		.byte	2
+ 1177 047c 94       		.byte	-108
+ 1178 047d 04       		.byte	4
+ 1179 047e 98       		.byte	-104
+ 1180 047f 04       		.byte	4
+ 1181 0480 9E       		.byte	-98
+ 1182 0481 01       		.byte	1
+ 1183 0482 A8       		.byte	-88
+ 1184 0483 01       		.byte	1
+ 1185 0484 B0       		.byte	-80
+ 1186 0485 04       		.byte	4
+ 1187 0486 B1       		.byte	-79
+ 1188 0487 02       		.byte	2
+ 1189 0488 B3       		.byte	-77
+ 1190 0489 01       		.byte	1
+ 1191 048a B6       		.byte	-74
+ 1192 048b 03       		.byte	3
+ 1193 048c BE       		.byte	-66
+ 1194 048d 01       		.byte	1
+ 1195 048e D4       		.byte	-44
+ 1196 048f 01       		.byte	1
+ 1197 0490 D8       		.byte	-40
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 22
+
+
+ 1198 0491 04       		.byte	4
+ 1199 0492 D9       		.byte	-39
+ 1200 0493 0C       		.byte	12
+ 1201 0494 DB       		.byte	-37
+ 1202 0495 0C       		.byte	12
+ 1203 0496 DC       		.byte	-36
+ 1204 0497 09       		.byte	9
+ 1205 0498 DF       		.byte	-33
+ 1206 0499 01       		.byte	1
+ 1207 049a 00       		.byte	0
+ 1208 049b 48       		.byte	72
+ 1209 049c 02       		.byte	2
+ 1210 049d 20       		.byte	32
+ 1211 049e 05       		.byte	5
+ 1212 049f 28       		.byte	40
+ 1213 04a0 07       		.byte	7
+ 1214 04a1 01       		.byte	1
+ 1215 04a2 08       		.byte	8
+ 1216 04a3 01       		.byte	1
+ 1217 04a4 09       		.byte	9
+ 1218 04a5 08       		.byte	8
+ 1219 04a6 0A       		.byte	10
+ 1220 04a7 09       		.byte	9
+ 1221 04a8 0D       		.byte	13
+ 1222 04a9 01       		.byte	1
+ 1223 04aa 0F       		.byte	15
+ 1224 04ab 2A       		.byte	42
+ 1225 04ac 12       		.byte	18
+ 1226 04ad 08       		.byte	8
+ 1227 04ae 15       		.byte	21
+ 1228 04af 48       		.byte	72
+ 1229 04b0 17       		.byte	23
+ 1230 04b1 20       		.byte	32
+ 1231 04b2 18       		.byte	24
+ 1232 04b3 02       		.byte	2
+ 1233 04b4 19       		.byte	25
+ 1234 04b5 01       		.byte	1
+ 1235 04b6 1A       		.byte	26
+ 1236 04b7 01       		.byte	1
+ 1237 04b8 1D       		.byte	29
+ 1238 04b9 80       		.byte	-128
+ 1239 04ba 21       		.byte	33
+ 1240 04bb 02       		.byte	2
+ 1241 04bc 22       		.byte	34
+ 1242 04bd 08       		.byte	8
+ 1243 04be 24       		.byte	36
+ 1244 04bf 04       		.byte	4
+ 1245 04c0 26       		.byte	38
+ 1246 04c1 04       		.byte	4
+ 1247 04c2 27       		.byte	39
+ 1248 04c3 10       		.byte	16
+ 1249 04c4 2C       		.byte	44
+ 1250 04c5 80       		.byte	-128
+ 1251 04c6 2D       		.byte	45
+ 1252 04c7 10       		.byte	16
+ 1253 04c8 2E       		.byte	46
+ 1254 04c9 04       		.byte	4
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 23
+
+
+ 1255 04ca 31       		.byte	49
+ 1256 04cb 02       		.byte	2
+ 1257 04cc 36       		.byte	54
+ 1258 04cd 22       		.byte	34
+ 1259 04ce 37       		.byte	55
+ 1260 04cf 04       		.byte	4
+ 1261 04d0 38       		.byte	56
+ 1262 04d1 02       		.byte	2
+ 1263 04d2 39       		.byte	57
+ 1264 04d3 08       		.byte	8
+ 1265 04d4 3A       		.byte	58
+ 1266 04d5 04       		.byte	4
+ 1267 04d6 3B       		.byte	59
+ 1268 04d7 08       		.byte	8
+ 1269 04d8 3C       		.byte	60
+ 1270 04d9 40       		.byte	64
+ 1271 04da 3E       		.byte	62
+ 1272 04db 20       		.byte	32
+ 1273 04dc 45       		.byte	69
+ 1274 04dd 88       		.byte	-120
+ 1275 04de 47       		.byte	71
+ 1276 04df 14       		.byte	20
+ 1277 04e0 4C       		.byte	76
+ 1278 04e1 40       		.byte	64
+ 1279 04e2 4D       		.byte	77
+ 1280 04e3 10       		.byte	16
+ 1281 04e4 4E       		.byte	78
+ 1282 04e5 07       		.byte	7
+ 1283 04e6 57       		.byte	87
+ 1284 04e7 08       		.byte	8
+ 1285 04e8 5A       		.byte	90
+ 1286 04e9 40       		.byte	64
+ 1287 04ea 5E       		.byte	94
+ 1288 04eb 80       		.byte	-128
+ 1289 04ec 64       		.byte	100
+ 1290 04ed 01       		.byte	1
+ 1291 04ee 7B       		.byte	123
+ 1292 04ef 02       		.byte	2
+ 1293 04f0 80       		.byte	-128
+ 1294 04f1 04       		.byte	4
+ 1295 04f2 83       		.byte	-125
+ 1296 04f3 08       		.byte	8
+ 1297 04f4 8B       		.byte	-117
+ 1298 04f5 01       		.byte	1
+ 1299 04f6 8C       		.byte	-116
+ 1300 04f7 80       		.byte	-128
+ 1301 04f8 8D       		.byte	-115
+ 1302 04f9 20       		.byte	32
+ 1303 04fa 92       		.byte	-110
+ 1304 04fb 10       		.byte	16
+ 1305 04fc 93       		.byte	-109
+ 1306 04fd 88       		.byte	-120
+ 1307 04fe 95       		.byte	-107
+ 1308 04ff 40       		.byte	64
+ 1309 0500 9B       		.byte	-101
+ 1310 0501 20       		.byte	32
+ 1311 0502 9D       		.byte	-99
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 24
+
+
+ 1312 0503 20       		.byte	32
+ 1313 0504 9F       		.byte	-97
+ 1314 0505 01       		.byte	1
+ 1315 0506 A2       		.byte	-94
+ 1316 0507 40       		.byte	64
+ 1317 0508 A3       		.byte	-93
+ 1318 0509 12       		.byte	18
+ 1319 050a A7       		.byte	-89
+ 1320 050b 01       		.byte	1
+ 1321 050c A9       		.byte	-87
+ 1322 050d 08       		.byte	8
+ 1323 050e AA       		.byte	-86
+ 1324 050f 48       		.byte	72
+ 1325 0510 B2       		.byte	-78
+ 1326 0511 43       		.byte	67
+ 1327 0512 B3       		.byte	-77
+ 1328 0513 AC       		.byte	-84
+ 1329 0514 C0       		.byte	-64
+ 1330 0515 E5       		.byte	-27
+ 1331 0516 C2       		.byte	-62
+ 1332 0517 FF       		.byte	-1
+ 1333 0518 C4       		.byte	-60
+ 1334 0519 E2       		.byte	-30
+ 1335 051a CA       		.byte	-54
+ 1336 051b E0       		.byte	-32
+ 1337 051c CC       		.byte	-52
+ 1338 051d E1       		.byte	-31
+ 1339 051e CE       		.byte	-50
+ 1340 051f 31       		.byte	49
+ 1341 0520 D0       		.byte	-48
+ 1342 0521 70       		.byte	112
+ 1343 0522 D2       		.byte	-46
+ 1344 0523 30       		.byte	48
+ 1345 0524 D6       		.byte	-42
+ 1346 0525 18       		.byte	24
+ 1347 0526 D8       		.byte	-40
+ 1348 0527 10       		.byte	16
+ 1349 0528 DE       		.byte	-34
+ 1350 0529 08       		.byte	8
+ 1351 052a E0       		.byte	-32
+ 1352 052b 10       		.byte	16
+ 1353 052c E4       		.byte	-28
+ 1354 052d 20       		.byte	32
+ 1355 052e E8       		.byte	-24
+ 1356 052f A8       		.byte	-88
+ 1357 0530 EC       		.byte	-20
+ 1358 0531 20       		.byte	32
+ 1359 0532 EE       		.byte	-18
+ 1360 0533 04       		.byte	4
+ 1361 0534 07       		.byte	7
+ 1362 0535 04       		.byte	4
+ 1363 0536 13       		.byte	19
+ 1364 0537 02       		.byte	2
+ 1365 0538 1A       		.byte	26
+ 1366 0539 02       		.byte	2
+ 1367 053a 1E       		.byte	30
+ 1368 053b 04       		.byte	4
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 25
+
+
+ 1369 053c 1F       		.byte	31
+ 1370 053d 08       		.byte	8
+ 1371 053e 22       		.byte	34
+ 1372 053f 01       		.byte	1
+ 1373 0540 23       		.byte	35
+ 1374 0541 01       		.byte	1
+ 1375 0542 2E       		.byte	46
+ 1376 0543 08       		.byte	8
+ 1377 0544 30       		.byte	48
+ 1378 0545 04       		.byte	4
+ 1379 0546 31       		.byte	49
+ 1380 0547 08       		.byte	8
+ 1381 0548 32       		.byte	50
+ 1382 0549 01       		.byte	1
+ 1383 054a 33       		.byte	51
+ 1384 054b 01       		.byte	1
+ 1385 054c 34       		.byte	52
+ 1386 054d 02       		.byte	2
+ 1387 054e 35       		.byte	53
+ 1388 054f 02       		.byte	2
+ 1389 0550 36       		.byte	54
+ 1390 0551 08       		.byte	8
+ 1391 0552 37       		.byte	55
+ 1392 0553 04       		.byte	4
+ 1393 0554 58       		.byte	88
+ 1394 0555 04       		.byte	4
+ 1395 0556 59       		.byte	89
+ 1396 0557 04       		.byte	4
+ 1397 0558 5B       		.byte	91
+ 1398 0559 04       		.byte	4
+ 1399 055a 5C       		.byte	92
+ 1400 055b 22       		.byte	34
+ 1401 055c 5F       		.byte	95
+ 1402 055d 01       		.byte	1
+ 1403 055e A4       		.byte	-92
+ 1404 055f 01       		.byte	1
+ 1405 0560 A8       		.byte	-88
+ 1406 0561 01       		.byte	1
+ 1407 0562 B6       		.byte	-74
+ 1408 0563 01       		.byte	1
+ 1409 0564 B8       		.byte	-72
+ 1410 0565 80       		.byte	-128
+ 1411 0566 BE       		.byte	-66
+ 1412 0567 40       		.byte	64
+ 1413 0568 D2       		.byte	-46
+ 1414 0569 03       		.byte	3
+ 1415 056a D3       		.byte	-45
+ 1416 056b 02       		.byte	2
+ 1417 056c D8       		.byte	-40
+ 1418 056d 04       		.byte	4
+ 1419 056e D9       		.byte	-39
+ 1420 056f 04       		.byte	4
+ 1421 0570 DB       		.byte	-37
+ 1422 0571 04       		.byte	4
+ 1423 0572 DF       		.byte	-33
+ 1424 0573 01       		.byte	1
+ 1425 0574 05       		.byte	5
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 26
+
+
+ 1426 0575 20       		.byte	32
+ 1427 0576 06       		.byte	6
+ 1428 0577 02       		.byte	2
+ 1429 0578 07       		.byte	7
+ 1430 0579 20       		.byte	32
+ 1431 057a 08       		.byte	8
+ 1432 057b 20       		.byte	32
+ 1433 057c 09       		.byte	9
+ 1434 057d 40       		.byte	64
+ 1435 057e 0D       		.byte	13
+ 1436 057f 08       		.byte	8
+ 1437 0580 0F       		.byte	15
+ 1438 0581 22       		.byte	34
+ 1439 0582 10       		.byte	16
+ 1440 0583 42       		.byte	66
+ 1441 0584 15       		.byte	21
+ 1442 0585 40       		.byte	64
+ 1443 0586 17       		.byte	23
+ 1444 0587 15       		.byte	21
+ 1445 0588 18       		.byte	24
+ 1446 0589 50       		.byte	80
+ 1447 058a 19       		.byte	25
+ 1448 058b 10       		.byte	16
+ 1449 058c 1A       		.byte	26
+ 1450 058d 01       		.byte	1
+ 1451 058e 1F       		.byte	31
+ 1452 058f 40       		.byte	64
+ 1453 0590 20       		.byte	32
+ 1454 0591 04       		.byte	4
+ 1455 0592 22       		.byte	34
+ 1456 0593 09       		.byte	9
+ 1457 0594 23       		.byte	35
+ 1458 0595 01       		.byte	1
+ 1459 0596 29       		.byte	41
+ 1460 0597 02       		.byte	2
+ 1461 0598 2D       		.byte	45
+ 1462 0599 20       		.byte	32
+ 1463 059a 2F       		.byte	47
+ 1464 059b 80       		.byte	-128
+ 1465 059c 31       		.byte	49
+ 1466 059d 81       		.byte	-127
+ 1467 059e 37       		.byte	55
+ 1468 059f 21       		.byte	33
+ 1469 05a0 38       		.byte	56
+ 1470 05a1 08       		.byte	8
+ 1471 05a2 3D       		.byte	61
+ 1472 05a3 40       		.byte	64
+ 1473 05a4 3F       		.byte	63
+ 1474 05a5 22       		.byte	34
+ 1475 05a6 59       		.byte	89
+ 1476 05a7 10       		.byte	16
+ 1477 05a8 5A       		.byte	90
+ 1478 05a9 42       		.byte	66
+ 1479 05aa 5B       		.byte	91
+ 1480 05ab 08       		.byte	8
+ 1481 05ac 60       		.byte	96
+ 1482 05ad 54       		.byte	84
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 27
+
+
+ 1483 05ae 63       		.byte	99
+ 1484 05af 01       		.byte	1
+ 1485 05b0 69       		.byte	105
+ 1486 05b1 90       		.byte	-112
+ 1487 05b2 6E       		.byte	110
+ 1488 05b3 10       		.byte	16
+ 1489 05b4 6F       		.byte	111
+ 1490 05b5 06       		.byte	6
+ 1491 05b6 89       		.byte	-119
+ 1492 05b7 10       		.byte	16
+ 1493 05b8 8D       		.byte	-115
+ 1494 05b9 40       		.byte	64
+ 1495 05ba 8F       		.byte	-113
+ 1496 05bb 10       		.byte	16
+ 1497 05bc 90       		.byte	-112
+ 1498 05bd 08       		.byte	8
+ 1499 05be 98       		.byte	-104
+ 1500 05bf 60       		.byte	96
+ 1501 05c0 99       		.byte	-103
+ 1502 05c1 03       		.byte	3
+ 1503 05c2 A0       		.byte	-96
+ 1504 05c3 02       		.byte	2
+ 1505 05c4 A1       		.byte	-95
+ 1506 05c5 C0       		.byte	-64
+ 1507 05c6 B0       		.byte	-80
+ 1508 05c7 40       		.byte	64
+ 1509 05c8 B1       		.byte	-79
+ 1510 05c9 40       		.byte	64
+ 1511 05ca B5       		.byte	-75
+ 1512 05cb 83       		.byte	-125
+ 1513 05cc C0       		.byte	-64
+ 1514 05cd E0       		.byte	-32
+ 1515 05ce C2       		.byte	-62
+ 1516 05cf A3       		.byte	-93
+ 1517 05d0 C4       		.byte	-60
+ 1518 05d1 F9       		.byte	-7
+ 1519 05d2 CA       		.byte	-54
+ 1520 05d3 A1       		.byte	-95
+ 1521 05d4 CC       		.byte	-52
+ 1522 05d5 A9       		.byte	-87
+ 1523 05d6 CE       		.byte	-50
+ 1524 05d7 B2       		.byte	-78
+ 1525 05d8 D6       		.byte	-42
+ 1526 05d9 0F       		.byte	15
+ 1527 05da D8       		.byte	-40
+ 1528 05db 0F       		.byte	15
+ 1529 05dc E0       		.byte	-32
+ 1530 05dd 40       		.byte	64
+ 1531 05de E6       		.byte	-26
+ 1532 05df 02       		.byte	2
+ 1533 05e0 88       		.byte	-120
+ 1534 05e1 22       		.byte	34
+ 1535 05e2 8C       		.byte	-116
+ 1536 05e3 04       		.byte	4
+ 1537 05e4 58       		.byte	88
+ 1538 05e5 04       		.byte	4
+ 1539 05e6 59       		.byte	89
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 28
+
+
+ 1540 05e7 04       		.byte	4
+ 1541 05e8 5F       		.byte	95
+ 1542 05e9 01       		.byte	1
+ 1543 05ea 82       		.byte	-126
+ 1544 05eb 10       		.byte	16
+ 1545 05ec 83       		.byte	-125
+ 1546 05ed 02       		.byte	2
+ 1547 05ee 86       		.byte	-122
+ 1548 05ef 08       		.byte	8
+ 1549 05f0 87       		.byte	-121
+ 1550 05f1 08       		.byte	8
+ 1551 05f2 88       		.byte	-120
+ 1552 05f3 04       		.byte	4
+ 1553 05f4 8E       		.byte	-114
+ 1554 05f5 80       		.byte	-128
+ 1555 05f6 8F       		.byte	-113
+ 1556 05f7 04       		.byte	4
+ 1557 05f8 92       		.byte	-110
+ 1558 05f9 20       		.byte	32
+ 1559 05fa 94       		.byte	-108
+ 1560 05fb 08       		.byte	8
+ 1561 05fc 9A       		.byte	-102
+ 1562 05fd 04       		.byte	4
+ 1563 05fe 9B       		.byte	-101
+ 1564 05ff 01       		.byte	1
+ 1565 0600 9C       		.byte	-100
+ 1566 0601 01       		.byte	1
+ 1567 0602 A0       		.byte	-96
+ 1568 0603 02       		.byte	2
+ 1569 0604 A6       		.byte	-90
+ 1570 0605 01       		.byte	1
+ 1571 0606 AA       		.byte	-86
+ 1572 0607 02       		.byte	2
+ 1573 0608 AE       		.byte	-82
+ 1574 0609 40       		.byte	64
+ 1575 060a B0       		.byte	-80
+ 1576 060b 40       		.byte	64
+ 1577 060c B1       		.byte	-79
+ 1578 060d 04       		.byte	4
+ 1579 060e B2       		.byte	-78
+ 1580 060f 80       		.byte	-128
+ 1581 0610 B3       		.byte	-77
+ 1582 0611 02       		.byte	2
+ 1583 0612 B4       		.byte	-76
+ 1584 0613 20       		.byte	32
+ 1585 0614 B5       		.byte	-75
+ 1586 0615 01       		.byte	1
+ 1587 0616 B6       		.byte	-74
+ 1588 0617 1F       		.byte	31
+ 1589 0618 B7       		.byte	-73
+ 1590 0619 08       		.byte	8
+ 1591 061a B8       		.byte	-72
+ 1592 061b 80       		.byte	-128
+ 1593 061c BE       		.byte	-66
+ 1594 061d 40       		.byte	64
+ 1595 061e D8       		.byte	-40
+ 1596 061f 04       		.byte	4
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 29
+
+
+ 1597 0620 D9       		.byte	-39
+ 1598 0621 04       		.byte	4
+ 1599 0622 DB       		.byte	-37
+ 1600 0623 04       		.byte	4
+ 1601 0624 DC       		.byte	-36
+ 1602 0625 22       		.byte	34
+ 1603 0626 DF       		.byte	-33
+ 1604 0627 01       		.byte	1
+ 1605 0628 00       		.byte	0
+ 1606 0629 12       		.byte	18
+ 1607 062a 04       		.byte	4
+ 1608 062b 12       		.byte	18
+ 1609 062c 05       		.byte	5
+ 1610 062d 88       		.byte	-120
+ 1611 062e 09       		.byte	9
+ 1612 062f 08       		.byte	8
+ 1613 0630 0B       		.byte	11
+ 1614 0631 01       		.byte	1
+ 1615 0632 0C       		.byte	12
+ 1616 0633 20       		.byte	32
+ 1617 0634 0F       		.byte	15
+ 1618 0635 91       		.byte	-111
+ 1619 0636 10       		.byte	16
+ 1620 0637 02       		.byte	2
+ 1621 0638 12       		.byte	18
+ 1622 0639 40       		.byte	64
+ 1623 063a 13       		.byte	19
+ 1624 063b 10       		.byte	16
+ 1625 063c 14       		.byte	20
+ 1626 063d 10       		.byte	16
+ 1627 063e 15       		.byte	21
+ 1628 063f 10       		.byte	16
+ 1629 0640 16       		.byte	22
+ 1630 0641 42       		.byte	66
+ 1631 0642 1C       		.byte	28
+ 1632 0643 0A       		.byte	10
+ 1633 0644 1D       		.byte	29
+ 1634 0645 40       		.byte	64
+ 1635 0646 1E       		.byte	30
+ 1636 0647 01       		.byte	1
+ 1637 0648 1F       		.byte	31
+ 1638 0649 85       		.byte	-123
+ 1639 064a 26       		.byte	38
+ 1640 064b 01       		.byte	1
+ 1641 064c 27       		.byte	39
+ 1642 064d 29       		.byte	41
+ 1643 064e 2A       		.byte	42
+ 1644 064f 40       		.byte	64
+ 1645 0650 2B       		.byte	43
+ 1646 0651 80       		.byte	-128
+ 1647 0652 30       		.byte	48
+ 1648 0653 02       		.byte	2
+ 1649 0654 31       		.byte	49
+ 1650 0655 08       		.byte	8
+ 1651 0656 32       		.byte	50
+ 1652 0657 81       		.byte	-127
+ 1653 0658 35       		.byte	53
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 30
+
+
+ 1654 0659 01       		.byte	1
+ 1655 065a 37       		.byte	55
+ 1656 065b 11       		.byte	17
+ 1657 065c 38       		.byte	56
+ 1658 065d 10       		.byte	16
+ 1659 065e 3A       		.byte	58
+ 1660 065f 04       		.byte	4
+ 1661 0660 3F       		.byte	63
+ 1662 0661 46       		.byte	70
+ 1663 0662 5C       		.byte	92
+ 1664 0663 80       		.byte	-128
+ 1665 0664 5E       		.byte	94
+ 1666 0665 02       		.byte	2
+ 1667 0666 5F       		.byte	95
+ 1668 0667 28       		.byte	40
+ 1669 0668 65       		.byte	101
+ 1670 0669 01       		.byte	1
+ 1671 066a 66       		.byte	102
+ 1672 066b 08       		.byte	8
+ 1673 066c 67       		.byte	103
+ 1674 066d 0A       		.byte	10
+ 1675 066e 83       		.byte	-125
+ 1676 066f 40       		.byte	64
+ 1677 0670 84       		.byte	-124
+ 1678 0671 84       		.byte	-124
+ 1679 0672 85       		.byte	-123
+ 1680 0673 80       		.byte	-128
+ 1681 0674 86       		.byte	-122
+ 1682 0675 02       		.byte	2
+ 1683 0676 8B       		.byte	-117
+ 1684 0677 45       		.byte	69
+ 1685 0678 8F       		.byte	-113
+ 1686 0679 10       		.byte	16
+ 1687 067a 90       		.byte	-112
+ 1688 067b 12       		.byte	18
+ 1689 067c 91       		.byte	-111
+ 1690 067d 10       		.byte	16
+ 1691 067e 92       		.byte	-110
+ 1692 067f 02       		.byte	2
+ 1693 0680 93       		.byte	-109
+ 1694 0681 11       		.byte	17
+ 1695 0682 96       		.byte	-106
+ 1696 0683 01       		.byte	1
+ 1697 0684 98       		.byte	-104
+ 1698 0685 10       		.byte	16
+ 1699 0686 99       		.byte	-103
+ 1700 0687 08       		.byte	8
+ 1701 0688 9A       		.byte	-102
+ 1702 0689 4C       		.byte	76
+ 1703 068a 9D       		.byte	-99
+ 1704 068b 40       		.byte	64
+ 1705 068c A0       		.byte	-96
+ 1706 068d 20       		.byte	32
+ 1707 068e A1       		.byte	-95
+ 1708 068f 08       		.byte	8
+ 1709 0690 A2       		.byte	-94
+ 1710 0691 80       		.byte	-128
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 31
+
+
+ 1711 0692 A9       		.byte	-87
+ 1712 0693 08       		.byte	8
+ 1713 0694 AA       		.byte	-86
+ 1714 0695 08       		.byte	8
+ 1715 0696 AC       		.byte	-84
+ 1716 0697 40       		.byte	64
+ 1717 0698 AD       		.byte	-83
+ 1718 0699 10       		.byte	16
+ 1719 069a B0       		.byte	-80
+ 1720 069b 10       		.byte	16
+ 1721 069c B1       		.byte	-79
+ 1722 069d 01       		.byte	1
+ 1723 069e C0       		.byte	-64
+ 1724 069f FA       		.byte	-6
+ 1725 06a0 C2       		.byte	-62
+ 1726 06a1 F5       		.byte	-11
+ 1727 06a2 C4       		.byte	-60
+ 1728 06a3 FB       		.byte	-5
+ 1729 06a4 CA       		.byte	-54
+ 1730 06a5 09       		.byte	9
+ 1731 06a6 CC       		.byte	-52
+ 1732 06a7 2B       		.byte	43
+ 1733 06a8 CE       		.byte	-50
+ 1734 06a9 D6       		.byte	-42
+ 1735 06aa D6       		.byte	-42
+ 1736 06ab F0       		.byte	-16
+ 1737 06ac D8       		.byte	-40
+ 1738 06ad F0       		.byte	-16
+ 1739 06ae E0       		.byte	-32
+ 1740 06af A0       		.byte	-96
+ 1741 06b0 E4       		.byte	-28
+ 1742 06b1 64       		.byte	100
+ 1743 06b2 E8       		.byte	-24
+ 1744 06b3 10       		.byte	16
+ 1745 06b4 EA       		.byte	-22
+ 1746 06b5 02       		.byte	2
+ 1747 06b6 EE       		.byte	-18
+ 1748 06b7 85       		.byte	-123
+ 1749 06b8 1A       		.byte	26
+ 1750 06b9 01       		.byte	1
+ 1751 06ba 2A       		.byte	42
+ 1752 06bb 02       		.byte	2
+ 1753 06bc 32       		.byte	50
+ 1754 06bd 01       		.byte	1
+ 1755 06be 36       		.byte	54
+ 1756 06bf 02       		.byte	2
+ 1757 06c0 58       		.byte	88
+ 1758 06c1 04       		.byte	4
+ 1759 06c2 59       		.byte	89
+ 1760 06c3 04       		.byte	4
+ 1761 06c4 5F       		.byte	95
+ 1762 06c5 01       		.byte	1
+ 1763 06c6 82       		.byte	-126
+ 1764 06c7 02       		.byte	2
+ 1765 06c8 84       		.byte	-124
+ 1766 06c9 08       		.byte	8
+ 1767 06ca 8A       		.byte	-118
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 32
+
+
+ 1768 06cb 04       		.byte	4
+ 1769 06cc 8B       		.byte	-117
+ 1770 06cd 01       		.byte	1
+ 1771 06ce 8C       		.byte	-116
+ 1772 06cf 80       		.byte	-128
+ 1773 06d0 8E       		.byte	-114
+ 1774 06d1 40       		.byte	64
+ 1775 06d2 90       		.byte	-112
+ 1776 06d3 20       		.byte	32
+ 1777 06d4 92       		.byte	-110
+ 1778 06d5 10       		.byte	16
+ 1779 06d6 94       		.byte	-108
+ 1780 06d7 10       		.byte	16
+ 1781 06d8 96       		.byte	-106
+ 1782 06d9 20       		.byte	32
+ 1783 06da 98       		.byte	-104
+ 1784 06db 02       		.byte	2
+ 1785 06dc 9B       		.byte	-101
+ 1786 06dd 04       		.byte	4
+ 1787 06de 9C       		.byte	-100
+ 1788 06df 40       		.byte	64
+ 1789 06e0 9E       		.byte	-98
+ 1790 06e1 80       		.byte	-128
+ 1791 06e2 A2       		.byte	-94
+ 1792 06e3 01       		.byte	1
+ 1793 06e4 A4       		.byte	-92
+ 1794 06e5 01       		.byte	1
+ 1795 06e6 A7       		.byte	-89
+ 1796 06e7 02       		.byte	2
+ 1797 06e8 AA       		.byte	-86
+ 1798 06e9 08       		.byte	8
+ 1799 06ea AC       		.byte	-84
+ 1800 06eb 04       		.byte	4
+ 1801 06ec B1       		.byte	-79
+ 1802 06ed 01       		.byte	1
+ 1803 06ee B3       		.byte	-77
+ 1804 06ef 02       		.byte	2
+ 1805 06f0 B6       		.byte	-74
+ 1806 06f1 FF       		.byte	-1
+ 1807 06f2 B7       		.byte	-73
+ 1808 06f3 04       		.byte	4
+ 1809 06f4 BE       		.byte	-66
+ 1810 06f5 40       		.byte	64
+ 1811 06f6 D8       		.byte	-40
+ 1812 06f7 04       		.byte	4
+ 1813 06f8 D9       		.byte	-39
+ 1814 06f9 04       		.byte	4
+ 1815 06fa DF       		.byte	-33
+ 1816 06fb 01       		.byte	1
+ 1817 06fc 00       		.byte	0
+ 1818 06fd 92       		.byte	-110
+ 1819 06fe 01       		.byte	1
+ 1820 06ff 08       		.byte	8
+ 1821 0700 02       		.byte	2
+ 1822 0701 40       		.byte	64
+ 1823 0702 04       		.byte	4
+ 1824 0703 10       		.byte	16
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 33
+
+
+ 1825 0704 06       		.byte	6
+ 1826 0705 40       		.byte	64
+ 1827 0706 07       		.byte	7
+ 1828 0707 02       		.byte	2
+ 1829 0708 08       		.byte	8
+ 1830 0709 42       		.byte	66
+ 1831 070a 09       		.byte	9
+ 1832 070b 08       		.byte	8
+ 1833 070c 0A       		.byte	10
+ 1834 070d 0A       		.byte	10
+ 1835 070e 0C       		.byte	12
+ 1836 070f 20       		.byte	32
+ 1837 0710 0D       		.byte	13
+ 1838 0711 08       		.byte	8
+ 1839 0712 0E       		.byte	14
+ 1840 0713 01       		.byte	1
+ 1841 0714 10       		.byte	16
+ 1842 0715 10       		.byte	16
+ 1843 0716 12       		.byte	18
+ 1844 0717 8E       		.byte	-114
+ 1845 0718 14       		.byte	20
+ 1846 0719 40       		.byte	64
+ 1847 071a 15       		.byte	21
+ 1848 071b 18       		.byte	24
+ 1849 071c 18       		.byte	24
+ 1850 071d 02       		.byte	2
+ 1851 071e 1C       		.byte	28
+ 1852 071f 12       		.byte	18
+ 1853 0720 1F       		.byte	31
+ 1854 0721 08       		.byte	8
+ 1855 0722 21       		.byte	33
+ 1856 0723 04       		.byte	4
+ 1857 0724 22       		.byte	34
+ 1858 0725 89       		.byte	-119
+ 1859 0726 23       		.byte	35
+ 1860 0727 53       		.byte	83
+ 1861 0728 28       		.byte	40
+ 1862 0729 40       		.byte	64
+ 1863 072a 29       		.byte	41
+ 1864 072b 48       		.byte	72
+ 1865 072c 2B       		.byte	43
+ 1866 072d 08       		.byte	8
+ 1867 072e 2E       		.byte	46
+ 1868 072f 21       		.byte	33
+ 1869 0730 30       		.byte	48
+ 1870 0731 10       		.byte	16
+ 1871 0732 31       		.byte	49
+ 1872 0733 08       		.byte	8
+ 1873 0734 32       		.byte	50
+ 1874 0735 80       		.byte	-128
+ 1875 0736 36       		.byte	54
+ 1876 0737 88       		.byte	-120
+ 1877 0738 39       		.byte	57
+ 1878 0739 20       		.byte	32
+ 1879 073a 3A       		.byte	58
+ 1880 073b 44       		.byte	68
+ 1881 073c 3C       		.byte	60
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 34
+
+
+ 1882 073d 12       		.byte	18
+ 1883 073e 3F       		.byte	63
+ 1884 073f 40       		.byte	64
+ 1885 0740 80       		.byte	-128
+ 1886 0741 22       		.byte	34
+ 1887 0742 82       		.byte	-126
+ 1888 0743 82       		.byte	-126
+ 1889 0744 83       		.byte	-125
+ 1890 0745 60       		.byte	96
+ 1891 0746 85       		.byte	-123
+ 1892 0747 10       		.byte	16
+ 1893 0748 86       		.byte	-122
+ 1894 0749 04       		.byte	4
+ 1895 074a 88       		.byte	-120
+ 1896 074b 01       		.byte	1
+ 1897 074c 8B       		.byte	-117
+ 1898 074d 01       		.byte	1
+ 1899 074e 91       		.byte	-111
+ 1900 074f 01       		.byte	1
+ 1901 0750 94       		.byte	-108
+ 1902 0751 10       		.byte	16
+ 1903 0752 97       		.byte	-105
+ 1904 0753 01       		.byte	1
+ 1905 0754 9A       		.byte	-102
+ 1906 0755 20       		.byte	32
+ 1907 0756 9C       		.byte	-100
+ 1908 0757 40       		.byte	64
+ 1909 0758 9D       		.byte	-99
+ 1910 0759 40       		.byte	64
+ 1911 075a 9E       		.byte	-98
+ 1912 075b 44       		.byte	68
+ 1913 075c 9F       		.byte	-97
+ 1914 075d 41       		.byte	65
+ 1915 075e A1       		.byte	-95
+ 1916 075f 08       		.byte	8
+ 1917 0760 A6       		.byte	-90
+ 1918 0761 08       		.byte	8
+ 1919 0762 A7       		.byte	-89
+ 1920 0763 20       		.byte	32
+ 1921 0764 A8       		.byte	-88
+ 1922 0765 20       		.byte	32
+ 1923 0766 AB       		.byte	-85
+ 1924 0767 08       		.byte	8
+ 1925 0768 B1       		.byte	-79
+ 1926 0769 01       		.byte	1
+ 1927 076a B5       		.byte	-75
+ 1928 076b 40       		.byte	64
+ 1929 076c C0       		.byte	-64
+ 1930 076d DF       		.byte	-33
+ 1931 076e C2       		.byte	-62
+ 1932 076f EF       		.byte	-17
+ 1933 0770 C4       		.byte	-60
+ 1934 0771 7F       		.byte	127
+ 1935 0772 CA       		.byte	-54
+ 1936 0773 AF       		.byte	-81
+ 1937 0774 CC       		.byte	-52
+ 1938 0775 5E       		.byte	94
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 35
+
+
+ 1939 0776 CE       		.byte	-50
+ 1940 0777 BE       		.byte	-66
+ 1941 0778 E2       		.byte	-30
+ 1942 0779 01       		.byte	1
+ 1943 077a E4       		.byte	-28
+ 1944 077b 04       		.byte	4
+ 1945 077c E6       		.byte	-26
+ 1946 077d 09       		.byte	9
+ 1947 077e EA       		.byte	-22
+ 1948 077f 03       		.byte	3
+ 1949 0780 EE       		.byte	-18
+ 1950 0781 40       		.byte	64
+ 1951 0782 0F       		.byte	15
+ 1952 0783 02       		.byte	2
+ 1953 0784 17       		.byte	23
+ 1954 0785 01       		.byte	1
+ 1955 0786 27       		.byte	39
+ 1956 0787 04       		.byte	4
+ 1957 0788 31       		.byte	49
+ 1958 0789 04       		.byte	4
+ 1959 078a 33       		.byte	51
+ 1960 078b 01       		.byte	1
+ 1961 078c 37       		.byte	55
+ 1962 078d 02       		.byte	2
+ 1963 078e 56       		.byte	86
+ 1964 078f 02       		.byte	2
+ 1965 0790 57       		.byte	87
+ 1966 0791 3D       		.byte	61
+ 1967 0792 58       		.byte	88
+ 1968 0793 04       		.byte	4
+ 1969 0794 59       		.byte	89
+ 1970 0795 04       		.byte	4
+ 1971 0796 5B       		.byte	91
+ 1972 0797 0C       		.byte	12
+ 1973 0798 5C       		.byte	92
+ 1974 0799 20       		.byte	32
+ 1975 079a 5F       		.byte	95
+ 1976 079b 01       		.byte	1
+ 1977 079c 81       		.byte	-127
+ 1978 079d 19       		.byte	25
+ 1979 079e 83       		.byte	-125
+ 1980 079f 06       		.byte	6
+ 1981 07a0 85       		.byte	-123
+ 1982 07a1 07       		.byte	7
+ 1983 07a2 8A       		.byte	-118
+ 1984 07a3 02       		.byte	2
+ 1985 07a4 8B       		.byte	-117
+ 1986 07a5 18       		.byte	24
+ 1987 07a6 8F       		.byte	-113
+ 1988 07a7 18       		.byte	24
+ 1989 07a8 92       		.byte	-110
+ 1990 07a9 04       		.byte	4
+ 1991 07aa 93       		.byte	-109
+ 1992 07ab 18       		.byte	24
+ 1993 07ac 95       		.byte	-107
+ 1994 07ad 18       		.byte	24
+ 1995 07ae 96       		.byte	-106
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 36
+
+
+ 1996 07af 01       		.byte	1
+ 1997 07b0 99       		.byte	-103
+ 1998 07b1 07       		.byte	7
+ 1999 07b2 A1       		.byte	-95
+ 2000 07b3 18       		.byte	24
+ 2001 07b4 A2       		.byte	-94
+ 2002 07b5 08       		.byte	8
+ 2003 07b6 A5       		.byte	-91
+ 2004 07b7 0A       		.byte	10
+ 2005 07b8 A7       		.byte	-89
+ 2006 07b9 01       		.byte	1
+ 2007 07ba A9       		.byte	-87
+ 2008 07bb 14       		.byte	20
+ 2009 07bc AB       		.byte	-85
+ 2010 07bd 01       		.byte	1
+ 2011 07be B0       		.byte	-80
+ 2012 07bf 01       		.byte	1
+ 2013 07c0 B1       		.byte	-79
+ 2014 07c1 07       		.byte	7
+ 2015 07c2 B2       		.byte	-78
+ 2016 07c3 04       		.byte	4
+ 2017 07c4 B4       		.byte	-76
+ 2018 07c5 08       		.byte	8
+ 2019 07c6 B5       		.byte	-75
+ 2020 07c7 18       		.byte	24
+ 2021 07c8 B6       		.byte	-74
+ 2022 07c9 02       		.byte	2
+ 2023 07ca D8       		.byte	-40
+ 2024 07cb 04       		.byte	4
+ 2025 07cc D9       		.byte	-39
+ 2026 07cd 04       		.byte	4
+ 2027 07ce DB       		.byte	-37
+ 2028 07cf 04       		.byte	4
+ 2029 07d0 DC       		.byte	-36
+ 2030 07d1 12       		.byte	18
+ 2031 07d2 DF       		.byte	-33
+ 2032 07d3 01       		.byte	1
+ 2033 07d4 00       		.byte	0
+ 2034 07d5 20       		.byte	32
+ 2035 07d6 06       		.byte	6
+ 2036 07d7 04       		.byte	4
+ 2037 07d8 07       		.byte	7
+ 2038 07d9 01       		.byte	1
+ 2039 07da 08       		.byte	8
+ 2040 07db 0A       		.byte	10
+ 2041 07dc 0F       		.byte	15
+ 2042 07dd 22       		.byte	34
+ 2043 07de 11       		.byte	17
+ 2044 07df 01       		.byte	1
+ 2045 07e0 14       		.byte	20
+ 2046 07e1 80       		.byte	-128
+ 2047 07e2 15       		.byte	21
+ 2048 07e3 40       		.byte	64
+ 2049 07e4 17       		.byte	23
+ 2050 07e5 20       		.byte	32
+ 2051 07e6 18       		.byte	24
+ 2052 07e7 05       		.byte	5
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 37
+
+
+ 2053 07e8 19       		.byte	25
+ 2054 07e9 04       		.byte	4
+ 2055 07ea 1A       		.byte	26
+ 2056 07eb 40       		.byte	64
+ 2057 07ec 21       		.byte	33
+ 2058 07ed 01       		.byte	1
+ 2059 07ee 23       		.byte	35
+ 2060 07ef 84       		.byte	-124
+ 2061 07f0 27       		.byte	39
+ 2062 07f1 52       		.byte	82
+ 2063 07f2 29       		.byte	41
+ 2064 07f3 08       		.byte	8
+ 2065 07f4 2A       		.byte	42
+ 2066 07f5 01       		.byte	1
+ 2067 07f6 2B       		.byte	43
+ 2068 07f7 04       		.byte	4
+ 2069 07f8 2F       		.byte	47
+ 2070 07f9 20       		.byte	32
+ 2071 07fa 32       		.byte	50
+ 2072 07fb 15       		.byte	21
+ 2073 07fc 36       		.byte	54
+ 2074 07fd 08       		.byte	8
+ 2075 07fe 38       		.byte	56
+ 2076 07ff 40       		.byte	64
+ 2077 0800 39       		.byte	57
+ 2078 0801 0A       		.byte	10
+ 2079 0802 3B       		.byte	59
+ 2080 0803 20       		.byte	32
+ 2081 0804 3C       		.byte	60
+ 2082 0805 80       		.byte	-128
+ 2083 0806 59       		.byte	89
+ 2084 0807 04       		.byte	4
+ 2085 0808 5A       		.byte	90
+ 2086 0809 40       		.byte	64
+ 2087 080a 5B       		.byte	91
+ 2088 080b 12       		.byte	18
+ 2089 080c 5E       		.byte	94
+ 2090 080d 10       		.byte	16
+ 2091 080e 60       		.byte	96
+ 2092 080f 05       		.byte	5
+ 2093 0810 67       		.byte	103
+ 2094 0811 80       		.byte	-128
+ 2095 0812 6C       		.byte	108
+ 2096 0813 44       		.byte	68
+ 2097 0814 6D       		.byte	109
+ 2098 0815 80       		.byte	-128
+ 2099 0816 6E       		.byte	110
+ 2100 0817 08       		.byte	8
+ 2101 0818 76       		.byte	118
+ 2102 0819 0A       		.byte	10
+ 2103 081a 7F       		.byte	127
+ 2104 081b 02       		.byte	2
+ 2105 081c 80       		.byte	-128
+ 2106 081d 44       		.byte	68
+ 2107 081e 81       		.byte	-127
+ 2108 081f 40       		.byte	64
+ 2109 0820 86       		.byte	-122
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 38
+
+
+ 2110 0821 02       		.byte	2
+ 2111 0822 89       		.byte	-119
+ 2112 0823 01       		.byte	1
+ 2113 0824 8B       		.byte	-117
+ 2114 0825 05       		.byte	5
+ 2115 0826 8C       		.byte	-116
+ 2116 0827 0A       		.byte	10
+ 2117 0828 8E       		.byte	-114
+ 2118 0829 08       		.byte	8
+ 2119 082a 92       		.byte	-110
+ 2120 082b 10       		.byte	16
+ 2121 082c 93       		.byte	-109
+ 2122 082d 88       		.byte	-120
+ 2123 082e 94       		.byte	-108
+ 2124 082f 40       		.byte	64
+ 2125 0830 95       		.byte	-107
+ 2126 0831 42       		.byte	66
+ 2127 0832 96       		.byte	-106
+ 2128 0833 0E       		.byte	14
+ 2129 0834 98       		.byte	-104
+ 2130 0835 80       		.byte	-128
+ 2131 0836 99       		.byte	-103
+ 2132 0837 01       		.byte	1
+ 2133 0838 9A       		.byte	-102
+ 2134 0839 04       		.byte	4
+ 2135 083a 9B       		.byte	-101
+ 2136 083b 21       		.byte	33
+ 2137 083c 9D       		.byte	-99
+ 2138 083d 08       		.byte	8
+ 2139 083e 9E       		.byte	-98
+ 2140 083f 20       		.byte	32
+ 2141 0840 A3       		.byte	-93
+ 2142 0841 12       		.byte	18
+ 2143 0842 A4       		.byte	-92
+ 2144 0843 84       		.byte	-124
+ 2145 0844 A5       		.byte	-91
+ 2146 0845 08       		.byte	8
+ 2147 0846 A7       		.byte	-89
+ 2148 0847 05       		.byte	5
+ 2149 0848 A8       		.byte	-88
+ 2150 0849 40       		.byte	64
+ 2151 084a B6       		.byte	-74
+ 2152 084b 4C       		.byte	76
+ 2153 084c C0       		.byte	-64
+ 2154 084d C2       		.byte	-62
+ 2155 084e C2       		.byte	-62
+ 2156 084f AC       		.byte	-84
+ 2157 0850 C4       		.byte	-60
+ 2158 0851 D8       		.byte	-40
+ 2159 0852 CA       		.byte	-54
+ 2160 0853 47       		.byte	71
+ 2161 0854 CC       		.byte	-52
+ 2162 0855 47       		.byte	71
+ 2163 0856 CE       		.byte	-50
+ 2164 0857 1F       		.byte	31
+ 2165 0858 D6       		.byte	-42
+ 2166 0859 2F       		.byte	47
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 39
+
+
+ 2167 085a D8       		.byte	-40
+ 2168 085b 8C       		.byte	-116
+ 2169 085c DE       		.byte	-34
+ 2170 085d 10       		.byte	16
+ 2171 085e E0       		.byte	-32
+ 2172 085f 80       		.byte	-128
+ 2173 0860 E6       		.byte	-26
+ 2174 0861 20       		.byte	32
+ 2175 0862 E8       		.byte	-24
+ 2176 0863 20       		.byte	32
+ 2177 0864 EA       		.byte	-22
+ 2178 0865 42       		.byte	66
+ 2179 0866 EE       		.byte	-18
+ 2180 0867 40       		.byte	64
+ 2181 0868 00       		.byte	0
+ 2182 0869 08       		.byte	8
+ 2183 086a 02       		.byte	2
+ 2184 086b 10       		.byte	16
+ 2185 086c 04       		.byte	4
+ 2186 086d 06       		.byte	6
+ 2187 086e 05       		.byte	5
+ 2188 086f 01       		.byte	1
+ 2189 0870 06       		.byte	6
+ 2190 0871 01       		.byte	1
+ 2191 0872 08       		.byte	8
+ 2192 0873 10       		.byte	16
+ 2193 0874 0A       		.byte	10
+ 2194 0875 08       		.byte	8
+ 2195 0876 0C       		.byte	12
+ 2196 0877 06       		.byte	6
+ 2197 0878 0D       		.byte	13
+ 2198 0879 01       		.byte	1
+ 2199 087a 0E       		.byte	14
+ 2200 087b 01       		.byte	1
+ 2201 087c 10       		.byte	16
+ 2202 087d 02       		.byte	2
+ 2203 087e 14       		.byte	20
+ 2204 087f 06       		.byte	6
+ 2205 0880 18       		.byte	24
+ 2206 0881 07       		.byte	7
+ 2207 0882 19       		.byte	25
+ 2208 0883 01       		.byte	1
+ 2209 0884 1E       		.byte	30
+ 2210 0885 01       		.byte	1
+ 2211 0886 20       		.byte	32
+ 2212 0887 04       		.byte	4
+ 2213 0888 24       		.byte	36
+ 2214 0889 18       		.byte	24
+ 2215 088a 28       		.byte	40
+ 2216 088b 18       		.byte	24
+ 2217 088c 2C       		.byte	44
+ 2218 088d 01       		.byte	1
+ 2219 088e 2E       		.byte	46
+ 2220 088f 06       		.byte	6
+ 2221 0890 30       		.byte	48
+ 2222 0891 07       		.byte	7
+ 2223 0892 31       		.byte	49
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 40
+
+
+ 2224 0893 01       		.byte	1
+ 2225 0894 32       		.byte	50
+ 2226 0895 18       		.byte	24
+ 2227 0896 3A       		.byte	58
+ 2228 0897 22       		.byte	34
+ 2229 0898 56       		.byte	86
+ 2230 0899 02       		.byte	2
+ 2231 089a 57       		.byte	87
+ 2232 089b 13       		.byte	19
+ 2233 089c 58       		.byte	88
+ 2234 089d 04       		.byte	4
+ 2235 089e 59       		.byte	89
+ 2236 089f 04       		.byte	4
+ 2237 08a0 5B       		.byte	91
+ 2238 08a1 04       		.byte	4
+ 2239 08a2 5C       		.byte	92
+ 2240 08a3 11       		.byte	17
+ 2241 08a4 5D       		.byte	93
+ 2242 08a5 10       		.byte	16
+ 2243 08a6 5F       		.byte	95
+ 2244 08a7 01       		.byte	1
+ 2245 08a8 80       		.byte	-128
+ 2246 08a9 C0       		.byte	-64
+ 2247 08aa 84       		.byte	-124
+ 2248 08ab 44       		.byte	68
+ 2249 08ac 86       		.byte	-122
+ 2250 08ad 20       		.byte	32
+ 2251 08ae 88       		.byte	-120
+ 2252 08af 08       		.byte	8
+ 2253 08b0 8C       		.byte	-116
+ 2254 08b1 DC       		.byte	-36
+ 2255 08b2 8E       		.byte	-114
+ 2256 08b3 01       		.byte	1
+ 2257 08b4 92       		.byte	-110
+ 2258 08b5 04       		.byte	4
+ 2259 08b6 94       		.byte	-108
+ 2260 08b7 18       		.byte	24
+ 2261 08b8 98       		.byte	-104
+ 2262 08b9 80       		.byte	-128
+ 2263 08ba 9C       		.byte	-100
+ 2264 08bb 10       		.byte	16
+ 2265 08bc A2       		.byte	-94
+ 2266 08bd C3       		.byte	-61
+ 2267 08be A4       		.byte	-92
+ 2268 08bf 1C       		.byte	28
+ 2269 08c0 A6       		.byte	-90
+ 2270 08c1 C2       		.byte	-62
+ 2271 08c2 A8       		.byte	-88
+ 2272 08c3 DF       		.byte	-33
+ 2273 08c4 AC       		.byte	-84
+ 2274 08c5 C7       		.byte	-57
+ 2275 08c6 AE       		.byte	-82
+ 2276 08c7 18       		.byte	24
+ 2277 08c8 B0       		.byte	-80
+ 2278 08c9 20       		.byte	32
+ 2279 08ca B2       		.byte	-78
+ 2280 08cb D8       		.byte	-40
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 41
+
+
+ 2281 08cc B4       		.byte	-76
+ 2282 08cd 1F       		.byte	31
+ 2283 08ce BA       		.byte	-70
+ 2284 08cf 28       		.byte	40
+ 2285 08d0 D8       		.byte	-40
+ 2286 08d1 04       		.byte	4
+ 2287 08d2 D9       		.byte	-39
+ 2288 08d3 04       		.byte	4
+ 2289 08d4 DC       		.byte	-36
+ 2290 08d5 01       		.byte	1
+ 2291 08d6 DF       		.byte	-33
+ 2292 08d7 01       		.byte	1
+ 2293 08d8 00       		.byte	0
+ 2294 08d9 4A       		.byte	74
+ 2295 08da 03       		.byte	3
+ 2296 08db 08       		.byte	8
+ 2297 08dc 04       		.byte	4
+ 2298 08dd 40       		.byte	64
+ 2299 08de 05       		.byte	5
+ 2300 08df 08       		.byte	8
+ 2301 08e0 07       		.byte	7
+ 2302 08e1 88       		.byte	-120
+ 2303 08e2 09       		.byte	9
+ 2304 08e3 02       		.byte	2
+ 2305 08e4 0A       		.byte	10
+ 2306 08e5 1A       		.byte	26
+ 2307 08e6 0C       		.byte	12
+ 2308 08e7 80       		.byte	-128
+ 2309 08e8 0E       		.byte	14
+ 2310 08e9 50       		.byte	80
+ 2311 08ea 0F       		.byte	15
+ 2312 08eb 08       		.byte	8
+ 2313 08ec 10       		.byte	16
+ 2314 08ed A8       		.byte	-88
+ 2315 08ee 12       		.byte	18
+ 2316 08ef 03       		.byte	3
+ 2317 08f0 14       		.byte	20
+ 2318 08f1 24       		.byte	36
+ 2319 08f2 15       		.byte	21
+ 2320 08f3 02       		.byte	2
+ 2321 08f4 16       		.byte	22
+ 2322 08f5 01       		.byte	1
+ 2323 08f6 18       		.byte	24
+ 2324 08f7 40       		.byte	64
+ 2325 08f8 1A       		.byte	26
+ 2326 08f9 08       		.byte	8
+ 2327 08fa 1B       		.byte	27
+ 2328 08fb 0C       		.byte	12
+ 2329 08fc 1C       		.byte	28
+ 2330 08fd 08       		.byte	8
+ 2331 08fe 1D       		.byte	29
+ 2332 08ff 08       		.byte	8
+ 2333 0900 1E       		.byte	30
+ 2334 0901 40       		.byte	64
+ 2335 0902 1F       		.byte	31
+ 2336 0903 10       		.byte	16
+ 2337 0904 21       		.byte	33
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 42
+
+
+ 2338 0905 01       		.byte	1
+ 2339 0906 22       		.byte	34
+ 2340 0907 01       		.byte	1
+ 2341 0908 2D       		.byte	45
+ 2342 0909 40       		.byte	64
+ 2343 090a 2F       		.byte	47
+ 2344 090b 04       		.byte	4
+ 2345 090c 30       		.byte	48
+ 2346 090d 04       		.byte	4
+ 2347 090e 32       		.byte	50
+ 2348 090f 14       		.byte	20
+ 2349 0910 34       		.byte	52
+ 2350 0911 80       		.byte	-128
+ 2351 0912 37       		.byte	55
+ 2352 0913 21       		.byte	33
+ 2353 0914 39       		.byte	57
+ 2354 0915 88       		.byte	-120
+ 2355 0916 3F       		.byte	63
+ 2356 0917 22       		.byte	34
+ 2357 0918 59       		.byte	89
+ 2358 0919 01       		.byte	1
+ 2359 091a 64       		.byte	100
+ 2360 091b 20       		.byte	32
+ 2361 091c 67       		.byte	103
+ 2362 091d 20       		.byte	32
+ 2363 091e 68       		.byte	104
+ 2364 091f 28       		.byte	40
+ 2365 0920 69       		.byte	105
+ 2366 0921 88       		.byte	-120
+ 2367 0922 6A       		.byte	106
+ 2368 0923 20       		.byte	32
+ 2369 0924 70       		.byte	112
+ 2370 0925 80       		.byte	-128
+ 2371 0926 72       		.byte	114
+ 2372 0927 34       		.byte	52
+ 2373 0928 73       		.byte	115
+ 2374 0929 08       		.byte	8
+ 2375 092a 81       		.byte	-127
+ 2376 092b 08       		.byte	8
+ 2377 092c 82       		.byte	-126
+ 2378 092d 02       		.byte	2
+ 2379 092e 83       		.byte	-125
+ 2380 092f 20       		.byte	32
+ 2381 0930 88       		.byte	-120
+ 2382 0931 01       		.byte	1
+ 2383 0932 89       		.byte	-119
+ 2384 0933 0A       		.byte	10
+ 2385 0934 8A       		.byte	-118
+ 2386 0935 04       		.byte	4
+ 2387 0936 91       		.byte	-111
+ 2388 0937 40       		.byte	64
+ 2389 0938 93       		.byte	-109
+ 2390 0939 08       		.byte	8
+ 2391 093a 94       		.byte	-108
+ 2392 093b 40       		.byte	64
+ 2393 093c 95       		.byte	-107
+ 2394 093d 08       		.byte	8
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 43
+
+
+ 2395 093e 96       		.byte	-106
+ 2396 093f 2E       		.byte	46
+ 2397 0940 97       		.byte	-105
+ 2398 0941 20       		.byte	32
+ 2399 0942 98       		.byte	-104
+ 2400 0943 80       		.byte	-128
+ 2401 0944 99       		.byte	-103
+ 2402 0945 01       		.byte	1
+ 2403 0946 9B       		.byte	-101
+ 2404 0947 A1       		.byte	-95
+ 2405 0948 9D       		.byte	-99
+ 2406 0949 08       		.byte	8
+ 2407 094a 9E       		.byte	-98
+ 2408 094b 21       		.byte	33
+ 2409 094c A3       		.byte	-93
+ 2410 094d 11       		.byte	17
+ 2411 094e A4       		.byte	-92
+ 2412 094f 84       		.byte	-124
+ 2413 0950 A5       		.byte	-91
+ 2414 0951 08       		.byte	8
+ 2415 0952 A7       		.byte	-89
+ 2416 0953 24       		.byte	36
+ 2417 0954 AA       		.byte	-86
+ 2418 0955 04       		.byte	4
+ 2419 0956 AB       		.byte	-85
+ 2420 0957 40       		.byte	64
+ 2421 0958 AD       		.byte	-83
+ 2422 0959 40       		.byte	64
+ 2423 095a B0       		.byte	-80
+ 2424 095b 50       		.byte	80
+ 2425 095c B2       		.byte	-78
+ 2426 095d 08       		.byte	8
+ 2427 095e C0       		.byte	-64
+ 2428 095f FF       		.byte	-1
+ 2429 0960 C2       		.byte	-62
+ 2430 0961 FF       		.byte	-1
+ 2431 0962 C4       		.byte	-60
+ 2432 0963 FF       		.byte	-1
+ 2433 0964 CA       		.byte	-54
+ 2434 0965 30       		.byte	48
+ 2435 0966 CC       		.byte	-52
+ 2436 0967 B4       		.byte	-76
+ 2437 0968 CE       		.byte	-50
+ 2438 0969 AA       		.byte	-86
+ 2439 096a D6       		.byte	-42
+ 2440 096b 01       		.byte	1
+ 2441 096c E8       		.byte	-24
+ 2442 096d 10       		.byte	16
+ 2443 096e EA       		.byte	-22
+ 2444 096f 20       		.byte	32
+ 2445 0970 13       		.byte	19
+ 2446 0971 02       		.byte	2
+ 2447 0972 16       		.byte	22
+ 2448 0973 80       		.byte	-128
+ 2449 0974 30       		.byte	48
+ 2450 0975 80       		.byte	-128
+ 2451 0976 33       		.byte	51
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 44
+
+
+ 2452 0977 01       		.byte	1
+ 2453 0978 36       		.byte	54
+ 2454 0979 40       		.byte	64
+ 2455 097a 3B       		.byte	59
+ 2456 097b 02       		.byte	2
+ 2457 097c 3E       		.byte	62
+ 2458 097d 80       		.byte	-128
+ 2459 097e C4       		.byte	-60
+ 2460 097f 30       		.byte	48
+ 2461 0980 CC       		.byte	-52
+ 2462 0981 70       		.byte	112
+ 2463 0982 CE       		.byte	-50
+ 2464 0983 60       		.byte	96
+ 2465 0984 50       		.byte	80
+ 2466 0985 04       		.byte	4
+ 2467 0986 57       		.byte	87
+ 2468 0987 40       		.byte	64
+ 2469 0988 58       		.byte	88
+ 2470 0989 08       		.byte	8
+ 2471 098a 5B       		.byte	91
+ 2472 098b 40       		.byte	64
+ 2473 098c 5E       		.byte	94
+ 2474 098d 02       		.byte	2
+ 2475 098e 5F       		.byte	95
+ 2476 098f 80       		.byte	-128
+ 2477 0990 60       		.byte	96
+ 2478 0991 20       		.byte	32
+ 2479 0992 65       		.byte	101
+ 2480 0993 04       		.byte	4
+ 2481 0994 83       		.byte	-125
+ 2482 0995 80       		.byte	-128
+ 2483 0996 88       		.byte	-120
+ 2484 0997 20       		.byte	32
+ 2485 0998 97       		.byte	-105
+ 2486 0999 02       		.byte	2
+ 2487 099a 9B       		.byte	-101
+ 2488 099b 02       		.byte	2
+ 2489 099c 9F       		.byte	-97
+ 2490 099d 01       		.byte	1
+ 2491 099e A4       		.byte	-92
+ 2492 099f 80       		.byte	-128
+ 2493 09a0 A6       		.byte	-90
+ 2494 09a1 40       		.byte	64
+ 2495 09a2 D4       		.byte	-44
+ 2496 09a3 E0       		.byte	-32
+ 2497 09a4 D6       		.byte	-42
+ 2498 09a5 E0       		.byte	-32
+ 2499 09a6 D8       		.byte	-40
+ 2500 09a7 C0       		.byte	-64
+ 2501 09a8 E2       		.byte	-30
+ 2502 09a9 80       		.byte	-128
+ 2503 09aa 50       		.byte	80
+ 2504 09ab 04       		.byte	4
+ 2505 09ac 54       		.byte	84
+ 2506 09ad 40       		.byte	64
+ 2507 09ae 83       		.byte	-125
+ 2508 09af 40       		.byte	64
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 45
+
+
+ 2509 09b0 84       		.byte	-124
+ 2510 09b1 40       		.byte	64
+ 2511 09b2 85       		.byte	-123
+ 2512 09b3 80       		.byte	-128
+ 2513 09b4 86       		.byte	-122
+ 2514 09b5 40       		.byte	64
+ 2515 09b6 88       		.byte	-120
+ 2516 09b7 08       		.byte	8
+ 2517 09b8 8D       		.byte	-115
+ 2518 09b9 24       		.byte	36
+ 2519 09ba 97       		.byte	-105
+ 2520 09bb 02       		.byte	2
+ 2521 09bc 9B       		.byte	-101
+ 2522 09bd 02       		.byte	2
+ 2523 09be 9C       		.byte	-100
+ 2524 09bf 08       		.byte	8
+ 2525 09c0 9D       		.byte	-99
+ 2526 09c1 04       		.byte	4
+ 2527 09c2 9F       		.byte	-97
+ 2528 09c3 41       		.byte	65
+ 2529 09c4 A4       		.byte	-92
+ 2530 09c5 80       		.byte	-128
+ 2531 09c6 A6       		.byte	-90
+ 2532 09c7 40       		.byte	64
+ 2533 09c8 A7       		.byte	-89
+ 2534 09c9 40       		.byte	64
+ 2535 09ca A8       		.byte	-88
+ 2536 09cb 04       		.byte	4
+ 2537 09cc B6       		.byte	-74
+ 2538 09cd 01       		.byte	1
+ 2539 09ce D4       		.byte	-44
+ 2540 09cf 60       		.byte	96
+ 2541 09d0 E2       		.byte	-30
+ 2542 09d1 70       		.byte	112
+ 2543 09d2 E6       		.byte	-26
+ 2544 09d3 40       		.byte	64
+ 2545 09d4 EE       		.byte	-18
+ 2546 09d5 80       		.byte	-128
+ 2547 09d6 99       		.byte	-103
+ 2548 09d7 80       		.byte	-128
+ 2549 09d8 9F       		.byte	-97
+ 2550 09d9 01       		.byte	1
+ 2551 09da A1       		.byte	-95
+ 2552 09db 20       		.byte	32
+ 2553 09dc A4       		.byte	-92
+ 2554 09dd 80       		.byte	-128
+ 2555 09de AB       		.byte	-85
+ 2556 09df 41       		.byte	65
+ 2557 09e0 B3       		.byte	-77
+ 2558 09e1 02       		.byte	2
+ 2559 09e2 B4       		.byte	-76
+ 2560 09e3 04       		.byte	4
+ 2561 09e4 EE       		.byte	-18
+ 2562 09e5 A0       		.byte	-96
+ 2563 09e6 72       		.byte	114
+ 2564 09e7 80       		.byte	-128
+ 2565 09e8 74       		.byte	116
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 46
+
+
+ 2566 09e9 01       		.byte	1
+ 2567 09ea DC       		.byte	-36
+ 2568 09eb 01       		.byte	1
+ 2569 09ec DE       		.byte	-34
+ 2570 09ed 04       		.byte	4
+ 2571 09ee 01       		.byte	1
+ 2572 09ef 08       		.byte	8
+ 2573 09f0 02       		.byte	2
+ 2574 09f1 08       		.byte	8
+ 2575 09f2 05       		.byte	5
+ 2576 09f3 22       		.byte	34
+ 2577 09f4 08       		.byte	8
+ 2578 09f5 22       		.byte	34
+ 2579 09f6 0C       		.byte	12
+ 2580 09f7 02       		.byte	2
+ 2581 09f8 0D       		.byte	13
+ 2582 09f9 10       		.byte	16
+ 2583 09fa 89       		.byte	-119
+ 2584 09fb 02       		.byte	2
+ 2585 09fc 8A       		.byte	-118
+ 2586 09fd 08       		.byte	8
+ 2587 09fe 8C       		.byte	-116
+ 2588 09ff 02       		.byte	2
+ 2589 0a00 9E       		.byte	-98
+ 2590 0a01 80       		.byte	-128
+ 2591 0a02 A4       		.byte	-92
+ 2592 0a03 01       		.byte	1
+ 2593 0a04 C0       		.byte	-64
+ 2594 0a05 0F       		.byte	15
+ 2595 0a06 C2       		.byte	-62
+ 2596 0a07 0F       		.byte	15
+ 2597 0a08 E2       		.byte	-30
+ 2598 0a09 09       		.byte	9
+ 2599 0a0a E6       		.byte	-26
+ 2600 0a0b 01       		.byte	1
+ 2601 0a0c 1B       		.byte	27
+ 2602 0a0d 04       		.byte	4
+ 2603 0a0e 24       		.byte	36
+ 2604 0a0f 20       		.byte	32
+ 2605 0a10 53       		.byte	83
+ 2606 0a11 80       		.byte	-128
+ 2607 0a12 54       		.byte	84
+ 2608 0a13 10       		.byte	16
+ 2609 0a14 87       		.byte	-121
+ 2610 0a15 40       		.byte	64
+ 2611 0a16 88       		.byte	-120
+ 2612 0a17 01       		.byte	1
+ 2613 0a18 8C       		.byte	-116
+ 2614 0a19 10       		.byte	16
+ 2615 0a1a 8E       		.byte	-114
+ 2616 0a1b 80       		.byte	-128
+ 2617 0a1c 8F       		.byte	-113
+ 2618 0a1d 80       		.byte	-128
+ 2619 0a1e 9E       		.byte	-98
+ 2620 0a1f 80       		.byte	-128
+ 2621 0a20 A4       		.byte	-92
+ 2622 0a21 01       		.byte	1
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 47
+
+
+ 2623 0a22 B0       		.byte	-80
+ 2624 0a23 20       		.byte	32
+ 2625 0a24 B1       		.byte	-79
+ 2626 0a25 10       		.byte	16
+ 2627 0a26 B4       		.byte	-76
+ 2628 0a27 02       		.byte	2
+ 2629 0a28 B5       		.byte	-75
+ 2630 0a29 28       		.byte	40
+ 2631 0a2a C6       		.byte	-58
+ 2632 0a2b 08       		.byte	8
+ 2633 0a2c C8       		.byte	-56
+ 2634 0a2d 01       		.byte	1
+ 2635 0a2e D4       		.byte	-44
+ 2636 0a2f 06       		.byte	6
+ 2637 0a30 E0       		.byte	-32
+ 2638 0a31 03       		.byte	3
+ 2639 0a32 E4       		.byte	-28
+ 2640 0a33 08       		.byte	8
+ 2641 0a34 E6       		.byte	-26
+ 2642 0a35 02       		.byte	2
+ 2643 0a36 EA       		.byte	-22
+ 2644 0a37 0B       		.byte	11
+ 2645 0a38 EE       		.byte	-18
+ 2646 0a39 06       		.byte	6
+ 2647 0a3a 0B       		.byte	11
+ 2648 0a3b 40       		.byte	64
+ 2649 0a3c 0D       		.byte	13
+ 2650 0a3d 08       		.byte	8
+ 2651 0a3e 44       		.byte	68
+ 2652 0a3f 02       		.byte	2
+ 2653 0a40 97       		.byte	-105
+ 2654 0a41 40       		.byte	64
+ 2655 0a42 AB       		.byte	-85
+ 2656 0a43 04       		.byte	4
+ 2657 0a44 AC       		.byte	-84
+ 2658 0a45 10       		.byte	16
+ 2659 0a46 C2       		.byte	-62
+ 2660 0a47 0C       		.byte	12
+ 2661 0a48 D0       		.byte	-48
+ 2662 0a49 04       		.byte	4
+ 2663 0a4a 24       		.byte	36
+ 2664 0a4b 08       		.byte	8
+ 2665 0a4c 50       		.byte	80
+ 2666 0a4d 02       		.byte	2
+ 2667 0a4e 51       		.byte	81
+ 2668 0a4f 20       		.byte	32
+ 2669 0a50 57       		.byte	87
+ 2670 0a51 10       		.byte	16
+ 2671 0a52 5D       		.byte	93
+ 2672 0a53 80       		.byte	-128
+ 2673 0a54 99       		.byte	-103
+ 2674 0a55 80       		.byte	-128
+ 2675 0a56 A1       		.byte	-95
+ 2676 0a57 20       		.byte	32
+ 2677 0a58 A3       		.byte	-93
+ 2678 0a59 10       		.byte	16
+ 2679 0a5a AB       		.byte	-85
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 48
+
+
+ 2680 0a5b 10       		.byte	16
+ 2681 0a5c AF       		.byte	-81
+ 2682 0a5d 01       		.byte	1
+ 2683 0a5e B4       		.byte	-76
+ 2684 0a5f 80       		.byte	-128
+ 2685 0a60 C8       		.byte	-56
+ 2686 0a61 20       		.byte	32
+ 2687 0a62 D4       		.byte	-44
+ 2688 0a63 E0       		.byte	-32
+ 2689 0a64 D6       		.byte	-42
+ 2690 0a65 20       		.byte	32
+ 2691 0a66 EA       		.byte	-22
+ 2692 0a67 40       		.byte	64
+ 2693 0a68 EE       		.byte	-18
+ 2694 0a69 80       		.byte	-128
+ 2695 0a6a 01       		.byte	1
+ 2696 0a6b 80       		.byte	-128
+ 2697 0a6c 03       		.byte	3
+ 2698 0a6d 10       		.byte	16
+ 2699 0a6e 05       		.byte	5
+ 2700 0a6f 28       		.byte	40
+ 2701 0a70 08       		.byte	8
+ 2702 0a71 08       		.byte	8
+ 2703 0a72 0B       		.byte	11
+ 2704 0a73 02       		.byte	2
+ 2705 0a74 0D       		.byte	13
+ 2706 0a75 10       		.byte	16
+ 2707 0a76 0F       		.byte	15
+ 2708 0a77 10       		.byte	16
+ 2709 0a78 83       		.byte	-125
+ 2710 0a79 11       		.byte	17
+ 2711 0a7a 84       		.byte	-124
+ 2712 0a7b 08       		.byte	8
+ 2713 0a7c 87       		.byte	-121
+ 2714 0a7d 10       		.byte	16
+ 2715 0a7e 89       		.byte	-119
+ 2716 0a7f 38       		.byte	56
+ 2717 0a80 8D       		.byte	-115
+ 2718 0a81 80       		.byte	-128
+ 2719 0a82 B0       		.byte	-80
+ 2720 0a83 02       		.byte	2
+ 2721 0a84 B4       		.byte	-76
+ 2722 0a85 04       		.byte	4
+ 2723 0a86 C0       		.byte	-64
+ 2724 0a87 F0       		.byte	-16
+ 2725 0a88 C2       		.byte	-62
+ 2726 0a89 F0       		.byte	-16
+ 2727 0a8a E0       		.byte	-32
+ 2728 0a8b 30       		.byte	48
+ 2729 0a8c E4       		.byte	-28
+ 2730 0a8d 30       		.byte	48
+ 2731 0a8e 01       		.byte	1
+ 2732 0a8f 40       		.byte	64
+ 2733 0a90 04       		.byte	4
+ 2734 0a91 20       		.byte	32
+ 2735 0a92 09       		.byte	9
+ 2736 0a93 21       		.byte	33
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 49
+
+
+ 2737 0a94 0C       		.byte	12
+ 2738 0a95 01       		.byte	1
+ 2739 0a96 0E       		.byte	14
+ 2740 0a97 01       		.byte	1
+ 2741 0a98 8A       		.byte	-118
+ 2742 0a99 01       		.byte	1
+ 2743 0a9a 8C       		.byte	-116
+ 2744 0a9b 10       		.byte	16
+ 2745 0a9c 8D       		.byte	-115
+ 2746 0a9d 41       		.byte	65
+ 2747 0a9e 98       		.byte	-104
+ 2748 0a9f 80       		.byte	-128
+ 2749 0aa0 9C       		.byte	-100
+ 2750 0aa1 02       		.byte	2
+ 2751 0aa2 AD       		.byte	-83
+ 2752 0aa3 08       		.byte	8
+ 2753 0aa4 B0       		.byte	-80
+ 2754 0aa5 80       		.byte	-128
+ 2755 0aa6 C0       		.byte	-64
+ 2756 0aa7 03       		.byte	3
+ 2757 0aa8 C2       		.byte	-62
+ 2758 0aa9 0F       		.byte	15
+ 2759 0aaa E2       		.byte	-30
+ 2760 0aab 0A       		.byte	10
+ 2761 0aac E6       		.byte	-26
+ 2762 0aad 03       		.byte	3
+ 2763 0aae E8       		.byte	-24
+ 2764 0aaf 04       		.byte	4
+ 2765 0ab0 10       		.byte	16
+ 2766 0ab1 40       		.byte	64
+ 2767 0ab2 78       		.byte	120
+ 2768 0ab3 80       		.byte	-128
+ 2769 0ab4 88       		.byte	-120
+ 2770 0ab5 40       		.byte	64
+ 2771 0ab6 98       		.byte	-104
+ 2772 0ab7 80       		.byte	-128
+ 2773 0ab8 B0       		.byte	-80
+ 2774 0ab9 01       		.byte	1
+ 2775 0aba B1       		.byte	-79
+ 2776 0abb 20       		.byte	32
+ 2777 0abc B4       		.byte	-76
+ 2778 0abd 02       		.byte	2
+ 2779 0abe C4       		.byte	-60
+ 2780 0abf 08       		.byte	8
+ 2781 0ac0 DC       		.byte	-36
+ 2782 0ac1 01       		.byte	1
+ 2783 0ac2 E2       		.byte	-30
+ 2784 0ac3 01       		.byte	1
+ 2785 0ac4 E8       		.byte	-24
+ 2786 0ac5 08       		.byte	8
+ 2787 0ac6 EE       		.byte	-18
+ 2788 0ac7 05       		.byte	5
+ 2789 0ac8 00       		.byte	0
+ 2790 0ac9 07       		.byte	7
+ 2791 0aca 01       		.byte	1
+ 2792 0acb 01       		.byte	1
+ 2793 0acc 08       		.byte	8
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 50
+
+
+ 2794 0acd 03       		.byte	3
+ 2795 0ace 09       		.byte	9
+ 2796 0acf 01       		.byte	1
+ 2797 0ad0 0A       		.byte	10
+ 2798 0ad1 03       		.byte	3
+ 2799 0ad2 0C       		.byte	12
+ 2800 0ad3 07       		.byte	7
+ 2801 0ad4 0D       		.byte	13
+ 2802 0ad5 01       		.byte	1
+ 2803 0ad6 10       		.byte	16
+ 2804 0ad7 07       		.byte	7
+ 2805 0ad8 1A       		.byte	26
+ 2806 0ad9 05       		.byte	5
+ 2807 0ada 1C       		.byte	28
+ 2808 0adb 07       		.byte	7
+ 2809 0adc 00       		.byte	0
+ 2810 0add 2B       		.byte	43
+ 2811 0ade 10       		.byte	16
+ 2812 0adf 0A       		.byte	10
+ 2813 0ae0 28       		.byte	40
+ 2814 0ae1 8C       		.byte	-116
+ 2815 0ae2 00       		.byte	0
+ 2816 0ae3 00       		.byte	0
+ 2817 0ae4 40       		.byte	64
+ 2818 0ae5 00       		.byte	0
+ 2819 0ae6 00       		.byte	0
+ 2820 0ae7 00       		.byte	0
+ 2821 0ae8 00       		.byte	0
+ 2822 0ae9 00       		.byte	0
+ 2823 0aea 00       		.byte	0
+ 2824 0aeb 00       		.byte	0
+ 2825 0aec 00       		.byte	0
+ 2826 0aed FF       		.byte	-1
+ 2827 0aee FF       		.byte	-1
+ 2828 0aef 00       		.byte	0
+ 2829 0af0 80       		.byte	-128
+ 2830 0af1 00       		.byte	0
+ 2831 0af2 40       		.byte	64
+ 2832 0af3 BC       		.byte	-68
+ 2833 0af4 BC       		.byte	-68
+ 2834 0af5 00       		.byte	0
+ 2835 0af6 BC       		.byte	-68
+ 2836 0af7 00       		.byte	0
+ 2837 0af8 00       		.byte	0
+ 2838 0af9 00       		.byte	0
+ 2839 0afa 00       		.byte	0
+ 2840 0afb 00       		.byte	0
+ 2841 0afc 40       		.byte	64
+ 2842 0afd 00       		.byte	0
+ 2843 0afe 00       		.byte	0
+ 2844 0aff 3F       		.byte	63
+ 2845 0b00 3F       		.byte	63
+ 2846 0b01 00       		.byte	0
+ 2847 0b02 3F       		.byte	63
+ 2848 0b03 00       		.byte	0
+ 2849 0b04 C0       		.byte	-64
+ 2850 0b05 00       		.byte	0
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 51
+
+
+ 2851 0b06 00       		.byte	0
+ 2852 0b07 00       		.byte	0
+ 2853 0b08 FC       		.byte	-4
+ 2854 0b09 FF       		.byte	-1
+ 2855 0b0a 03       		.byte	3
+ 2856 0b0b 00       		.byte	0
+ 2857 0b0c 00       		.byte	0
+ 2858 0b0d 00       		.byte	0
+ 2859 0b0e 00       		.byte	0
+ 2860 0b0f 00       		.byte	0
+ 2861 0b10 FF       		.byte	-1
+ 2862 0b11 FF       		.byte	-1
+ 2863 0b12 00       		.byte	0
+ 2864 0b13 00       		.byte	0
+ 2865 0b14 00       		.byte	0
+ 2866 0b15 00       		.byte	0
+ 2867 0b16 00       		.byte	0
+ 2868 0b17 00       		.byte	0
+ 2869 0b18 FF       		.byte	-1
+ 2870 0b19 FF       		.byte	-1
+ 2871 0b1a 00       		.byte	0
+ 2872 0b1b 00       		.byte	0
+ 2873 0b1c 00       		.byte	0
+ 2874 0b1d 00       		.byte	0
+ 2875 0b1e 00       		.byte	0
+ 2876 0b1f 00       		.byte	0
+ 2877 0b20 00       		.byte	0
+ 2878 0b21 01       		.byte	1
+ 2879 0b22 00       		.byte	0
+ 2880 0b23 00       		.byte	0
+ 2881              		.section	.cywolatch,"a",%progbits
+ 2882              		.align	2
+ 2883              		.type	cy_meta_wonvl, %object
+ 2884              		.size	cy_meta_wonvl, 4
+ 2885              	cy_meta_wonvl:
+ 2886 0000 BC       		.byte	-68
+ 2887 0001 90       		.byte	-112
+ 2888 0002 AC       		.byte	-84
+ 2889 0003 AF       		.byte	-81
+ 2890              		.section	.cycustnvl,"a",%progbits
+ 2891              		.align	2
+ 2892              		.type	cy_meta_custnvl, %object
+ 2893              		.size	cy_meta_custnvl, 4
+ 2894              	cy_meta_custnvl:
+ 2895 0000 00       		.byte	0
+ 2896 0001 00       		.byte	0
+ 2897 0002 40       		.byte	64
+ 2898 0003 05       		.byte	5
+ 2899              		.section	.cymeta,"a",%progbits
+ 2900              		.align	2
+ 2901              		.type	cy_metadata, %object
+ 2902              		.size	cy_metadata, 12
+ 2903              	cy_metadata:
+ 2904 0000 00       		.byte	0
+ 2905 0001 01       		.byte	1
+ 2906 0002 2E       		.byte	46
+ 2907 0003 16       		.byte	22
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 52
+
+
+ 2908 0004 10       		.byte	16
+ 2909 0005 69       		.byte	105
+ 2910 0006 00       		.byte	0
+ 2911 0007 01       		.byte	1
+ 2912 0008 00       		.byte	0
+ 2913 0009 00       		.byte	0
+ 2914 000a 00       		.byte	0
+ 2915 000b 00       		.byte	0
+ 2916              		.section	.cyflashprotect,"a",%progbits
+ 2917              		.align	2
+ 2918              		.type	cy_meta_flashprotect, %object
+ 2919              		.size	cy_meta_flashprotect, 256
+ 2920              	cy_meta_flashprotect:
+ 2921 0000 00000000 		.space	256
+ 2921      00000000 
+ 2921      00000000 
+ 2921      00000000 
+ 2921      00000000 
+ 2922              		.text
+ 2923              	.Letext0:
+ 2924              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
+ 2925              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
+ 2926              		.file 3 "Generated_Source\\PSoC5\\cymetadata.c"
+ 2927              		.section	.debug_info,"",%progbits
+ 2928              	.Ldebug_info0:
+ 2929 0000 35010000 		.4byte	0x135
+ 2930 0004 0400     		.2byte	0x4
+ 2931 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 2932 000a 04       		.byte	0x4
+ 2933 000b 01       		.uleb128 0x1
+ 2934 000c 24000000 		.4byte	.LASF17
+ 2935 0010 0C       		.byte	0xc
+ 2936 0011 19020000 		.4byte	.LASF18
+ 2937 0015 72010000 		.4byte	.LASF19
+ 2938 0019 00000000 		.4byte	.Ldebug_line0
+ 2939 001d 02       		.uleb128 0x2
+ 2940 001e 01       		.byte	0x1
+ 2941 001f 06       		.byte	0x6
+ 2942 0020 0D020000 		.4byte	.LASF0
+ 2943 0024 03       		.uleb128 0x3
+ 2944 0025 00000000 		.4byte	.LASF9
+ 2945 0029 01       		.byte	0x1
+ 2946 002a 1D       		.byte	0x1d
+ 2947 002b 2F000000 		.4byte	0x2f
+ 2948 002f 02       		.uleb128 0x2
+ 2949 0030 01       		.byte	0x1
+ 2950 0031 08       		.byte	0x8
+ 2951 0032 16000000 		.4byte	.LASF1
+ 2952 0036 02       		.uleb128 0x2
+ 2953 0037 02       		.byte	0x2
+ 2954 0038 05       		.byte	0x5
+ 2955 0039 5F010000 		.4byte	.LASF2
+ 2956 003d 02       		.uleb128 0x2
+ 2957 003e 02       		.byte	0x2
+ 2958 003f 07       		.byte	0x7
+ 2959 0040 C4000000 		.4byte	.LASF3
+ 2960 0044 02       		.uleb128 0x2
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 53
+
+
+ 2961 0045 04       		.byte	0x4
+ 2962 0046 05       		.byte	0x5
+ 2963 0047 69010000 		.4byte	.LASF4
+ 2964 004b 02       		.uleb128 0x2
+ 2965 004c 04       		.byte	0x4
+ 2966 004d 07       		.byte	0x7
+ 2967 004e B2000000 		.4byte	.LASF5
+ 2968 0052 02       		.uleb128 0x2
+ 2969 0053 08       		.byte	0x8
+ 2970 0054 05       		.byte	0x5
+ 2971 0055 51010000 		.4byte	.LASF6
+ 2972 0059 02       		.uleb128 0x2
+ 2973 005a 08       		.byte	0x8
+ 2974 005b 07       		.byte	0x7
+ 2975 005c 06010000 		.4byte	.LASF7
+ 2976 0060 04       		.uleb128 0x4
+ 2977 0061 04       		.byte	0x4
+ 2978 0062 05       		.byte	0x5
+ 2979 0063 696E7400 		.ascii	"int\000"
+ 2980 0067 02       		.uleb128 0x2
+ 2981 0068 04       		.byte	0x4
+ 2982 0069 07       		.byte	0x7
+ 2983 006a F9000000 		.4byte	.LASF8
+ 2984 006e 03       		.uleb128 0x3
+ 2985 006f 1D010000 		.4byte	.LASF10
+ 2986 0073 02       		.byte	0x2
+ 2987 0074 18       		.byte	0x18
+ 2988 0075 24000000 		.4byte	0x24
+ 2989 0079 05       		.uleb128 0x5
+ 2990 007a 91000000 		.4byte	0x91
+ 2991 007e 8A000000 		.4byte	0x8a
+ 2992 0082 06       		.uleb128 0x6
+ 2993 0083 8A000000 		.4byte	0x8a
+ 2994 0087 230B     		.2byte	0xb23
+ 2995 0089 00       		.byte	0
+ 2996 008a 02       		.uleb128 0x2
+ 2997 008b 04       		.byte	0x4
+ 2998 008c 07       		.byte	0x7
+ 2999 008d 48010000 		.4byte	.LASF11
+ 3000 0091 07       		.uleb128 0x7
+ 3001 0092 6E000000 		.4byte	0x6e
+ 3002 0096 08       		.uleb128 0x8
+ 3003 0097 E7000000 		.4byte	.LASF12
+ 3004 009b 03       		.byte	0x3
+ 3005 009c 1F       		.byte	0x1f
+ 3006 009d A7000000 		.4byte	0xa7
+ 3007 00a1 05       		.uleb128 0x5
+ 3008 00a2 03       		.byte	0x3
+ 3009 00a3 00000000 		.4byte	cy_meta_configecc
+ 3010 00a7 07       		.uleb128 0x7
+ 3011 00a8 79000000 		.4byte	0x79
+ 3012 00ac 05       		.uleb128 0x5
+ 3013 00ad 91000000 		.4byte	0x91
+ 3014 00b1 BC000000 		.4byte	0xbc
+ 3015 00b5 09       		.uleb128 0x9
+ 3016 00b6 8A000000 		.4byte	0x8a
+ 3017 00ba 03       		.byte	0x3
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 54
+
+
+ 3018 00bb 00       		.byte	0
+ 3019 00bc 0A       		.uleb128 0xa
+ 3020 00bd D7000000 		.4byte	.LASF13
+ 3021 00c1 03       		.byte	0x3
+ 3022 00c2 9101     		.2byte	0x191
+ 3023 00c4 CE000000 		.4byte	0xce
+ 3024 00c8 05       		.uleb128 0x5
+ 3025 00c9 03       		.byte	0x3
+ 3026 00ca 00000000 		.4byte	cy_meta_custnvl
+ 3027 00ce 07       		.uleb128 0x7
+ 3028 00cf AC000000 		.4byte	0xac
+ 3029 00d3 0A       		.uleb128 0xa
+ 3030 00d4 3A010000 		.4byte	.LASF14
+ 3031 00d8 03       		.byte	0x3
+ 3032 00d9 9F01     		.2byte	0x19f
+ 3033 00db E5000000 		.4byte	0xe5
+ 3034 00df 05       		.uleb128 0x5
+ 3035 00e0 03       		.byte	0x3
+ 3036 00e1 00000000 		.4byte	cy_meta_wonvl
+ 3037 00e5 07       		.uleb128 0x7
+ 3038 00e6 AC000000 		.4byte	0xac
+ 3039 00ea 05       		.uleb128 0x5
+ 3040 00eb 91000000 		.4byte	0x91
+ 3041 00ef FA000000 		.4byte	0xfa
+ 3042 00f3 09       		.uleb128 0x9
+ 3043 00f4 8A000000 		.4byte	0x8a
+ 3044 00f8 FF       		.byte	0xff
+ 3045 00f9 00       		.byte	0
+ 3046 00fa 0A       		.uleb128 0xa
+ 3047 00fb 25010000 		.4byte	.LASF15
+ 3048 00ff 03       		.byte	0x3
+ 3049 0100 AD01     		.2byte	0x1ad
+ 3050 0102 0C010000 		.4byte	0x10c
+ 3051 0106 05       		.uleb128 0x5
+ 3052 0107 03       		.byte	0x3
+ 3053 0108 00000000 		.4byte	cy_meta_flashprotect
+ 3054 010c 07       		.uleb128 0x7
+ 3055 010d EA000000 		.4byte	0xea
+ 3056 0111 05       		.uleb128 0x5
+ 3057 0112 91000000 		.4byte	0x91
+ 3058 0116 21010000 		.4byte	0x121
+ 3059 011a 09       		.uleb128 0x9
+ 3060 011b 8A000000 		.4byte	0x8a
+ 3061 011f 0B       		.byte	0xb
+ 3062 0120 00       		.byte	0
+ 3063 0121 0A       		.uleb128 0xa
+ 3064 0122 0A000000 		.4byte	.LASF16
+ 3065 0126 03       		.byte	0x3
+ 3066 0127 DA01     		.2byte	0x1da
+ 3067 0129 33010000 		.4byte	0x133
+ 3068 012d 05       		.uleb128 0x5
+ 3069 012e 03       		.byte	0x3
+ 3070 012f 00000000 		.4byte	cy_metadata
+ 3071 0133 07       		.uleb128 0x7
+ 3072 0134 11010000 		.4byte	0x111
+ 3073 0138 00       		.byte	0
+ 3074              		.section	.debug_abbrev,"",%progbits
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 55
+
+
+ 3075              	.Ldebug_abbrev0:
+ 3076 0000 01       		.uleb128 0x1
+ 3077 0001 11       		.uleb128 0x11
+ 3078 0002 01       		.byte	0x1
+ 3079 0003 25       		.uleb128 0x25
+ 3080 0004 0E       		.uleb128 0xe
+ 3081 0005 13       		.uleb128 0x13
+ 3082 0006 0B       		.uleb128 0xb
+ 3083 0007 03       		.uleb128 0x3
+ 3084 0008 0E       		.uleb128 0xe
+ 3085 0009 1B       		.uleb128 0x1b
+ 3086 000a 0E       		.uleb128 0xe
+ 3087 000b 10       		.uleb128 0x10
+ 3088 000c 17       		.uleb128 0x17
+ 3089 000d 00       		.byte	0
+ 3090 000e 00       		.byte	0
+ 3091 000f 02       		.uleb128 0x2
+ 3092 0010 24       		.uleb128 0x24
+ 3093 0011 00       		.byte	0
+ 3094 0012 0B       		.uleb128 0xb
+ 3095 0013 0B       		.uleb128 0xb
+ 3096 0014 3E       		.uleb128 0x3e
+ 3097 0015 0B       		.uleb128 0xb
+ 3098 0016 03       		.uleb128 0x3
+ 3099 0017 0E       		.uleb128 0xe
+ 3100 0018 00       		.byte	0
+ 3101 0019 00       		.byte	0
+ 3102 001a 03       		.uleb128 0x3
+ 3103 001b 16       		.uleb128 0x16
+ 3104 001c 00       		.byte	0
+ 3105 001d 03       		.uleb128 0x3
+ 3106 001e 0E       		.uleb128 0xe
+ 3107 001f 3A       		.uleb128 0x3a
+ 3108 0020 0B       		.uleb128 0xb
+ 3109 0021 3B       		.uleb128 0x3b
+ 3110 0022 0B       		.uleb128 0xb
+ 3111 0023 49       		.uleb128 0x49
+ 3112 0024 13       		.uleb128 0x13
+ 3113 0025 00       		.byte	0
+ 3114 0026 00       		.byte	0
+ 3115 0027 04       		.uleb128 0x4
+ 3116 0028 24       		.uleb128 0x24
+ 3117 0029 00       		.byte	0
+ 3118 002a 0B       		.uleb128 0xb
+ 3119 002b 0B       		.uleb128 0xb
+ 3120 002c 3E       		.uleb128 0x3e
+ 3121 002d 0B       		.uleb128 0xb
+ 3122 002e 03       		.uleb128 0x3
+ 3123 002f 08       		.uleb128 0x8
+ 3124 0030 00       		.byte	0
+ 3125 0031 00       		.byte	0
+ 3126 0032 05       		.uleb128 0x5
+ 3127 0033 01       		.uleb128 0x1
+ 3128 0034 01       		.byte	0x1
+ 3129 0035 49       		.uleb128 0x49
+ 3130 0036 13       		.uleb128 0x13
+ 3131 0037 01       		.uleb128 0x1
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 56
+
+
+ 3132 0038 13       		.uleb128 0x13
+ 3133 0039 00       		.byte	0
+ 3134 003a 00       		.byte	0
+ 3135 003b 06       		.uleb128 0x6
+ 3136 003c 21       		.uleb128 0x21
+ 3137 003d 00       		.byte	0
+ 3138 003e 49       		.uleb128 0x49
+ 3139 003f 13       		.uleb128 0x13
+ 3140 0040 2F       		.uleb128 0x2f
+ 3141 0041 05       		.uleb128 0x5
+ 3142 0042 00       		.byte	0
+ 3143 0043 00       		.byte	0
+ 3144 0044 07       		.uleb128 0x7
+ 3145 0045 26       		.uleb128 0x26
+ 3146 0046 00       		.byte	0
+ 3147 0047 49       		.uleb128 0x49
+ 3148 0048 13       		.uleb128 0x13
+ 3149 0049 00       		.byte	0
+ 3150 004a 00       		.byte	0
+ 3151 004b 08       		.uleb128 0x8
+ 3152 004c 34       		.uleb128 0x34
+ 3153 004d 00       		.byte	0
+ 3154 004e 03       		.uleb128 0x3
+ 3155 004f 0E       		.uleb128 0xe
+ 3156 0050 3A       		.uleb128 0x3a
+ 3157 0051 0B       		.uleb128 0xb
+ 3158 0052 3B       		.uleb128 0x3b
+ 3159 0053 0B       		.uleb128 0xb
+ 3160 0054 49       		.uleb128 0x49
+ 3161 0055 13       		.uleb128 0x13
+ 3162 0056 3F       		.uleb128 0x3f
+ 3163 0057 19       		.uleb128 0x19
+ 3164 0058 02       		.uleb128 0x2
+ 3165 0059 18       		.uleb128 0x18
+ 3166 005a 00       		.byte	0
+ 3167 005b 00       		.byte	0
+ 3168 005c 09       		.uleb128 0x9
+ 3169 005d 21       		.uleb128 0x21
+ 3170 005e 00       		.byte	0
+ 3171 005f 49       		.uleb128 0x49
+ 3172 0060 13       		.uleb128 0x13
+ 3173 0061 2F       		.uleb128 0x2f
+ 3174 0062 0B       		.uleb128 0xb
+ 3175 0063 00       		.byte	0
+ 3176 0064 00       		.byte	0
+ 3177 0065 0A       		.uleb128 0xa
+ 3178 0066 34       		.uleb128 0x34
+ 3179 0067 00       		.byte	0
+ 3180 0068 03       		.uleb128 0x3
+ 3181 0069 0E       		.uleb128 0xe
+ 3182 006a 3A       		.uleb128 0x3a
+ 3183 006b 0B       		.uleb128 0xb
+ 3184 006c 3B       		.uleb128 0x3b
+ 3185 006d 05       		.uleb128 0x5
+ 3186 006e 49       		.uleb128 0x49
+ 3187 006f 13       		.uleb128 0x13
+ 3188 0070 3F       		.uleb128 0x3f
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 57
+
+
+ 3189 0071 19       		.uleb128 0x19
+ 3190 0072 02       		.uleb128 0x2
+ 3191 0073 18       		.uleb128 0x18
+ 3192 0074 00       		.byte	0
+ 3193 0075 00       		.byte	0
+ 3194 0076 00       		.byte	0
+ 3195              		.section	.debug_aranges,"",%progbits
+ 3196 0000 14000000 		.4byte	0x14
+ 3197 0004 0200     		.2byte	0x2
+ 3198 0006 00000000 		.4byte	.Ldebug_info0
+ 3199 000a 04       		.byte	0x4
+ 3200 000b 00       		.byte	0
+ 3201 000c 0000     		.2byte	0
+ 3202 000e 0000     		.2byte	0
+ 3203 0010 00000000 		.4byte	0
+ 3204 0014 00000000 		.4byte	0
+ 3205              		.section	.debug_line,"",%progbits
+ 3206              	.Ldebug_line0:
+ 3207 0000 3D010000 		.section	.debug_str,"MS",%progbits,1
+ 3207      02003701 
+ 3207      00000201 
+ 3207      FB0E0D00 
+ 3207      01010101 
+ 3208              	.LASF9:
+ 3209 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 3209      6E74385F 
+ 3209      7400
+ 3210              	.LASF16:
+ 3211 000a 63795F6D 		.ascii	"cy_metadata\000"
+ 3211      65746164 
+ 3211      61746100 
+ 3212              	.LASF1:
+ 3213 0016 756E7369 		.ascii	"unsigned char\000"
+ 3213      676E6564 
+ 3213      20636861 
+ 3213      7200
+ 3214              	.LASF17:
+ 3215 0024 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 3215      43313120 
+ 3215      352E342E 
+ 3215      31203230 
+ 3215      31363036 
+ 3216 0057 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 3216      20726576 
+ 3216      6973696F 
+ 3216      6E203233 
+ 3216      37373135 
+ 3217 008a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 3217      66756E63 
+ 3217      74696F6E 
+ 3217      2D736563 
+ 3217      74696F6E 
+ 3218              	.LASF5:
+ 3219 00b2 6C6F6E67 		.ascii	"long unsigned int\000"
+ 3219      20756E73 
+ 3219      69676E65 
+ 3219      6420696E 
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 58
+
+
+ 3219      7400
+ 3220              	.LASF3:
+ 3221 00c4 73686F72 		.ascii	"short unsigned int\000"
+ 3221      7420756E 
+ 3221      7369676E 
+ 3221      65642069 
+ 3221      6E7400
+ 3222              	.LASF13:
+ 3223 00d7 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 3223      6574615F 
+ 3223      63757374 
+ 3223      6E766C00 
+ 3224              	.LASF12:
+ 3225 00e7 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 3225      6574615F 
+ 3225      636F6E66 
+ 3225      69676563 
+ 3225      6300
+ 3226              	.LASF8:
+ 3227 00f9 756E7369 		.ascii	"unsigned int\000"
+ 3227      676E6564 
+ 3227      20696E74 
+ 3227      00
+ 3228              	.LASF7:
+ 3229 0106 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 3229      206C6F6E 
+ 3229      6720756E 
+ 3229      7369676E 
+ 3229      65642069 
+ 3230              	.LASF10:
+ 3231 011d 75696E74 		.ascii	"uint8_t\000"
+ 3231      385F7400 
+ 3232              	.LASF15:
+ 3233 0125 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 3233      6574615F 
+ 3233      666C6173 
+ 3233      6870726F 
+ 3233      74656374 
+ 3234              	.LASF14:
+ 3235 013a 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 3235      6574615F 
+ 3235      776F6E76 
+ 3235      6C00
+ 3236              	.LASF11:
+ 3237 0148 73697A65 		.ascii	"sizetype\000"
+ 3237      74797065 
+ 3237      00
+ 3238              	.LASF6:
+ 3239 0151 6C6F6E67 		.ascii	"long long int\000"
+ 3239      206C6F6E 
+ 3239      6720696E 
+ 3239      7400
+ 3240              	.LASF2:
+ 3241 015f 73686F72 		.ascii	"short int\000"
+ 3241      7420696E 
+ 3241      7400
+ 3242              	.LASF4:
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccvFijZu.s 			page 59
+
+
+ 3243 0169 6C6F6E67 		.ascii	"long int\000"
+ 3243      20696E74 
+ 3243      00
+ 3244              	.LASF19:
+ 3245 0172 503A5C4D 		.ascii	"P:\\My_Documents\\business\\Prometheus_EducationLLC"
+ 3245      795F446F 
+ 3245      63756D65 
+ 3245      6E74735C 
+ 3245      62757369 
+ 3246 01a2 5C547574 		.ascii	"\\Tutorials\\MCU101_Cypresss\\SW_Working_Directory\\"
+ 3246      6F726961 
+ 3246      6C735C4D 
+ 3246      43553130 
+ 3246      315F4379 
+ 3247 01d2 4D435531 		.ascii	"MCU101_Cypress_PSOC5_Labs\\CyController\\CyControll"
+ 3247      30315F43 
+ 3247      79707265 
+ 3247      73735F50 
+ 3247      534F4335 
+ 3248 0203 6572312E 		.ascii	"er1.cydsn\000"
+ 3248      63796473 
+ 3248      6E00
+ 3249              	.LASF0:
+ 3250 020d 7369676E 		.ascii	"signed char\000"
+ 3250      65642063 
+ 3250      68617200 
+ 3251              	.LASF18:
+ 3252 0219 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
+ 3252      72617465 
+ 3252      645F536F 
+ 3252      75726365 
+ 3252      5C50536F 
+ 3253              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
