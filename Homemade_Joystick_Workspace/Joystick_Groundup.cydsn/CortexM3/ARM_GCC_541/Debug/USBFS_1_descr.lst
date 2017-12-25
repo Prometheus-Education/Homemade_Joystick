@@ -1,0 +1,1283 @@
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"USBFS_1_descr.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	USBFS_1_TABLE
+  20              		.global	USBFS_1_DEVICE0_TABLE
+  21              		.global	USBFS_1_DEVICE0_CONFIGURATION0_TABLE
+  22              		.global	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+  23              		.global	USBFS_1_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+  24              		.global	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_TABLE
+  25              		.global	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_TABLE
+  26              		.global	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_TABLE
+  27              		.comm	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_BUF,4,4
+  28              		.comm	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_SCB,4,4
+  29              		.global	USBFS_1_HIDREPORT_DESCRIPTOR1
+  30              		.global	USBFS_1_STRING_DESCRIPTORS
+  31              		.global	USBFS_1_DEVICE0_CONFIGURATION0_DESCR
+  32              		.global	USBFS_1_DEVICE0_DESCR
+  33              		.section	.rodata
+  34              		.align	2
+  35              		.type	USBFS_1_TABLE, %object
+  36              		.size	USBFS_1_TABLE, 8
+  37              	USBFS_1_TABLE:
+  38 0000 01       		.byte	1
+  39 0001 000000   		.space	3
+  40 0004 00000000 		.word	USBFS_1_DEVICE0_TABLE
+  41              		.type	USBFS_1_DEVICE0_TABLE, %object
+  42              		.size	USBFS_1_DEVICE0_TABLE, 24
+  43              	USBFS_1_DEVICE0_TABLE:
+  44 0008 01       		.byte	1
+  45 0009 000000   		.space	3
+  46 000c 00000000 		.word	USBFS_1_DEVICE0_DESCR
+  47 0010 00       		.byte	0
+  48 0011 000000   		.space	3
+  49 0014 00000000 		.word	0
+  50 0018 01       		.byte	1
+  51 0019 000000   		.space	3
+  52 001c 00000000 		.word	USBFS_1_DEVICE0_CONFIGURATION0_TABLE
+  53              		.type	USBFS_1_DEVICE0_CONFIGURATION0_TABLE, %object
+  54              		.size	USBFS_1_DEVICE0_CONFIGURATION0_TABLE, 32
+  55              	USBFS_1_DEVICE0_CONFIGURATION0_TABLE:
+  56 0020 01       		.byte	1
+  57 0021 000000   		.space	3
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 2
+
+
+  58 0024 00000000 		.word	USBFS_1_DEVICE0_CONFIGURATION0_DESCR
+  59 0028 01       		.byte	1
+  60 0029 000000   		.space	3
+  61 002c 00000000 		.word	USBFS_1_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+  62 0030 01       		.byte	1
+  63 0031 000000   		.space	3
+  64 0034 00000000 		.word	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_TABLE
+  65 0038 00       		.byte	0
+  66 0039 000000   		.space	3
+  67 003c 00000000 		.word	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+  68              		.type	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE_CLASS, %object
+  69              		.size	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE_CLASS, 1
+  70              	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE_CLASS:
+  71 0040 03       		.byte	3
+  72 0041 000000   		.space	3
+  73              		.type	USBFS_1_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE, %object
+  74              		.size	USBFS_1_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE, 8
+  75              	USBFS_1_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE:
+  76 0044 00       		.byte	0
+  77 0045 00       		.byte	0
+  78 0046 81       		.byte	-127
+  79 0047 03       		.byte	3
+  80 0048 0800     		.short	8
+  81 004a 03       		.byte	3
+  82 004b 00       		.space	1
+  83              		.type	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_TABLE, %object
+  84              		.size	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_TABLE, 8
+  85              	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_TABLE:
+  86 004c 01       		.byte	1
+  87 004d 000000   		.space	3
+  88 0050 00000000 		.word	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_TABLE
+  89              		.type	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_TABLE, %object
+  90              		.size	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_TABLE, 40
+  91              	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_TABLE:
+  92 0054 00       		.byte	0
+  93 0055 000000   		.space	3
+  94 0058 00000000 		.word	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_TABLE
+  95 005c 00       		.byte	0
+  96 005d 000000   		.space	3
+  97 0060 00000000 		.word	0
+  98 0064 00       		.byte	0
+  99 0065 000000   		.space	3
+ 100 0068 00000000 		.word	0
+ 101 006c 01       		.byte	1
+ 102 006d 000000   		.space	3
+ 103 0070 00000000 		.word	USBFS_1_HIDREPORT_DESCRIPTOR1
+ 104 0074 01       		.byte	1
+ 105 0075 000000   		.space	3
+ 106 0078 12000000 		.word	USBFS_1_DEVICE0_CONFIGURATION0_DESCR+18
+ 107              		.type	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_TABLE, %object
+ 108              		.size	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_TABLE, 12
+ 109              	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_TABLE:
+ 110 007c 0400     		.short	4
+ 111 007e 0000     		.space	2
+ 112 0080 00000000 		.word	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_BUF
+ 113 0084 00000000 		.word	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_SCB
+ 114              		.type	USBFS_1_HIDREPORT_DESCRIPTOR1, %object
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 3
+
+
+ 115              		.size	USBFS_1_HIDREPORT_DESCRIPTOR1, 46
+ 116              	USBFS_1_HIDREPORT_DESCRIPTOR1:
+ 117 0088 2A       		.byte	42
+ 118 0089 00       		.byte	0
+ 119 008a 05       		.byte	5
+ 120 008b 01       		.byte	1
+ 121 008c 09       		.byte	9
+ 122 008d 04       		.byte	4
+ 123 008e A1       		.byte	-95
+ 124 008f 00       		.byte	0
+ 125 0090 09       		.byte	9
+ 126 0091 01       		.byte	1
+ 127 0092 A1       		.byte	-95
+ 128 0093 00       		.byte	0
+ 129 0094 09       		.byte	9
+ 130 0095 30       		.byte	48
+ 131 0096 09       		.byte	9
+ 132 0097 31       		.byte	49
+ 133 0098 15       		.byte	21
+ 134 0099 81       		.byte	-127
+ 135 009a 25       		.byte	37
+ 136 009b 7F       		.byte	127
+ 137 009c 75       		.byte	117
+ 138 009d 08       		.byte	8
+ 139 009e 95       		.byte	-107
+ 140 009f 02       		.byte	2
+ 141 00a0 81       		.byte	-127
+ 142 00a1 02       		.byte	2
+ 143 00a2 C0       		.byte	-64
+ 144 00a3 05       		.byte	5
+ 145 00a4 09       		.byte	9
+ 146 00a5 19       		.byte	25
+ 147 00a6 01       		.byte	1
+ 148 00a7 29       		.byte	41
+ 149 00a8 08       		.byte	8
+ 150 00a9 15       		.byte	21
+ 151 00aa 00       		.byte	0
+ 152 00ab 25       		.byte	37
+ 153 00ac 01       		.byte	1
+ 154 00ad 75       		.byte	117
+ 155 00ae 01       		.byte	1
+ 156 00af 95       		.byte	-107
+ 157 00b0 08       		.byte	8
+ 158 00b1 81       		.byte	-127
+ 159 00b2 02       		.byte	2
+ 160 00b3 C0       		.byte	-64
+ 161 00b4 00       		.byte	0
+ 162 00b5 00       		.byte	0
+ 163 00b6 0000     		.space	2
+ 164              		.type	USBFS_1_STRING_DESCRIPTORS, %object
+ 165              		.size	USBFS_1_STRING_DESCRIPTORS, 81
+ 166              	USBFS_1_STRING_DESCRIPTORS:
+ 167 00b8 04       		.byte	4
+ 168 00b9 03       		.byte	3
+ 169 00ba 09       		.byte	9
+ 170 00bb 04       		.byte	4
+ 171 00bc 2A       		.byte	42
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 4
+
+
+ 172 00bd 03       		.byte	3
+ 173 00be 50       		.byte	80
+ 174 00bf 00       		.byte	0
+ 175 00c0 72       		.byte	114
+ 176 00c1 00       		.byte	0
+ 177 00c2 6F       		.byte	111
+ 178 00c3 00       		.byte	0
+ 179 00c4 6D       		.byte	109
+ 180 00c5 00       		.byte	0
+ 181 00c6 65       		.byte	101
+ 182 00c7 00       		.byte	0
+ 183 00c8 74       		.byte	116
+ 184 00c9 00       		.byte	0
+ 185 00ca 68       		.byte	104
+ 186 00cb 00       		.byte	0
+ 187 00cc 65       		.byte	101
+ 188 00cd 00       		.byte	0
+ 189 00ce 75       		.byte	117
+ 190 00cf 00       		.byte	0
+ 191 00d0 73       		.byte	115
+ 192 00d1 00       		.byte	0
+ 193 00d2 5F       		.byte	95
+ 194 00d3 00       		.byte	0
+ 195 00d4 45       		.byte	69
+ 196 00d5 00       		.byte	0
+ 197 00d6 64       		.byte	100
+ 198 00d7 00       		.byte	0
+ 199 00d8 75       		.byte	117
+ 200 00d9 00       		.byte	0
+ 201 00da 63       		.byte	99
+ 202 00db 00       		.byte	0
+ 203 00dc 61       		.byte	97
+ 204 00dd 00       		.byte	0
+ 205 00de 74       		.byte	116
+ 206 00df 00       		.byte	0
+ 207 00e0 69       		.byte	105
+ 208 00e1 00       		.byte	0
+ 209 00e2 6F       		.byte	111
+ 210 00e3 00       		.byte	0
+ 211 00e4 6E       		.byte	110
+ 212 00e5 00       		.byte	0
+ 213 00e6 22       		.byte	34
+ 214 00e7 03       		.byte	3
+ 215 00e8 48       		.byte	72
+ 216 00e9 00       		.byte	0
+ 217 00ea 6F       		.byte	111
+ 218 00eb 00       		.byte	0
+ 219 00ec 6D       		.byte	109
+ 220 00ed 00       		.byte	0
+ 221 00ee 65       		.byte	101
+ 222 00ef 00       		.byte	0
+ 223 00f0 42       		.byte	66
+ 224 00f1 00       		.byte	0
+ 225 00f2 72       		.byte	114
+ 226 00f3 00       		.byte	0
+ 227 00f4 65       		.byte	101
+ 228 00f5 00       		.byte	0
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 5
+
+
+ 229 00f6 77       		.byte	119
+ 230 00f7 00       		.byte	0
+ 231 00f8 4A       		.byte	74
+ 232 00f9 00       		.byte	0
+ 233 00fa 6F       		.byte	111
+ 234 00fb 00       		.byte	0
+ 235 00fc 79       		.byte	121
+ 236 00fd 00       		.byte	0
+ 237 00fe 53       		.byte	83
+ 238 00ff 00       		.byte	0
+ 239 0100 74       		.byte	116
+ 240 0101 00       		.byte	0
+ 241 0102 69       		.byte	105
+ 242 0103 00       		.byte	0
+ 243 0104 63       		.byte	99
+ 244 0105 00       		.byte	0
+ 245 0106 6B       		.byte	107
+ 246 0107 00       		.byte	0
+ 247 0108 00       		.byte	0
+ 248 0109 000000   		.space	3
+ 249              		.type	USBFS_1_DEVICE0_CONFIGURATION0_DESCR, %object
+ 250              		.size	USBFS_1_DEVICE0_CONFIGURATION0_DESCR, 34
+ 251              	USBFS_1_DEVICE0_CONFIGURATION0_DESCR:
+ 252 010c 09       		.byte	9
+ 253 010d 02       		.byte	2
+ 254 010e 22       		.byte	34
+ 255 010f 00       		.byte	0
+ 256 0110 01       		.byte	1
+ 257 0111 01       		.byte	1
+ 258 0112 02       		.byte	2
+ 259 0113 80       		.byte	-128
+ 260 0114 7D       		.byte	125
+ 261 0115 09       		.byte	9
+ 262 0116 04       		.byte	4
+ 263 0117 00       		.byte	0
+ 264 0118 00       		.byte	0
+ 265 0119 01       		.byte	1
+ 266 011a 03       		.byte	3
+ 267 011b 00       		.byte	0
+ 268 011c 00       		.byte	0
+ 269 011d 02       		.byte	2
+ 270 011e 09       		.byte	9
+ 271 011f 21       		.byte	33
+ 272 0120 11       		.byte	17
+ 273 0121 01       		.byte	1
+ 274 0122 00       		.byte	0
+ 275 0123 01       		.byte	1
+ 276 0124 22       		.byte	34
+ 277 0125 2A       		.byte	42
+ 278 0126 00       		.byte	0
+ 279 0127 07       		.byte	7
+ 280 0128 05       		.byte	5
+ 281 0129 81       		.byte	-127
+ 282 012a 03       		.byte	3
+ 283 012b 08       		.byte	8
+ 284 012c 00       		.byte	0
+ 285 012d 0A       		.byte	10
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 6
+
+
+ 286 012e 0000     		.space	2
+ 287              		.type	USBFS_1_DEVICE0_DESCR, %object
+ 288              		.size	USBFS_1_DEVICE0_DESCR, 18
+ 289              	USBFS_1_DEVICE0_DESCR:
+ 290 0130 12       		.byte	18
+ 291 0131 01       		.byte	1
+ 292 0132 00       		.byte	0
+ 293 0133 02       		.byte	2
+ 294 0134 00       		.byte	0
+ 295 0135 00       		.byte	0
+ 296 0136 00       		.byte	0
+ 297 0137 08       		.byte	8
+ 298 0138 B4       		.byte	-76
+ 299 0139 04       		.byte	4
+ 300 013a 51       		.byte	81
+ 301 013b 80       		.byte	-128
+ 302 013c 00       		.byte	0
+ 303 013d 00       		.byte	0
+ 304 013e 01       		.byte	1
+ 305 013f 02       		.byte	2
+ 306 0140 00       		.byte	0
+ 307 0141 01       		.byte	1
+ 308              		.text
+ 309              	.Letext0:
+ 310              		.file 1 "Generated_Source\\PSoC5\\cytypes.h"
+ 311              		.file 2 "Generated_Source\\PSoC5\\USBFS_1.h"
+ 312              		.file 3 "Generated_Source\\PSoC5\\USBFS_1_descr.c"
+ 313              		.section	.debug_info,"",%progbits
+ 314              	.Ldebug_info0:
+ 315 0000 9B030000 		.4byte	0x39b
+ 316 0004 0400     		.2byte	0x4
+ 317 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 318 000a 04       		.byte	0x4
+ 319 000b 01       		.uleb128 0x1
+ 320 000c 57010000 		.4byte	.LASF46
+ 321 0010 0C       		.byte	0xc
+ 322 0011 18030000 		.4byte	.LASF47
+ 323 0015 4F040000 		.4byte	.LASF48
+ 324 0019 00000000 		.4byte	.Ldebug_line0
+ 325 001d 02       		.uleb128 0x2
+ 326 001e 01       		.byte	0x1
+ 327 001f 06       		.byte	0x6
+ 328 0020 FC030000 		.4byte	.LASF0
+ 329 0024 02       		.uleb128 0x2
+ 330 0025 01       		.byte	0x1
+ 331 0026 08       		.byte	0x8
+ 332 0027 49010000 		.4byte	.LASF1
+ 333 002b 02       		.uleb128 0x2
+ 334 002c 02       		.byte	0x2
+ 335 002d 05       		.byte	0x5
+ 336 002e 7A030000 		.4byte	.LASF2
+ 337 0032 02       		.uleb128 0x2
+ 338 0033 02       		.byte	0x2
+ 339 0034 07       		.byte	0x7
+ 340 0035 62000000 		.4byte	.LASF3
+ 341 0039 02       		.uleb128 0x2
+ 342 003a 04       		.byte	0x4
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 7
+
+
+ 343 003b 05       		.byte	0x5
+ 344 003c 59000000 		.4byte	.LASF4
+ 345 0040 02       		.uleb128 0x2
+ 346 0041 04       		.byte	0x4
+ 347 0042 07       		.byte	0x7
+ 348 0043 F0010000 		.4byte	.LASF5
+ 349 0047 02       		.uleb128 0x2
+ 350 0048 08       		.byte	0x8
+ 351 0049 05       		.byte	0x5
+ 352 004a 0A030000 		.4byte	.LASF6
+ 353 004e 02       		.uleb128 0x2
+ 354 004f 08       		.byte	0x8
+ 355 0050 07       		.byte	0x7
+ 356 0051 C5020000 		.4byte	.LASF7
+ 357 0055 03       		.uleb128 0x3
+ 358 0056 04       		.byte	0x4
+ 359 0057 05       		.byte	0x5
+ 360 0058 696E7400 		.ascii	"int\000"
+ 361 005c 02       		.uleb128 0x2
+ 362 005d 04       		.byte	0x4
+ 363 005e 07       		.byte	0x7
+ 364 005f 94020000 		.4byte	.LASF8
+ 365 0063 04       		.uleb128 0x4
+ 366 0064 84030000 		.4byte	.LASF9
+ 367 0068 01       		.byte	0x1
+ 368 0069 9201     		.2byte	0x192
+ 369 006b 24000000 		.4byte	0x24
+ 370 006f 04       		.uleb128 0x4
+ 371 0070 5C020000 		.4byte	.LASF10
+ 372 0074 01       		.byte	0x1
+ 373 0075 9301     		.2byte	0x193
+ 374 0077 32000000 		.4byte	0x32
+ 375 007b 02       		.uleb128 0x2
+ 376 007c 04       		.byte	0x4
+ 377 007d 04       		.byte	0x4
+ 378 007e F6000000 		.4byte	.LASF11
+ 379 0082 02       		.uleb128 0x2
+ 380 0083 08       		.byte	0x8
+ 381 0084 04       		.byte	0x4
+ 382 0085 55020000 		.4byte	.LASF12
+ 383 0089 02       		.uleb128 0x2
+ 384 008a 01       		.byte	0x1
+ 385 008b 08       		.byte	0x8
+ 386 008c DE030000 		.4byte	.LASF13
+ 387 0090 05       		.uleb128 0x5
+ 388 0091 63000000 		.4byte	0x63
+ 389 0095 02       		.uleb128 0x2
+ 390 0096 08       		.byte	0x8
+ 391 0097 04       		.byte	0x4
+ 392 0098 E3030000 		.4byte	.LASF14
+ 393 009c 02       		.uleb128 0x2
+ 394 009d 04       		.byte	0x4
+ 395 009e 07       		.byte	0x7
+ 396 009f E3020000 		.4byte	.LASF15
+ 397 00a3 06       		.uleb128 0x6
+ 398 00a4 08       		.byte	0x8
+ 399 00a5 02       		.byte	0x2
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 8
+
+
+ 400 00a6 9D       		.byte	0x9d
+ 401 00a7 F4000000 		.4byte	0xf4
+ 402 00ab 07       		.uleb128 0x7
+ 403 00ac 8A030000 		.4byte	.LASF16
+ 404 00b0 02       		.byte	0x2
+ 405 00b1 9F       		.byte	0x9f
+ 406 00b2 63000000 		.4byte	0x63
+ 407 00b6 00       		.byte	0
+ 408 00b7 07       		.uleb128 0x7
+ 409 00b8 EB000000 		.4byte	.LASF17
+ 410 00bc 02       		.byte	0x2
+ 411 00bd A0       		.byte	0xa0
+ 412 00be 63000000 		.4byte	0x63
+ 413 00c2 01       		.byte	0x1
+ 414 00c3 07       		.uleb128 0x7
+ 415 00c4 02020000 		.4byte	.LASF18
+ 416 00c8 02       		.byte	0x2
+ 417 00c9 A1       		.byte	0xa1
+ 418 00ca 63000000 		.4byte	0x63
+ 419 00ce 02       		.byte	0x2
+ 420 00cf 07       		.uleb128 0x7
+ 421 00d0 E5010000 		.4byte	.LASF19
+ 422 00d4 02       		.byte	0x2
+ 423 00d5 A2       		.byte	0xa2
+ 424 00d6 63000000 		.4byte	0x63
+ 425 00da 03       		.byte	0x3
+ 426 00db 07       		.uleb128 0x7
+ 427 00dc 6F030000 		.4byte	.LASF20
+ 428 00e0 02       		.byte	0x2
+ 429 00e1 A3       		.byte	0xa3
+ 430 00e2 6F000000 		.4byte	0x6f
+ 431 00e6 04       		.byte	0x4
+ 432 00e7 07       		.uleb128 0x7
+ 433 00e8 F3040000 		.4byte	.LASF21
+ 434 00ec 02       		.byte	0x2
+ 435 00ed A4       		.byte	0xa4
+ 436 00ee 63000000 		.4byte	0x63
+ 437 00f2 06       		.byte	0x6
+ 438 00f3 00       		.byte	0
+ 439 00f4 08       		.uleb128 0x8
+ 440 00f5 39020000 		.4byte	.LASF22
+ 441 00f9 02       		.byte	0x2
+ 442 00fa A5       		.byte	0xa5
+ 443 00fb A3000000 		.4byte	0xa3
+ 444 00ff 06       		.uleb128 0x6
+ 445 0100 04       		.byte	0x4
+ 446 0101 02       		.byte	0x2
+ 447 0102 A7       		.byte	0xa7
+ 448 0103 20010000 		.4byte	0x120
+ 449 0107 07       		.uleb128 0x7
+ 450 0108 9A000000 		.4byte	.LASF23
+ 451 010c 02       		.byte	0x2
+ 452 010d A9       		.byte	0xa9
+ 453 010e 63000000 		.4byte	0x63
+ 454 0112 00       		.byte	0
+ 455 0113 07       		.uleb128 0x7
+ 456 0114 48040000 		.4byte	.LASF24
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 9
+
+
+ 457 0118 02       		.byte	0x2
+ 458 0119 AA       		.byte	0xaa
+ 459 011a 6F000000 		.4byte	0x6f
+ 460 011e 02       		.byte	0x2
+ 461 011f 00       		.byte	0
+ 462 0120 08       		.uleb128 0x8
+ 463 0121 07020000 		.4byte	.LASF25
+ 464 0125 02       		.byte	0x2
+ 465 0126 AB       		.byte	0xab
+ 466 0127 FF000000 		.4byte	0xff
+ 467 012b 06       		.uleb128 0x6
+ 468 012c 0C       		.byte	0xc
+ 469 012d 02       		.byte	0x2
+ 470 012e AD       		.byte	0xad
+ 471 012f 58010000 		.4byte	0x158
+ 472 0133 07       		.uleb128 0x7
+ 473 0134 53000000 		.4byte	.LASF26
+ 474 0138 02       		.byte	0x2
+ 475 0139 AF       		.byte	0xaf
+ 476 013a 6F000000 		.4byte	0x6f
+ 477 013e 00       		.byte	0
+ 478 013f 07       		.uleb128 0x7
+ 479 0140 E5000000 		.4byte	.LASF27
+ 480 0144 02       		.byte	0x2
+ 481 0145 B0       		.byte	0xb0
+ 482 0146 58010000 		.4byte	0x158
+ 483 014a 04       		.byte	0x4
+ 484 014b 07       		.uleb128 0x7
+ 485 014c 00000000 		.4byte	.LASF28
+ 486 0150 02       		.byte	0x2
+ 487 0151 B1       		.byte	0xb1
+ 488 0152 5E010000 		.4byte	0x15e
+ 489 0156 08       		.byte	0x8
+ 490 0157 00       		.byte	0
+ 491 0158 09       		.uleb128 0x9
+ 492 0159 04       		.byte	0x4
+ 493 015a 90000000 		.4byte	0x90
+ 494 015e 09       		.uleb128 0x9
+ 495 015f 04       		.byte	0x4
+ 496 0160 20010000 		.4byte	0x120
+ 497 0164 08       		.uleb128 0x8
+ 498 0165 EF030000 		.4byte	.LASF29
+ 499 0169 02       		.byte	0x2
+ 500 016a B2       		.byte	0xb2
+ 501 016b 2B010000 		.4byte	0x12b
+ 502 016f 06       		.uleb128 0x6
+ 503 0170 08       		.byte	0x8
+ 504 0171 02       		.byte	0x2
+ 505 0172 B4       		.byte	0xb4
+ 506 0173 8E010000 		.4byte	0x18e
+ 507 0177 0A       		.uleb128 0xa
+ 508 0178 6300     		.ascii	"c\000"
+ 509 017a 02       		.byte	0x2
+ 510 017b B6       		.byte	0xb6
+ 511 017c 63000000 		.4byte	0x63
+ 512 0180 00       		.byte	0
+ 513 0181 07       		.uleb128 0x7
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 10
+
+
+ 514 0182 DC020000 		.4byte	.LASF30
+ 515 0186 02       		.byte	0x2
+ 516 0187 B7       		.byte	0xb7
+ 517 0188 8E010000 		.4byte	0x18e
+ 518 018c 04       		.byte	0x4
+ 519 018d 00       		.byte	0
+ 520 018e 09       		.uleb128 0x9
+ 521 018f 04       		.byte	0x4
+ 522 0190 94010000 		.4byte	0x194
+ 523 0194 0B       		.uleb128 0xb
+ 524 0195 08       		.uleb128 0x8
+ 525 0196 A1020000 		.4byte	.LASF31
+ 526 019a 02       		.byte	0x2
+ 527 019b B8       		.byte	0xb8
+ 528 019c 6F010000 		.4byte	0x16f
+ 529 01a0 0C       		.uleb128 0xc
+ 530 01a1 B0010000 		.4byte	0x1b0
+ 531 01a5 B0010000 		.4byte	0x1b0
+ 532 01a9 0D       		.uleb128 0xd
+ 533 01aa 9C000000 		.4byte	0x9c
+ 534 01ae 11       		.byte	0x11
+ 535 01af 00       		.byte	0
+ 536 01b0 0E       		.uleb128 0xe
+ 537 01b1 63000000 		.4byte	0x63
+ 538 01b5 0F       		.uleb128 0xf
+ 539 01b6 AF020000 		.4byte	.LASF32
+ 540 01ba 03       		.byte	0x3
+ 541 01bb 24       		.byte	0x24
+ 542 01bc C6010000 		.4byte	0x1c6
+ 543 01c0 05       		.uleb128 0x5
+ 544 01c1 03       		.byte	0x3
+ 545 01c2 00000000 		.4byte	USBFS_1_DEVICE0_DESCR
+ 546 01c6 0E       		.uleb128 0xe
+ 547 01c7 A0010000 		.4byte	0x1a0
+ 548 01cb 0C       		.uleb128 0xc
+ 549 01cc B0010000 		.4byte	0x1b0
+ 550 01d0 DB010000 		.4byte	0x1db
+ 551 01d4 0D       		.uleb128 0xd
+ 552 01d5 9C000000 		.4byte	0x9c
+ 553 01d9 21       		.byte	0x21
+ 554 01da 00       		.byte	0
+ 555 01db 0F       		.uleb128 0xf
+ 556 01dc 75000000 		.4byte	.LASF33
+ 557 01e0 03       		.byte	0x3
+ 558 01e1 37       		.byte	0x37
+ 559 01e2 EC010000 		.4byte	0x1ec
+ 560 01e6 05       		.uleb128 0x5
+ 561 01e7 03       		.byte	0x3
+ 562 01e8 00000000 		.4byte	USBFS_1_DEVICE0_CONFIGURATION0_DESCR
+ 563 01ec 0E       		.uleb128 0xe
+ 564 01ed CB010000 		.4byte	0x1cb
+ 565 01f1 0C       		.uleb128 0xc
+ 566 01f2 01020000 		.4byte	0x201
+ 567 01f6 01020000 		.4byte	0x201
+ 568 01fa 0D       		.uleb128 0xd
+ 569 01fb 9C000000 		.4byte	0x9c
+ 570 01ff 00       		.byte	0
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 11
+
+
+ 571 0200 00       		.byte	0
+ 572 0201 0E       		.uleb128 0xe
+ 573 0202 95010000 		.4byte	0x195
+ 574 0206 0F       		.uleb128 0xf
+ 575 0207 3F030000 		.4byte	.LASF34
+ 576 020b 03       		.byte	0x3
+ 577 020c C7       		.byte	0xc7
+ 578 020d 17020000 		.4byte	0x217
+ 579 0211 05       		.uleb128 0x5
+ 580 0212 03       		.byte	0x3
+ 581 0213 00000000 		.4byte	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_TABLE
+ 582 0217 0E       		.uleb128 0xe
+ 583 0218 F1010000 		.4byte	0x1f1
+ 584 021c 0C       		.uleb128 0xc
+ 585 021d 2C020000 		.4byte	0x22c
+ 586 0221 2C020000 		.4byte	0x22c
+ 587 0225 0D       		.uleb128 0xd
+ 588 0226 9C000000 		.4byte	0x9c
+ 589 022a 00       		.byte	0
+ 590 022b 00       		.byte	0
+ 591 022c 0E       		.uleb128 0xe
+ 592 022d F4000000 		.4byte	0xf4
+ 593 0231 0F       		.uleb128 0xf
+ 594 0232 63020000 		.4byte	.LASF35
+ 595 0236 03       		.byte	0x3
+ 596 0237 D2       		.byte	0xd2
+ 597 0238 42020000 		.4byte	0x242
+ 598 023c 05       		.uleb128 0x5
+ 599 023d 03       		.byte	0x3
+ 600 023e 00000000 		.4byte	USBFS_1_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+ 601 0242 0E       		.uleb128 0xe
+ 602 0243 1C020000 		.4byte	0x21c
+ 603 0247 0C       		.uleb128 0xc
+ 604 0248 B0010000 		.4byte	0x1b0
+ 605 024c 57020000 		.4byte	0x257
+ 606 0250 0D       		.uleb128 0xd
+ 607 0251 9C000000 		.4byte	0x9c
+ 608 0255 00       		.byte	0
+ 609 0256 00       		.byte	0
+ 610 0257 0F       		.uleb128 0xf
+ 611 0258 AF030000 		.4byte	.LASF36
+ 612 025c 03       		.byte	0x3
+ 613 025d D6       		.byte	0xd6
+ 614 025e 68020000 		.4byte	0x268
+ 615 0262 05       		.uleb128 0x5
+ 616 0263 03       		.byte	0x3
+ 617 0264 00000000 		.4byte	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+ 618 0268 0E       		.uleb128 0xe
+ 619 0269 47020000 		.4byte	0x247
+ 620 026d 0C       		.uleb128 0xc
+ 621 026e 01020000 		.4byte	0x201
+ 622 0272 7D020000 		.4byte	0x27d
+ 623 0276 0D       		.uleb128 0xd
+ 624 0277 9C000000 		.4byte	0x9c
+ 625 027b 03       		.byte	0x3
+ 626 027c 00       		.byte	0
+ 627 027d 0F       		.uleb128 0xf
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 12
+
+
+ 628 027e CE040000 		.4byte	.LASF37
+ 629 0282 03       		.byte	0x3
+ 630 0283 DE       		.byte	0xde
+ 631 0284 8E020000 		.4byte	0x28e
+ 632 0288 05       		.uleb128 0x5
+ 633 0289 03       		.byte	0x3
+ 634 028a 00000000 		.4byte	USBFS_1_DEVICE0_CONFIGURATION0_TABLE
+ 635 028e 0E       		.uleb128 0xe
+ 636 028f 6D020000 		.4byte	0x26d
+ 637 0293 0C       		.uleb128 0xc
+ 638 0294 01020000 		.4byte	0x201
+ 639 0298 A3020000 		.4byte	0x2a3
+ 640 029c 0D       		.uleb128 0xd
+ 641 029d 9C000000 		.4byte	0x9c
+ 642 02a1 02       		.byte	0x2
+ 643 02a2 00       		.byte	0
+ 644 02a3 0F       		.uleb128 0xf
+ 645 02a4 23020000 		.4byte	.LASF38
+ 646 02a8 03       		.byte	0x3
+ 647 02a9 E8       		.byte	0xe8
+ 648 02aa B4020000 		.4byte	0x2b4
+ 649 02ae 05       		.uleb128 0x5
+ 650 02af 03       		.byte	0x3
+ 651 02b0 00000000 		.4byte	USBFS_1_DEVICE0_TABLE
+ 652 02b4 0E       		.uleb128 0xe
+ 653 02b5 93020000 		.4byte	0x293
+ 654 02b9 0F       		.uleb128 0xf
+ 655 02ba 3B010000 		.4byte	.LASF39
+ 656 02be 03       		.byte	0x3
+ 657 02bf F0       		.byte	0xf0
+ 658 02c0 CA020000 		.4byte	0x2ca
+ 659 02c4 05       		.uleb128 0x5
+ 660 02c5 03       		.byte	0x3
+ 661 02c6 00000000 		.4byte	USBFS_1_TABLE
+ 662 02ca 0E       		.uleb128 0xe
+ 663 02cb F1010000 		.4byte	0x1f1
+ 664 02cf 0C       		.uleb128 0xc
+ 665 02d0 B0010000 		.4byte	0x1b0
+ 666 02d4 DF020000 		.4byte	0x2df
+ 667 02d8 0D       		.uleb128 0xd
+ 668 02d9 9C000000 		.4byte	0x9c
+ 669 02dd 50       		.byte	0x50
+ 670 02de 00       		.byte	0
+ 671 02df 0F       		.uleb128 0xf
+ 672 02e0 94030000 		.4byte	.LASF40
+ 673 02e4 03       		.byte	0x3
+ 674 02e5 65       		.byte	0x65
+ 675 02e6 F0020000 		.4byte	0x2f0
+ 676 02ea 05       		.uleb128 0x5
+ 677 02eb 03       		.byte	0x3
+ 678 02ec 00000000 		.4byte	USBFS_1_STRING_DESCRIPTORS
+ 679 02f0 0E       		.uleb128 0xe
+ 680 02f1 CF020000 		.4byte	0x2cf
+ 681 02f5 0F       		.uleb128 0xf
+ 682 02f6 A1000000 		.4byte	.LASF41
+ 683 02fa 03       		.byte	0x3
+ 684 02fb A7       		.byte	0xa7
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 13
+
+
+ 685 02fc 20010000 		.4byte	0x120
+ 686 0300 05       		.uleb128 0x5
+ 687 0301 03       		.byte	0x3
+ 688 0302 00000000 		.4byte	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_SCB
+ 689 0306 0C       		.uleb128 0xc
+ 690 0307 63000000 		.4byte	0x63
+ 691 030b 16030000 		.4byte	0x316
+ 692 030f 0D       		.uleb128 0xd
+ 693 0310 9C000000 		.4byte	0x9c
+ 694 0314 03       		.byte	0x3
+ 695 0315 00       		.byte	0
+ 696 0316 0F       		.uleb128 0xf
+ 697 0317 08040000 		.4byte	.LASF42
+ 698 031b 03       		.byte	0x3
+ 699 031c A8       		.byte	0xa8
+ 700 031d 06030000 		.4byte	0x306
+ 701 0321 05       		.uleb128 0x5
+ 702 0322 03       		.byte	0x3
+ 703 0323 00000000 		.4byte	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_BUF
+ 704 0327 0C       		.uleb128 0xc
+ 705 0328 B0010000 		.4byte	0x1b0
+ 706 032c 37030000 		.4byte	0x337
+ 707 0330 0D       		.uleb128 0xd
+ 708 0331 9C000000 		.4byte	0x9c
+ 709 0335 2D       		.byte	0x2d
+ 710 0336 00       		.byte	0
+ 711 0337 0F       		.uleb128 0xf
+ 712 0338 EC020000 		.4byte	.LASF43
+ 713 033c 03       		.byte	0x3
+ 714 033d 86       		.byte	0x86
+ 715 033e 48030000 		.4byte	0x348
+ 716 0342 05       		.uleb128 0x5
+ 717 0343 03       		.byte	0x3
+ 718 0344 00000000 		.4byte	USBFS_1_HIDREPORT_DESCRIPTOR1
+ 719 0348 0E       		.uleb128 0xe
+ 720 0349 27030000 		.4byte	0x327
+ 721 034d 0C       		.uleb128 0xc
+ 722 034e 5D030000 		.4byte	0x35d
+ 723 0352 5D030000 		.4byte	0x35d
+ 724 0356 0D       		.uleb128 0xd
+ 725 0357 9C000000 		.4byte	0x9c
+ 726 035b 00       		.byte	0
+ 727 035c 00       		.byte	0
+ 728 035d 0E       		.uleb128 0xe
+ 729 035e 64010000 		.4byte	0x164
+ 730 0362 0F       		.uleb128 0xf
+ 731 0363 0D000000 		.4byte	.LASF44
+ 732 0367 03       		.byte	0x3
+ 733 0368 AE       		.byte	0xae
+ 734 0369 73030000 		.4byte	0x373
+ 735 036d 05       		.uleb128 0x5
+ 736 036e 03       		.byte	0x3
+ 737 036f 00000000 		.4byte	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_IN_RPT_TABLE
+ 738 0373 0E       		.uleb128 0xe
+ 739 0374 4D030000 		.4byte	0x34d
+ 740 0378 0C       		.uleb128 0xc
+ 741 0379 01020000 		.4byte	0x201
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 14
+
+
+ 742 037d 88030000 		.4byte	0x388
+ 743 0381 0D       		.uleb128 0xd
+ 744 0382 9C000000 		.4byte	0x9c
+ 745 0386 04       		.byte	0x4
+ 746 0387 00       		.byte	0
+ 747 0388 0F       		.uleb128 0xf
+ 748 0389 FC000000 		.4byte	.LASF45
+ 749 038d 03       		.byte	0x3
+ 750 038e BB       		.byte	0xbb
+ 751 038f 99030000 		.4byte	0x399
+ 752 0393 05       		.uleb128 0x5
+ 753 0394 03       		.byte	0x3
+ 754 0395 00000000 		.4byte	USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE0_HID_TABLE
+ 755 0399 0E       		.uleb128 0xe
+ 756 039a 78030000 		.4byte	0x378
+ 757 039e 00       		.byte	0
+ 758              		.section	.debug_abbrev,"",%progbits
+ 759              	.Ldebug_abbrev0:
+ 760 0000 01       		.uleb128 0x1
+ 761 0001 11       		.uleb128 0x11
+ 762 0002 01       		.byte	0x1
+ 763 0003 25       		.uleb128 0x25
+ 764 0004 0E       		.uleb128 0xe
+ 765 0005 13       		.uleb128 0x13
+ 766 0006 0B       		.uleb128 0xb
+ 767 0007 03       		.uleb128 0x3
+ 768 0008 0E       		.uleb128 0xe
+ 769 0009 1B       		.uleb128 0x1b
+ 770 000a 0E       		.uleb128 0xe
+ 771 000b 10       		.uleb128 0x10
+ 772 000c 17       		.uleb128 0x17
+ 773 000d 00       		.byte	0
+ 774 000e 00       		.byte	0
+ 775 000f 02       		.uleb128 0x2
+ 776 0010 24       		.uleb128 0x24
+ 777 0011 00       		.byte	0
+ 778 0012 0B       		.uleb128 0xb
+ 779 0013 0B       		.uleb128 0xb
+ 780 0014 3E       		.uleb128 0x3e
+ 781 0015 0B       		.uleb128 0xb
+ 782 0016 03       		.uleb128 0x3
+ 783 0017 0E       		.uleb128 0xe
+ 784 0018 00       		.byte	0
+ 785 0019 00       		.byte	0
+ 786 001a 03       		.uleb128 0x3
+ 787 001b 24       		.uleb128 0x24
+ 788 001c 00       		.byte	0
+ 789 001d 0B       		.uleb128 0xb
+ 790 001e 0B       		.uleb128 0xb
+ 791 001f 3E       		.uleb128 0x3e
+ 792 0020 0B       		.uleb128 0xb
+ 793 0021 03       		.uleb128 0x3
+ 794 0022 08       		.uleb128 0x8
+ 795 0023 00       		.byte	0
+ 796 0024 00       		.byte	0
+ 797 0025 04       		.uleb128 0x4
+ 798 0026 16       		.uleb128 0x16
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 15
+
+
+ 799 0027 00       		.byte	0
+ 800 0028 03       		.uleb128 0x3
+ 801 0029 0E       		.uleb128 0xe
+ 802 002a 3A       		.uleb128 0x3a
+ 803 002b 0B       		.uleb128 0xb
+ 804 002c 3B       		.uleb128 0x3b
+ 805 002d 05       		.uleb128 0x5
+ 806 002e 49       		.uleb128 0x49
+ 807 002f 13       		.uleb128 0x13
+ 808 0030 00       		.byte	0
+ 809 0031 00       		.byte	0
+ 810 0032 05       		.uleb128 0x5
+ 811 0033 35       		.uleb128 0x35
+ 812 0034 00       		.byte	0
+ 813 0035 49       		.uleb128 0x49
+ 814 0036 13       		.uleb128 0x13
+ 815 0037 00       		.byte	0
+ 816 0038 00       		.byte	0
+ 817 0039 06       		.uleb128 0x6
+ 818 003a 13       		.uleb128 0x13
+ 819 003b 01       		.byte	0x1
+ 820 003c 0B       		.uleb128 0xb
+ 821 003d 0B       		.uleb128 0xb
+ 822 003e 3A       		.uleb128 0x3a
+ 823 003f 0B       		.uleb128 0xb
+ 824 0040 3B       		.uleb128 0x3b
+ 825 0041 0B       		.uleb128 0xb
+ 826 0042 01       		.uleb128 0x1
+ 827 0043 13       		.uleb128 0x13
+ 828 0044 00       		.byte	0
+ 829 0045 00       		.byte	0
+ 830 0046 07       		.uleb128 0x7
+ 831 0047 0D       		.uleb128 0xd
+ 832 0048 00       		.byte	0
+ 833 0049 03       		.uleb128 0x3
+ 834 004a 0E       		.uleb128 0xe
+ 835 004b 3A       		.uleb128 0x3a
+ 836 004c 0B       		.uleb128 0xb
+ 837 004d 3B       		.uleb128 0x3b
+ 838 004e 0B       		.uleb128 0xb
+ 839 004f 49       		.uleb128 0x49
+ 840 0050 13       		.uleb128 0x13
+ 841 0051 38       		.uleb128 0x38
+ 842 0052 0B       		.uleb128 0xb
+ 843 0053 00       		.byte	0
+ 844 0054 00       		.byte	0
+ 845 0055 08       		.uleb128 0x8
+ 846 0056 16       		.uleb128 0x16
+ 847 0057 00       		.byte	0
+ 848 0058 03       		.uleb128 0x3
+ 849 0059 0E       		.uleb128 0xe
+ 850 005a 3A       		.uleb128 0x3a
+ 851 005b 0B       		.uleb128 0xb
+ 852 005c 3B       		.uleb128 0x3b
+ 853 005d 0B       		.uleb128 0xb
+ 854 005e 49       		.uleb128 0x49
+ 855 005f 13       		.uleb128 0x13
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 16
+
+
+ 856 0060 00       		.byte	0
+ 857 0061 00       		.byte	0
+ 858 0062 09       		.uleb128 0x9
+ 859 0063 0F       		.uleb128 0xf
+ 860 0064 00       		.byte	0
+ 861 0065 0B       		.uleb128 0xb
+ 862 0066 0B       		.uleb128 0xb
+ 863 0067 49       		.uleb128 0x49
+ 864 0068 13       		.uleb128 0x13
+ 865 0069 00       		.byte	0
+ 866 006a 00       		.byte	0
+ 867 006b 0A       		.uleb128 0xa
+ 868 006c 0D       		.uleb128 0xd
+ 869 006d 00       		.byte	0
+ 870 006e 03       		.uleb128 0x3
+ 871 006f 08       		.uleb128 0x8
+ 872 0070 3A       		.uleb128 0x3a
+ 873 0071 0B       		.uleb128 0xb
+ 874 0072 3B       		.uleb128 0x3b
+ 875 0073 0B       		.uleb128 0xb
+ 876 0074 49       		.uleb128 0x49
+ 877 0075 13       		.uleb128 0x13
+ 878 0076 38       		.uleb128 0x38
+ 879 0077 0B       		.uleb128 0xb
+ 880 0078 00       		.byte	0
+ 881 0079 00       		.byte	0
+ 882 007a 0B       		.uleb128 0xb
+ 883 007b 26       		.uleb128 0x26
+ 884 007c 00       		.byte	0
+ 885 007d 00       		.byte	0
+ 886 007e 00       		.byte	0
+ 887 007f 0C       		.uleb128 0xc
+ 888 0080 01       		.uleb128 0x1
+ 889 0081 01       		.byte	0x1
+ 890 0082 49       		.uleb128 0x49
+ 891 0083 13       		.uleb128 0x13
+ 892 0084 01       		.uleb128 0x1
+ 893 0085 13       		.uleb128 0x13
+ 894 0086 00       		.byte	0
+ 895 0087 00       		.byte	0
+ 896 0088 0D       		.uleb128 0xd
+ 897 0089 21       		.uleb128 0x21
+ 898 008a 00       		.byte	0
+ 899 008b 49       		.uleb128 0x49
+ 900 008c 13       		.uleb128 0x13
+ 901 008d 2F       		.uleb128 0x2f
+ 902 008e 0B       		.uleb128 0xb
+ 903 008f 00       		.byte	0
+ 904 0090 00       		.byte	0
+ 905 0091 0E       		.uleb128 0xe
+ 906 0092 26       		.uleb128 0x26
+ 907 0093 00       		.byte	0
+ 908 0094 49       		.uleb128 0x49
+ 909 0095 13       		.uleb128 0x13
+ 910 0096 00       		.byte	0
+ 911 0097 00       		.byte	0
+ 912 0098 0F       		.uleb128 0xf
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 17
+
+
+ 913 0099 34       		.uleb128 0x34
+ 914 009a 00       		.byte	0
+ 915 009b 03       		.uleb128 0x3
+ 916 009c 0E       		.uleb128 0xe
+ 917 009d 3A       		.uleb128 0x3a
+ 918 009e 0B       		.uleb128 0xb
+ 919 009f 3B       		.uleb128 0x3b
+ 920 00a0 0B       		.uleb128 0xb
+ 921 00a1 49       		.uleb128 0x49
+ 922 00a2 13       		.uleb128 0x13
+ 923 00a3 3F       		.uleb128 0x3f
+ 924 00a4 19       		.uleb128 0x19
+ 925 00a5 02       		.uleb128 0x2
+ 926 00a6 18       		.uleb128 0x18
+ 927 00a7 00       		.byte	0
+ 928 00a8 00       		.byte	0
+ 929 00a9 00       		.byte	0
+ 930              		.section	.debug_aranges,"",%progbits
+ 931 0000 14000000 		.4byte	0x14
+ 932 0004 0200     		.2byte	0x2
+ 933 0006 00000000 		.4byte	.Ldebug_info0
+ 934 000a 04       		.byte	0x4
+ 935 000b 00       		.byte	0
+ 936 000c 0000     		.2byte	0
+ 937 000e 0000     		.2byte	0
+ 938 0010 00000000 		.4byte	0
+ 939 0014 00000000 		.4byte	0
+ 940              		.section	.debug_line,"",%progbits
+ 941              	.Ldebug_line0:
+ 942 0000 5D000000 		.section	.debug_str,"MS",%progbits,1
+ 942      02005700 
+ 942      00000201 
+ 942      FB0E0D00 
+ 942      01010101 
+ 943              	.LASF28:
+ 944 0000 70537461 		.ascii	"pStatusBlock\000"
+ 944      74757342 
+ 944      6C6F636B 
+ 944      00
+ 945              	.LASF44:
+ 946 000d 55534246 		.ascii	"USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE"
+ 946      535F315F 
+ 946      44455649 
+ 946      4345305F 
+ 946      434F4E46 
+ 947 0040 305F4849 		.ascii	"0_HID_IN_RPT_TABLE\000"
+ 947      445F494E 
+ 947      5F525054 
+ 947      5F544142 
+ 947      4C4500
+ 948              	.LASF26:
+ 949 0053 636F756E 		.ascii	"count\000"
+ 949      7400
+ 950              	.LASF4:
+ 951 0059 6C6F6E67 		.ascii	"long int\000"
+ 951      20696E74 
+ 951      00
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 18
+
+
+ 952              	.LASF3:
+ 953 0062 73686F72 		.ascii	"short unsigned int\000"
+ 953      7420756E 
+ 953      7369676E 
+ 953      65642069 
+ 953      6E7400
+ 954              	.LASF33:
+ 955 0075 55534246 		.ascii	"USBFS_1_DEVICE0_CONFIGURATION0_DESCR\000"
+ 955      535F315F 
+ 955      44455649 
+ 955      4345305F 
+ 955      434F4E46 
+ 956              	.LASF23:
+ 957 009a 73746174 		.ascii	"status\000"
+ 957      757300
+ 958              	.LASF41:
+ 959 00a1 55534246 		.ascii	"USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE"
+ 959      535F315F 
+ 959      44455649 
+ 959      4345305F 
+ 959      434F4E46 
+ 960 00d4 305F4849 		.ascii	"0_HID_IN_RPT_SCB\000"
+ 960      445F494E 
+ 960      5F525054 
+ 960      5F534342 
+ 960      00
+ 961              	.LASF27:
+ 962 00e5 70446174 		.ascii	"pData\000"
+ 962      6100
+ 963              	.LASF17:
+ 964 00eb 616C7453 		.ascii	"altSetting\000"
+ 964      65747469 
+ 964      6E6700
+ 965              	.LASF11:
+ 966 00f6 666C6F61 		.ascii	"float\000"
+ 966      7400
+ 967              	.LASF45:
+ 968 00fc 55534246 		.ascii	"USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE"
+ 968      535F315F 
+ 968      44455649 
+ 968      4345305F 
+ 968      434F4E46 
+ 969 012f 305F4849 		.ascii	"0_HID_TABLE\000"
+ 969      445F5441 
+ 969      424C4500 
+ 970              	.LASF39:
+ 971 013b 55534246 		.ascii	"USBFS_1_TABLE\000"
+ 971      535F315F 
+ 971      5441424C 
+ 971      4500
+ 972              	.LASF1:
+ 973 0149 756E7369 		.ascii	"unsigned char\000"
+ 973      676E6564 
+ 973      20636861 
+ 973      7200
+ 974              	.LASF46:
+ 975 0157 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 19
+
+
+ 975      43313120 
+ 975      352E342E 
+ 975      31203230 
+ 975      31363036 
+ 976 018a 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 976      20726576 
+ 976      6973696F 
+ 976      6E203233 
+ 976      37373135 
+ 977 01bd 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 977      66756E63 
+ 977      74696F6E 
+ 977      2D736563 
+ 977      74696F6E 
+ 978              	.LASF19:
+ 979 01e5 61747472 		.ascii	"attributes\000"
+ 979      69627574 
+ 979      657300
+ 980              	.LASF5:
+ 981 01f0 6C6F6E67 		.ascii	"long unsigned int\000"
+ 981      20756E73 
+ 981      69676E65 
+ 981      6420696E 
+ 981      7400
+ 982              	.LASF18:
+ 983 0202 61646472 		.ascii	"addr\000"
+ 983      00
+ 984              	.LASF25:
+ 985 0207 545F5553 		.ascii	"T_USBFS_1_XFER_STATUS_BLOCK\000"
+ 985      4246535F 
+ 985      315F5846 
+ 985      45525F53 
+ 985      54415455 
+ 986              	.LASF38:
+ 987 0223 55534246 		.ascii	"USBFS_1_DEVICE0_TABLE\000"
+ 987      535F315F 
+ 987      44455649 
+ 987      4345305F 
+ 987      5441424C 
+ 988              	.LASF22:
+ 989 0239 545F5553 		.ascii	"T_USBFS_1_EP_SETTINGS_BLOCK\000"
+ 989      4246535F 
+ 989      315F4550 
+ 989      5F534554 
+ 989      54494E47 
+ 990              	.LASF12:
+ 991 0255 646F7562 		.ascii	"double\000"
+ 991      6C6500
+ 992              	.LASF10:
+ 993 025c 75696E74 		.ascii	"uint16\000"
+ 993      313600
+ 994              	.LASF35:
+ 995 0263 55534246 		.ascii	"USBFS_1_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE\000"
+ 995      535F315F 
+ 995      44455649 
+ 995      4345305F 
+ 995      434F4E46 
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 20
+
+
+ 996              	.LASF8:
+ 997 0294 756E7369 		.ascii	"unsigned int\000"
+ 997      676E6564 
+ 997      20696E74 
+ 997      00
+ 998              	.LASF31:
+ 999 02a1 545F5553 		.ascii	"T_USBFS_1_LUT\000"
+ 999      4246535F 
+ 999      315F4C55 
+ 999      5400
+ 1000              	.LASF32:
+ 1001 02af 55534246 		.ascii	"USBFS_1_DEVICE0_DESCR\000"
+ 1001      535F315F 
+ 1001      44455649 
+ 1001      4345305F 
+ 1001      44455343 
+ 1002              	.LASF7:
+ 1003 02c5 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1003      206C6F6E 
+ 1003      6720756E 
+ 1003      7369676E 
+ 1003      65642069 
+ 1004              	.LASF30:
+ 1005 02dc 705F6C69 		.ascii	"p_list\000"
+ 1005      737400
+ 1006              	.LASF15:
+ 1007 02e3 73697A65 		.ascii	"sizetype\000"
+ 1007      74797065 
+ 1007      00
+ 1008              	.LASF43:
+ 1009 02ec 55534246 		.ascii	"USBFS_1_HIDREPORT_DESCRIPTOR1\000"
+ 1009      535F315F 
+ 1009      48494452 
+ 1009      45504F52 
+ 1009      545F4445 
+ 1010              	.LASF6:
+ 1011 030a 6C6F6E67 		.ascii	"long long int\000"
+ 1011      206C6F6E 
+ 1011      6720696E 
+ 1011      7400
+ 1012              	.LASF47:
+ 1013 0318 47656E65 		.ascii	"Generated_Source\\PSoC5\\USBFS_1_descr.c\000"
+ 1013      72617465 
+ 1013      645F536F 
+ 1013      75726365 
+ 1013      5C50536F 
+ 1014              	.LASF34:
+ 1015 033f 55534246 		.ascii	"USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_TABLE\000"
+ 1015      535F315F 
+ 1015      44455649 
+ 1015      4345305F 
+ 1015      434F4E46 
+ 1016              	.LASF20:
+ 1017 036f 62756666 		.ascii	"bufferSize\000"
+ 1017      65725369 
+ 1017      7A6500
+ 1018              	.LASF2:
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 21
+
+
+ 1019 037a 73686F72 		.ascii	"short int\000"
+ 1019      7420696E 
+ 1019      7400
+ 1020              	.LASF9:
+ 1021 0384 75696E74 		.ascii	"uint8\000"
+ 1021      3800
+ 1022              	.LASF16:
+ 1023 038a 696E7465 		.ascii	"interface\000"
+ 1023      72666163 
+ 1023      6500
+ 1024              	.LASF40:
+ 1025 0394 55534246 		.ascii	"USBFS_1_STRING_DESCRIPTORS\000"
+ 1025      535F315F 
+ 1025      53545249 
+ 1025      4E475F44 
+ 1025      45534352 
+ 1026              	.LASF36:
+ 1027 03af 55534246 		.ascii	"USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE_CLASS\000"
+ 1027      535F315F 
+ 1027      44455649 
+ 1027      4345305F 
+ 1027      434F4E46 
+ 1028              	.LASF13:
+ 1029 03de 63686172 		.ascii	"char\000"
+ 1029      00
+ 1030              	.LASF14:
+ 1031 03e3 6C6F6E67 		.ascii	"long double\000"
+ 1031      20646F75 
+ 1031      626C6500 
+ 1032              	.LASF29:
+ 1033 03ef 545F5553 		.ascii	"T_USBFS_1_TD\000"
+ 1033      4246535F 
+ 1033      315F5444 
+ 1033      00
+ 1034              	.LASF0:
+ 1035 03fc 7369676E 		.ascii	"signed char\000"
+ 1035      65642063 
+ 1035      68617200 
+ 1036              	.LASF42:
+ 1037 0408 55534246 		.ascii	"USBFS_1_DEVICE0_CONFIGURATION0_INTERFACE0_ALTERNATE"
+ 1037      535F315F 
+ 1037      44455649 
+ 1037      4345305F 
+ 1037      434F4E46 
+ 1038 043b 305F4849 		.ascii	"0_HID_IN_BUF\000"
+ 1038      445F494E 
+ 1038      5F425546 
+ 1038      00
+ 1039              	.LASF24:
+ 1040 0448 6C656E67 		.ascii	"length\000"
+ 1040      746800
+ 1041              	.LASF48:
+ 1042 044f 503A5C43 		.ascii	"P:\\Cypress_Tutorials_Working_Directory\\Homemade_J"
+ 1042      79707265 
+ 1042      73735F54 
+ 1042      75746F72 
+ 1042      69616C73 
+ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccis3CMJ.s 			page 22
+
+
+ 1043 0480 6F797374 		.ascii	"oystick\\Homemade_Joystick\\Homemade_Joystick_Works"
+ 1043      69636B5C 
+ 1043      486F6D65 
+ 1043      6D616465 
+ 1043      5F4A6F79 
+ 1044 04b1 70616365 		.ascii	"pace\\Joystick_Groundup.cydsn\000"
+ 1044      5C4A6F79 
+ 1044      73746963 
+ 1044      6B5F4772 
+ 1044      6F756E64 
+ 1045              	.LASF37:
+ 1046 04ce 55534246 		.ascii	"USBFS_1_DEVICE0_CONFIGURATION0_TABLE\000"
+ 1046      535F315F 
+ 1046      44455649 
+ 1046      4345305F 
+ 1046      434F4E46 
+ 1047              	.LASF21:
+ 1048 04f3 624D6973 		.ascii	"bMisc\000"
+ 1048      6300
+ 1049              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

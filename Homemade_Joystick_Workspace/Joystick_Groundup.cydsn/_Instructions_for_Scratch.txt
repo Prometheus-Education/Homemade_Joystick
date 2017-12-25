@@ -1,0 +1,20 @@
+USB Joystick Steps:
+1. Create new project with appropriate MCU
+2. Add the USBFS peripheral
+3. Enable USB Clock, set to 2X, change IMO to 24MHz.  See the IMO tolerance change to 0.25%
+4. Set ILO to 100kHz (using checkbox and dropdown box)
+5. Set VID, PID, MFG String, and Prod String in the USBFS Config>>DeviceDesciptor
+6. Set Configuration Description to appropriate current consumption
+7. Edit HID Descriptor tab:
+
+
+8. Set Alternate function to HID
+9. Set HID Class Descriptor to your report from step 7
+10. Set endpoint descriptor EP1 to IN, type INT, set max packet size to ???
+11.  In main.c, Add initial load of USBFS
+12.  In the main loop, wait for ACK from PC host
+13.  populate your USB report based on MCU peripheral inputs (analog, digital, sensors)
+14.  Send the report, if the report is zeroed
+ out
+15. compile and program to board
+16. test the program using Microsoft USB Game Controller set up "Set Up USB Game Controllers"
