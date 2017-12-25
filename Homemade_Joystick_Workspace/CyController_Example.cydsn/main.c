@@ -37,6 +37,7 @@ USA
     #define FALSE 0u
 #endif
 
+//Use this define statement to enable the UART debug interface
 #define DEBUG_ENABLE TRUE
 
 #include <project.h>
@@ -68,15 +69,14 @@ static uint8 USB_Output_Data[OUTPUT_SIZE]; /* USB data received from the PC */
 int main()
 {    
     uint16 outCount;
+    uint16_t loop_index;
     
     StartUp(); 	/* Calls the proper start API for all the components */
     DEBUG_UART_Start();    
-    //TEMPORARY:  Test UART Channel
-//    uart_put_hex_8bit('a');
-    DEBUG_UART_PutChar('a');
 	
 	for(;;)
     {
+
         
     	while(!USBFS_1_bGetEPAckState(IN_EP)); 	/* Wait for ACK before loading data */
         
@@ -86,10 +86,18 @@ int main()
         /*Check to see if the IN Endpoint is empty. If so, load it with Input data to be tranfered */
         if(USBFS_1_GetEPState(IN_EP) == USBFS_1_IN_BUFFER_EMPTY)
         {
+            //UART Debug interface will stream out the contents of the USB report
             #if(DEBUG_ENABLE == TRUE)
             //Transmit USB_Input_Data over debug
-                
+            for(loop_index = 0; loop_index < sizeof(USB_Input_Data); loop_index++)
+            {
+                uart_put_hex_8bit(USB_Input_Data[loop_index]);
+                debug_putc(0x09);
+            }
+            debug_putc(0x0A);
+            debug_putc(0x0D);
             #endif
+            
 		    /* Load latest analog and button data into the IN EP and send */
             USBFS_1_LoadInEP(IN_EP, (uint8 *)USB_Input_Data, sizeof(USB_Input_Data));   
         }
