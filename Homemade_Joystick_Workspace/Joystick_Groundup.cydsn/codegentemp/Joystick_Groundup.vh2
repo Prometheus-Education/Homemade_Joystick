@@ -2,7 +2,7 @@
 --	Conversion of Joystick_Groundup.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Mon Dec 25 18:00:05 2017
+--	Sat Jan 20 19:15:31 2018
 --
 
 USE cypress.cypress.all;

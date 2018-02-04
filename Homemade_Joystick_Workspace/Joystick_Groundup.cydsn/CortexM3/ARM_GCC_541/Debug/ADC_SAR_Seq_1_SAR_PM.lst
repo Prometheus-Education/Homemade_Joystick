@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccpVsoS4.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
   28:Generated_Source\PSoC5/ADC_SAR_Seq_1_SAR_PM.c **** 
   29:Generated_Source\PSoC5/ADC_SAR_Seq_1_SAR_PM.c **** 
   30:Generated_Source\PSoC5/ADC_SAR_Seq_1_SAR_PM.c **** /*******************************************************************************
-ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 2
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccpVsoS4.s 			page 2
 
 
   31:Generated_Source\PSoC5/ADC_SAR_Seq_1_SAR_PM.c **** * Function Name: ADC_SAR_Seq_1_SAR_SaveConfig
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
   47              		@ args = 0, pretend = 0, frame = 0
   48              		@ frame_needed = 0, uses_anonymous_args = 0
   49              		@ link register save eliminated.
-ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 3
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccpVsoS4.s 			page 3
 
 
   50 0000 7047     		bx	lr
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
   94:Generated_Source\PSoC5/ADC_SAR_Seq_1_SAR_PM.c ****         if((ADC_SAR_Seq_1_SAR_SAR_CSR0_REG & ADC_SAR_Seq_1_SAR_SAR_SOF_START_CONV) != 0u)
   76              		.loc 1 94 0
   77 000c 0A4B     		ldr	r3, .L9+4
-ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 4
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccpVsoS4.s 			page 4
 
 
   78 000e 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
  108:Generated_Source\PSoC5/ADC_SAR_Seq_1_SAR_PM.c **** }
  109:Generated_Source\PSoC5/ADC_SAR_Seq_1_SAR_PM.c **** 
  110:Generated_Source\PSoC5/ADC_SAR_Seq_1_SAR_PM.c **** 
-ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 5
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccpVsoS4.s 			page 5
 
 
  111:Generated_Source\PSoC5/ADC_SAR_Seq_1_SAR_PM.c **** /*******************************************************************************
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
  143 001a 08BD     		pop	{r3, pc}
  144              	.L15:
  145              		.align	2
-ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 6
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccpVsoS4.s 			page 6
 
 
  146              	.L14:
@@ -327,14 +327,14 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
  169 000c B2000000 		.4byte	.LASF22
  170 0010 0C       		.byte	0xc
  171 0011 91010000 		.4byte	.LASF23
- 172 0015 5F020000 		.4byte	.LASF24
+ 172 0015 F6010000 		.4byte	.LASF24
  173 0019 00000000 		.4byte	.Ldebug_ranges0+0
  174 001d 00000000 		.4byte	0
  175 0021 00000000 		.4byte	.Ldebug_line0
  176 0025 02       		.uleb128 0x2
  177 0026 01       		.byte	0x1
  178 0027 06       		.byte	0x6
- 179 0028 53020000 		.4byte	.LASF0
+ 179 0028 C1020000 		.4byte	.LASF0
  180 002c 02       		.uleb128 0x2
  181 002d 01       		.byte	0x1
  182 002e 08       		.byte	0x8
@@ -342,7 +342,7 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
  184 0033 02       		.uleb128 0x2
  185 0034 02       		.byte	0x2
  186 0035 05       		.byte	0x5
- 187 0036 F6010000 		.4byte	.LASF2
+ 187 0036 64020000 		.4byte	.LASF2
  188 003a 02       		.uleb128 0x2
  189 003b 02       		.byte	0x2
  190 003c 07       		.byte	0x7
@@ -350,7 +350,7 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
  192 0041 02       		.uleb128 0x2
  193 0042 04       		.byte	0x4
  194 0043 05       		.byte	0x5
- 195 0044 25020000 		.4byte	.LASF4
+ 195 0044 93020000 		.4byte	.LASF4
  196 0048 02       		.uleb128 0x2
  197 0049 04       		.byte	0x4
  198 004a 07       		.byte	0x7
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
  200 004f 02       		.uleb128 0x2
  201 0050 08       		.byte	0x8
  202 0051 05       		.byte	0x5
-ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 7
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccpVsoS4.s 			page 7
 
 
  203 0052 E3010000 		.4byte	.LASF6
@@ -375,7 +375,7 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
  214 0066 07       		.byte	0x7
  215 0067 BF010000 		.4byte	.LASF8
  216 006b 04       		.uleb128 0x4
- 217 006c 00020000 		.4byte	.LASF12
+ 217 006c 6E020000 		.4byte	.LASF12
  218 0070 02       		.byte	0x2
  219 0071 9201     		.2byte	0x192
  220 0073 2C000000 		.4byte	0x2c
@@ -404,7 +404,7 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
  243 00a0 2A       		.byte	0x2a
  244 00a1 B2000000 		.4byte	0xb2
  245 00a5 07       		.uleb128 0x7
- 246 00a6 2E020000 		.4byte	.LASF25
+ 246 00a6 9C020000 		.4byte	.LASF25
  247 00aa 03       		.byte	0x3
  248 00ab 2C       		.byte	0x2c
  249 00ac 6B000000 		.4byte	0x6b
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
  257 00bd 09       		.uleb128 0x9
  258 00be 87000000 		.4byte	.LASF15
  259 00c2 01       		.byte	0x1
-ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 8
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccpVsoS4.s 			page 8
 
 
  260 00c3 2C       		.byte	0x2c
@@ -477,16 +477,16 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
  313 0140 03       		.byte	0x3
  314 0141 35       		.byte	0x35
  315 0142 0D       		.uleb128 0xd
- 316 0143 3A020000 		.4byte	.LASF20
-ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 9
+ 316 0143 A8020000 		.4byte	.LASF20
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccpVsoS4.s 			page 9
 
 
- 317 0147 3A020000 		.4byte	.LASF20
+ 317 0147 A8020000 		.4byte	.LASF20
  318 014b 03       		.byte	0x3
  319 014c 44       		.byte	0x44
  320 014d 0D       		.uleb128 0xd
- 321 014e 06020000 		.4byte	.LASF21
- 322 0152 06020000 		.4byte	.LASF21
+ 321 014e 74020000 		.4byte	.LASF21
+ 322 0152 74020000 		.4byte	.LASF21
  323 0156 03       		.byte	0x3
  324 0157 D1       		.byte	0xd1
  325 0158 00       		.byte	0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
  371 002b 00       		.byte	0
  372 002c 03       		.uleb128 0x3
  373 002d 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 10
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccpVsoS4.s 			page 10
 
 
  374 002e 3A       		.uleb128 0x3a
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
  428 0064 00       		.byte	0
  429 0065 00       		.byte	0
  430 0066 09       		.uleb128 0x9
-ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 11
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccpVsoS4.s 			page 11
 
 
  431 0067 2E       		.uleb128 0x2e
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
  485 00a1 00       		.byte	0
  486 00a2 00       		.byte	0
  487 00a3 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 12
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccpVsoS4.s 			page 12
 
 
  488 00a4 34       		.uleb128 0x34
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
  542 0008 00000000 		.4byte	.LFB1
  543 000c 02000000 		.4byte	.LFE1
  544 0010 00000000 		.4byte	.LFB2
-ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 13
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccpVsoS4.s 			page 13
 
 
  545 0014 40000000 		.4byte	.LFE2
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
  568      20636861 
  568      7200
  569              	.LASF22:
-ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 14
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccpVsoS4.s 			page 14
 
 
  570 00b2 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
  588      7369676E 
  588      65642069 
  589              	.LASF6:
-ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 15
+ARM GAS  C:\Users\PROMET~1\AppData\Local\Temp\ccpVsoS4.s 			page 15
 
 
  590 01e3 6C6F6E67 		.ascii	"long long int\000"
@@ -848,51 +848,50 @@ ARM GAS  C:\Users\Alex\AppData\Local\Temp\ccICxqMP.s 			page 1
  591              	.LASF11:
  592 01f1 63686172 		.ascii	"char\000"
  592      00
- 593              	.LASF2:
- 594 01f6 73686F72 		.ascii	"short int\000"
- 594      7420696E 
- 594      7400
- 595              	.LASF12:
- 596 0200 75696E74 		.ascii	"uint8\000"
- 596      3800
- 597              	.LASF21:
- 598 0206 4144435F 		.ascii	"ADC_SAR_Seq_1_SAR_StartConvert\000"
- 598      5341525F 
- 598      5365715F 
- 598      315F5341 
- 598      525F5374 
- 599              	.LASF4:
- 600 0225 6C6F6E67 		.ascii	"long int\000"
- 600      20696E74 
- 600      00
- 601              	.LASF25:
- 602 022e 656E6162 		.ascii	"enableState\000"
- 602      6C655374 
- 602      61746500 
- 603              	.LASF20:
- 604 023a 4144435F 		.ascii	"ADC_SAR_Seq_1_SAR_Enable\000"
- 604      5341525F 
- 604      5365715F 
- 604      315F5341 
- 604      525F456E 
- 605              	.LASF0:
- 606 0253 7369676E 		.ascii	"signed char\000"
- 606      65642063 
- 606      68617200 
- 607              	.LASF24:
- 608 025f 503A5C43 		.ascii	"P:\\Cypress_Tutorials_Working_Directory\\Homemade_J"
- 608      79707265 
- 608      73735F54 
- 608      75746F72 
- 608      69616C73 
- 609 0290 6F797374 		.ascii	"oystick\\Homemade_Joystick\\Homemade_Joystick_Works"
- 609      69636B5C 
- 609      486F6D65 
- 609      6D616465 
- 609      5F4A6F79 
- 610 02c1 70616365 		.ascii	"pace\\Joystick_Groundup.cydsn\000"
- 610      5C4A6F79 
- 610      73746963 
- 610      6B5F4772 
- 610      6F756E64 
+ 593              	.LASF24:
+ 594 01f6 433A5C55 		.ascii	"C:\\Users\\Prometheus_Ed\\Documents\\GitHub\\Homema"
+ 594      73657273 
+ 594      5C50726F 
+ 594      6D657468 
+ 594      6575735F 
+ 595 0224 64655F4A 		.ascii	"de_Joystick\\Homemade_Joystick_Workspace\\Joystick_"
+ 595      6F797374 
+ 595      69636B5C 
+ 595      486F6D65 
+ 595      6D616465 
+ 596 0255 47726F75 		.ascii	"Groundup.cydsn\000"
+ 596      6E647570 
+ 596      2E637964 
+ 596      736E00
+ 597              	.LASF2:
+ 598 0264 73686F72 		.ascii	"short int\000"
+ 598      7420696E 
+ 598      7400
+ 599              	.LASF12:
+ 600 026e 75696E74 		.ascii	"uint8\000"
+ 600      3800
+ 601              	.LASF21:
+ 602 0274 4144435F 		.ascii	"ADC_SAR_Seq_1_SAR_StartConvert\000"
+ 602      5341525F 
+ 602      5365715F 
+ 602      315F5341 
+ 602      525F5374 
+ 603              	.LASF4:
+ 604 0293 6C6F6E67 		.ascii	"long int\000"
+ 604      20696E74 
+ 604      00
+ 605              	.LASF25:
+ 606 029c 656E6162 		.ascii	"enableState\000"
+ 606      6C655374 
+ 606      61746500 
+ 607              	.LASF20:
+ 608 02a8 4144435F 		.ascii	"ADC_SAR_Seq_1_SAR_Enable\000"
+ 608      5341525F 
+ 608      5365715F 
+ 608      315F5341 
+ 608      525F456E 
+ 609              	.LASF0:
+ 610 02c1 7369676E 		.ascii	"signed char\000"
+ 610      65642063 
+ 610      68617200 
  611              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

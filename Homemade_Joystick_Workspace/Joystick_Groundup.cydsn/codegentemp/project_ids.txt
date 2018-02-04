@@ -1,8 +1,6 @@
-C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|32ff8c79-8d92-4e0b-bb87-f96edf16fb8c
-C:\Users\Alex\Documents\PSoC Creator\4.1\Downloads ( 4.1).cylib\Downloads ( 4.1).cyprj|67cffc2e-505b-4b63-a784-278b669f97a0
-C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|109943f6-eeab-439b-9327-bffbea50aba3
-C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|70042d7f-be4e-4f3b-b150-0e8b8ca3c2d3
-C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|3d165a7a-a9ef-44ed-abc8-1734f73ec842
-P:\Cypress_Tutorials_Working_Directory\Homemade_Joystick\Homemade_Joystick\Homemade_Joystick_Workspace\Joystick_Tester_Workspace.cydsn\Joystick_Tester_Workspace.cyprj|9cab4edb-656f-4c00-8267-4e42b68d2dc7
-P:\Cypress_Tutorials_Working_Directory\Homemade_Joystick\Homemade_Joystick\Homemade_Joystick_Workspace\CyController_Example.cydsn\CyController_Example.cyprj|622d2c1c-5dc4-4ae2-88a8-6b97e18c9a43
-P:\Cypress_Tutorials_Working_Directory\Homemade_Joystick\Homemade_Joystick\Homemade_Joystick_Workspace\Joystick_Groundup.cydsn\Joystick_Groundup.cyprj|1c4c7490-4d7a-460e-ab9c-0ea70537c0de
+C:\Users\Prometheus_Ed\Documents\GitHub\Homemade_Joystick\Homemade_Joystick_Workspace\Joystick_Groundup.cydsn\Joystick_Groundup.cyprj|34413440-eff6-4381-9dbf-677053e33873
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|54af1df6-0bd5-46fb-b286-f39cde5f8991
+C:\Users\Prometheus_Ed\Documents\PSoC Creator\4.1\Downloads ( 4.1).cylib\Downloads ( 4.1).cyprj|c752e9b4-a07d-4b8f-a93b-f52961f4d427
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|7d10176f-24be-442f-bb08-f76f0e87f872
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|a9cea9c3-14b1-4300-81c6-c2c182ff0bc2
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|e4b61570-db5e-41b8-8e53-c72e4784a75f

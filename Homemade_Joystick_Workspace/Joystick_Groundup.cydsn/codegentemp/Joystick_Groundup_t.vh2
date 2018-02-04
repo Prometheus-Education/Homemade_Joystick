@@ -1,5 +1,5 @@
--- Project:   P:\Cypress_Tutorials_Working_Directory\Homemade_Joystick\Homemade_Joystick\Homemade_Joystick_Workspace\Joystick_Groundup.cydsn\Joystick_Groundup.cyprj
--- Generated: 12/25/2017 18:00:17
+-- Project:   C:\Users\Prometheus_Ed\Documents\GitHub\Homemade_Joystick\Homemade_Joystick_Workspace\Joystick_Groundup.cydsn\Joystick_Groundup.cyprj
+-- Generated: 01/20/2018 19:15:41
 -- PSoC Creator  4.1 Update 1
 
 ENTITY Joystick_Groundup IS
