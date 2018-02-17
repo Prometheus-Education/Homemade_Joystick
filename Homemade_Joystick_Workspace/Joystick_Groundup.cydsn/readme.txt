@@ -1,5 +1,0 @@
--To make your breadboard, use the schematic in the HW design folder (look for the pdf)
--Open this project in Cypress PSOC creator (4.1 or later)
--Compile the code, attach your breadboard to your computer, then go to debug>>program
--Plug the micro USB connector to your computer via a USB cable
--Begin using your new joystick!  Use microsoft's "Set Up USB Game Controller"
